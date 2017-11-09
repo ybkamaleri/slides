@@ -1,20 +1,7 @@
+#+Options: num:nil toc:nil
+#+Options: creator:nil
 
-#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto html-preamble:nil
-#+OPTIONS: html-scripts:t html-style:t html5-fancy:nil tex:t
-#+HTML_DOCTYPE: xhtml-strict
-#+HTML_CONTAINER: div
-#+DESCRIPTION:
-#+KEYWORDS:
-#+HTML_LINK_HOME:
-#+HTML_LINK_UP:
-#+HTML_MATHJAX:
-#+HTML_HEAD: Presentation Slides
-#+HTML_HEAD_EXTRA:
-#+SUBTITLE:
-#+INFOJS_OPT:
-#+CREATOR: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 9.1.2)
-#+LATEX_HEADER:
-#+OPTIONS: toc:nil
+#+Title: Slided presentations
 
 * HTML slides
 
