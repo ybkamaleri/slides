@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Registery Data</title>
+<meta name="author" content="(Yusman Kamaleri)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./css/reveal.css"/>
+<link rel="stylesheet" href="./css/theme/beige.css" id="theme"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+    <h1>Registery Data</h1><h3>Yusman Kamaleri</d><h5>15 May 2017</h5>
+</section>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./images/logo.svg" height="20%," width="30%">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+
+<section>
+<section id="slide-orgb76283f">
+<h2 id="orgb76283f">Statistics</h2>
+<p>
+Contributions
+</p>
+<ul>
+<li>Variables: Do's and Don'ts</li>
+<li>Analyses of the data</li>
+<li>Visualization of the results</li>
+
+</ul>
+</section>
+<section id="slide-orgdd12887">
+<h3 id="orgdd12887">Visualization of the results</h3>
+<ul>
+<li>Local use
+<ul>
+    <li>Excel</li>
+    <li>R via <a href="./images/SnipImage.JPG" target="_blank">Rapporteket</a> or <a href="./images/shiny.jpeg"  target="_blank">Shiny</a></li>
+
+</ul></li>
+<li>R packages eg. <a href="https://cran.r-project.org/web/packages/aimPlot/index.html" target="_blank">aimPlot</a></li>
+<li>Public via <a href="https://www.kvalitetsregistre.no/registers/norsk-hjertestansregister" target="_blank">online</a> or The Norwegian Directorate of Health</li>
+<li>Indicators
+<ul>
+    <li>MRS-Results via <a href="https://app.powerbi.com/view?r=eyJrIjoiOTc5MjM1ODEtMGRlYi00NjU2LWJlYzgtODMyYmQ3OGYxN2E5IiwidCI6IjE2ZmY5NjNmLThlYWItNDEyZi04ZWE5LTlkYWVkMzA3OGI5OCIsImMiOjh9" target="_blank">PowerBI</a></li>
+    <li>Shiny via <a href="http://discovery.wmflabs.org/metrics/#kpis_summary" target="_blank">Cancer Register</a></li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org2eac3ac">
+<h2 id="org2eac3ac">Statistics</h2>
+<p>
+Contributions
+</p>
+<ul>
+<li>Variables: Do's and Don'ts</li>
+<li>Analyses of the data</li>
+<li>Visualization of the results</li>
+<li>Auto report generating ie. LaTeX, HTML or DOCX</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org48598f2">
+    <h2 id="org48598f2">Epidemiology</h2>
+    <ul>
+        <li>Variation eg. <a href="https://www.ncbi.nlm.nih.gov/pubmed/18977088" target="_blank">Pain sites</a></li>
+        <li>Statistical Process Control eg. <a href="https://www.ncbi.nlm.nih.gov/pubmed/23773727" target="_blank">Pandemrix® vaccination</a></li>
+        <li>Registry Data for research</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="./lib/js/head.min.js"></script>
+<script src="./js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
