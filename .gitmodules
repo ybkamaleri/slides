@@ -1,0 +1,3 @@
+[submodule "nakos"]
+	path = nakos
+	url = git@personal:yusbk/nakos.git
