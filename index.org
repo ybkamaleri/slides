@@ -1,4 +1,8 @@
+
 #+Title: Presentation slides
 
+#+OPTIONS: num:nil toc:nil
+
 * HTML slides
-- [[file:2017-05-11-Registry-Data/][Registry data (NAKOS) 11 May 2017]]
+
+1. [[file:2017-05-11-Registry-Data/][Registry data (NAKOS) 11 May 2017]]
