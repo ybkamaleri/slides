@@ -1,2 +1,0 @@
-# nakos
-presentation på NAKOS
