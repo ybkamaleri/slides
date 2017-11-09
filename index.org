@@ -1,8 +1,9 @@
 #+Options: num:nil toc:nil
-#+Options: creator:nil
+#+Options: html-postamble:nil
 
-#+Title: Slided presentations
+#+Title: Slides presentations
 
 * HTML slides
 
 1. [[file:2017-05-11-Registry-Data/][Registry data (NAKOS) 11 May 2017]]
+2. [[file:2017-06-08-Workshop-resultat/][Workshop for analyser og resultatutvikling 08 Juni 2017]]
