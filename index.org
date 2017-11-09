@@ -1,7 +1,6 @@
 #+Options: num:nil toc:nil
 #+Options: html-postamble:nil
 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="mystyle.css" />
 
 #+Title: Slides presentations
 
