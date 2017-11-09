@@ -1,5 +1,5 @@
 
-#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto html-preamble:t
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto html-preamble:nil
 #+OPTIONS: html-scripts:t html-style:t html5-fancy:nil tex:t
 #+HTML_DOCTYPE: xhtml-strict
 #+HTML_CONTAINER: div
@@ -14,6 +14,7 @@
 #+INFOJS_OPT:
 #+CREATOR: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 9.1.2)
 #+LATEX_HEADER:
+#+OPTIONS: toc:nil
 
 * HTML slides
 
