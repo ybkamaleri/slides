@@ -4,7 +4,7 @@
 
 #+Title: Slides presentations
 
-* HTML slides
+* List of slides
 
 1. [[file:2017-03-12-Servicemilj-seminar/][Servicemiljø seminar 12 Mars 2017]]
 2. [[file:2017-05-11-Registry-Data/][Registry data (NAKOS) 11 May 2017]]
