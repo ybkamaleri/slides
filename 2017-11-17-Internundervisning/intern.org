@@ -5,6 +5,7 @@
 #+REVEAL_THEME: beige
 #+REVEAL_HLEVEL: 2
 #+REVEAL_TRANS: slide
+#+REVEAL_EXTRA_CSS: ./intern.css
 
 #+REVEAL_TITLE_SLIDE_TEMPLATE: <h1>%t</h1><h3>%a</d><h5>%d</h5>
 #+REVEAL_TITLE_SLIDE_BACKGROUND: #4dd
@@ -20,7 +21,7 @@
 Foreløpig er det bare anonyme data
 - [[https://www.kvalitetsregistre.no/registers/norsk-kvinnelig-inkontinensregister][Norsk kvinnelig inkontinensregister]]
 - [[https://www.kvalitetsregistre.no/registers/nasjonalt-hoftebruddregister][Nasjonalt hoftebruddregister]]
-* Rapporteket (Jasper og R)
+* Rapporteket (JasperReport og R)
 Resultattjeneste for sensitiv data
 * Lokal løsning
 - R og Shiny
