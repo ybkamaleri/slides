@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Kvalitetsindikatorer</title>
+<meta name="author" content="(Yusman Kamaleri)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./css/reveal.css"/>
+
+<link rel="stylesheet" href="./css/theme/beige.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="#4dd"><h1 class="title">Kvalitetsindikatorer</h1><h2 class="date">17 nov 2017</h2>
+</section>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./images/logo.svg" class="org-svg" height="20%," width="30%">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+<section>
+<section id="slide-org3b310c2">
+<h2 id="org3b310c2">MRS-Resultat (Power BI)</h2>
+<p>
+Foreløpig er det bare anonyme data
+</p>
+<ul>
+<li><a href="https://www.kvalitetsregistre.no/registers/norsk-kvinnelig-inkontinensregister">Norsk kvinnelig inkontinensregister</a></li>
+<li><a href="https://www.kvalitetsregistre.no/registers/nasjonalt-hoftebruddregister">Nasjonalt hoftebruddregister</a></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org9634bb6">
+<h2 id="org9634bb6">Rapporteket (Jasper og R)</h2>
+<p>
+Resultattjeneste for sensitiv data
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org0238722">
+<h2 id="org0238722">Lokal løsning</h2>
+<ul>
+<li>R og Shiny
+<ul>
+<li>BDR</li>
+<li><a href="https://gallery.shinyapps.io/087-crandash/">Eksample</a></li>
+
+</ul></li>
+<li>R og LaTeX</li>
+<li>Excel</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="./lib/js/head.min.js"></script>
+<script src="./js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
