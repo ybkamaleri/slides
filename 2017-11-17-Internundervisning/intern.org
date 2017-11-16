@@ -23,17 +23,12 @@ Foreløpig er det bare anonyme data
 - [[https://www.kvalitetsregistre.no/registers/nasjonalt-hoftebruddregister][Nasjonalt hoftebruddregister]]
 * Rapporteket (JasperReport og R)
 Resultattjeneste for sensitiv data
+- [[file:images/SnipImage.JPG][Norsk gynekologisk endoskopi register]]
 * Lokal løsning
 - R og Shiny
-  + BDR
-  + [[https://gallery.shinyapps.io/087-crandash/][Eksample]]
+  + [[file:images/shiny.jpeg][Nasjonalt medisinsk kvalitetsregister for barne- og ungdomsdiabetes]]
+  + [[https://gallery.shinyapps.io/087-crandash/][Eksample1]] [[http://discovery.wmflabs.org/metrics/#kpis_summary][Eksample2]]
 - R og LaTeX
+  + R pakke "[[https://cran.r-project.org/web/packages/rreg/index.html][rreg]]"
+  + Dynamisk rapport - pdf, docx, html
 - Excel
-
-
-
-
-
-
-
-
