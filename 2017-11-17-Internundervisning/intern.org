@@ -25,7 +25,7 @@ Foreløpig er det bare anonyme data
 Resultattjeneste for sensitiv data
 - [[file:images/SnipImage.JPG][Norsk gynekologisk endoskopi register]]
 * Lokal løsning
-- R og Shiny
+- R og Shiny ([[file:images/bdrshiny.mp4][video]])
   + [[file:images/shiny.jpeg][Nasjonalt medisinsk kvalitetsregister for barne- og ungdomsdiabetes]]
   + [[https://gallery.shinyapps.io/087-crandash/][Eksampel1]]  [[http://discovery.wmflabs.org/metrics/#kpis_summary][Eksampel2]]
 - R og LaTeX
