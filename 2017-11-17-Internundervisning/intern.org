@@ -30,5 +30,6 @@ Resultattjeneste for sensitiv data
   + [[https://gallery.shinyapps.io/087-crandash/][Eksample1]] [[http://discovery.wmflabs.org/metrics/#kpis_summary][Eksample2]]
 - R og LaTeX
   + R pakke "[[https://cran.r-project.org/web/packages/rreg/index.html][rreg]]"
+  + Uvanlig [[file:images/prosessControlROSC.pdf][variasjon]]
   + Dynamisk rapport - pdf, docx, html
 - Excel
