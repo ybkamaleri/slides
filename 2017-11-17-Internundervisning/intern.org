@@ -25,11 +25,11 @@ Foreløpig er det bare anonyme data
 Resultattjeneste for sensitiv data
 - [[file:images/SnipImage.JPG][Norsk gynekologisk endoskopi register]]
 * Lokal løsning
-- R og Shiny ([[file:images/bdrshiny.mp4][video]])
+- R og Shiny
   + R pakke "[[https://cran.r-project.org/web/packages/rreg/index.html][rreg]]"
   + Uvanlig [[file:images/prosessControlROSC.pdf][variasjon]]
 
-  + [[file:images/shiny.jpeg][Nasjonalt medisinsk kvalitetsregister for barne- og ungdomsdiabetes]]
+  + [[file:images/shiny.jpeg][Nasjonalt medisinsk kvalitetsregister for barne- og ungdomsdiabetes]] ([[file:images/bdrshiny.mp4][video]])
   + [[https://gallery.shinyapps.io/087-crandash/][Eksampel1]]  [[http://discovery.wmflabs.org/metrics/#kpis_summary][Eksampel2]]
 #+ATTR_REVEAL: :frag (roll-in)
 - R og LaTeX
