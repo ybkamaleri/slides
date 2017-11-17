@@ -31,6 +31,7 @@ Resultattjeneste for sensitiv data
 
   + [[file:images/shiny.jpeg][Nasjonalt medisinsk kvalitetsregister for barne- og ungdomsdiabetes]]
   + [[https://gallery.shinyapps.io/087-crandash/][Eksampel1]]  [[http://discovery.wmflabs.org/metrics/#kpis_summary][Eksampel2]]
+#+ATTR_REVEAL: :frag (roll-in)
 - R og LaTeX
    + Dynamisk rapport - pdf, docx, html ([[file:images/bdr.mp4][eksampel]])
 - Excel
