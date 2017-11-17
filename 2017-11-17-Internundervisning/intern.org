@@ -21,7 +21,7 @@
 Foreløpig er det bare anonyme data
 - [[https://www.kvalitetsregistre.no/registers/norsk-kvinnelig-inkontinensregister][Norsk kvinnelig inkontinensregister]]
 - [[https://www.kvalitetsregistre.no/registers/nasjonalt-hoftebruddregister][Nasjonalt hoftebruddregister]]
-* Rapporteket (JasperReport og R)
+* Rapporteket (JasperReport og [[https://www.r-project.org/][R]])
 Resultattjeneste for sensitiv data
 - [[file:images/SnipImage.JPG][Norsk gynekologisk endoskopi register]]
 * Lokal løsning
