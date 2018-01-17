@@ -2,7 +2,7 @@
 #+Options: html-postamble:nil
 
 
-#+Title: Slides presentations
+#+Title: Presentations
 
 * List of slides
 
