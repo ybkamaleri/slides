@@ -8,9 +8,9 @@
 #+REVEAL_EXTRA_CSS: ./intern.css
 
 #+REVEAL_TITLE_SLIDE_TEMPLATE: <h1>%t</h1><h3>%a</d><h5>%d</h5>
-#+REVEAL_TITLE_SLIDE_BACKGROUND: #5ee
-#+ATTR_HTML: :height 20%, :width 20% :style :align right
-[[./images/logo.svg]]
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./images/logo.svg
+#+REVEAL_TITLE_SLIDE_BACKGROUND_SIZE: 200px
+#+REVEAL_TITLE_SLIDE_BACKGROUND_POSITION: 15% 30%
 
 #+options: reveal_slide_number:nil reveal_progress:t reveal_control:t
 #+OPTIONS: reveal_rolling_links:nil reveal_single_file:nil reveal_slide_number:"c"
