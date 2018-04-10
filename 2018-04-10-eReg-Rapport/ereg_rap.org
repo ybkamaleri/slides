@@ -23,8 +23,12 @@
 - [[https://www.youtube.com/watch?v=zWuTqbDrA2c&t=24s][Rapport per sykehus]]
 - [[https://www.youtube.com/watch?v=uggz-gn3Brg][Rapport for alle sykehus]]
 - [[https://youtu.be/Ei_GMagiyMk][Interaktiv resultat]]
-* Dagen analyse prosess
+* Dagens analyse prosess
 - [[./images/prosess.png]]
+* Utfordringer
+- Lokal tilpasning
+- Lokal installasjon
+- Krever grunnlegende kunnskap om analyseverktøy
 * Løsningen
 - Kjør R-kode i *eReg*
 #+ATTR_HTML: :width 350px
