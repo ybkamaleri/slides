@@ -1,0 +1,10 @@
+.reveal .slides .title {
+    font-family: "Georgia", serif;
+    font-size: 70px;
+}
+
+.reveal .slides .date {
+    color: #030;
+    font-size: 35px;
+    font-family: "Times New Roman", sans-serif;
+}
