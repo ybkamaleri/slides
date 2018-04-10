@@ -9,7 +9,7 @@
 
 #+REVEAL_TITLE_SLIDE_TEMPLATE: <h1>%t</h1><h3>%a</d><h5>%d</h5>
 #+REVEAL_TITLE_SLIDE_BACKGROUND: #5ee
-#+ATTR_HTML: :height 20%, :width 30%
+#+ATTR_HTML: :height 20%, :width 20% :style :align right
 [[./images/logo.svg]]
 
 #+options: reveal_slide_number:nil reveal_progress:t reveal_control:t
@@ -22,12 +22,12 @@
 - Tilpasset analyse ved å lage R pakke "[[https://cran.r-project.org/web/packages/rreg/index.html][rreg]]"
 - [[https://www.youtube.com/watch?v=zWuTqbDrA2c&t=24s][Rapport per sykehus]]
 - [[https://www.youtube.com/watch?v=uggz-gn3Brg][Rapport for alle sykehus]]
+- [[https://youtu.be/Ei_GMagiyMk][Interaktiv resultat]]
 * Dagen analyse prosess
-
 - [[./images/prosess.png]]
 * Løsningen
 - Kjør R-kode i *eReg*
-#+ATTR_HTML: :width 250px
+#+ATTR_HTML: :width 350px
 [[./images/solve.png]]
 * eReg rapport
 [[./images/ereg.png]]
