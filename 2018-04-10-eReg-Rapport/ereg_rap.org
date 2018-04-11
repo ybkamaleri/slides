@@ -5,12 +5,13 @@
 #+REVEAL_THEME: beige
 #+REVEAL_HLEVEL: 2
 #+REVEAL_TRANS: slide
-#+REVEAL_EXTRA_CSS: ./intern.css
+#+REVEAL_EXTRA_CSS: ./ereg.css
 
 #+REVEAL_TITLE_SLIDE_TEMPLATE: <h1>%t</h1><h3>%a</d><h5>%d</h5>
 #+REVEAL_TITLE_SLIDE_BACKGROUND: ./images/logo.svg
-#+REVEAL_TITLE_SLIDE_BACKGROUND_SIZE: 200px
-#+REVEAL_TITLE_SLIDE_BACKGROUND_POSITION: 15% 30%
+#+REVEAL_TITLE_SLIDE_BACKGROUND_SIZE: 300px
+
+#+REVEAL_TITLE_SLIDE_BACKGROUND_POSITION: left 50px top 50px
 
 #+options: reveal_slide_number:nil reveal_progress:t reveal_control:t
 #+OPTIONS: reveal_rolling_links:nil reveal_single_file:nil reveal_slide_number:"c"
@@ -24,7 +25,7 @@
 - [[https://www.youtube.com/watch?v=uggz-gn3Brg][Rapport for alle sykehus]]
 - [[https://youtu.be/Ei_GMagiyMk][Interaktiv resultat]]
 * Dagens analyse prosess
-- [[./images/prosess.png]]
+ [[./images/prosess.png]]
 * Utfordringer
 - Lokal tilpasning
 - Lokal installasjon
