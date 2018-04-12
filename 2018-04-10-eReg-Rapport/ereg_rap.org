@@ -11,6 +11,7 @@
 #+REVEAL_TITLE_SLIDE_BACKGROUND: ./images/logo.svg
 #+REVEAL_TITLE_SLIDE_BACKGROUND_SIZE: 300px
 
+
 #+REVEAL_TITLE_SLIDE_BACKGROUND_POSITION: left 50px top 50px
 
 #+options: reveal_slide_number:nil reveal_progress:t reveal_control:t
