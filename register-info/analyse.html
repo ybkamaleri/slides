@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-08-15 on. 16:34 -->
+<!-- 2018-08-16 to. 10:10 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Analyser for NTR</title>
@@ -92,36 +92,36 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb75dffe">1. Kategorisering</a></li>
-<li><a href="#org8aca5d9">2. Liggerdøgn</a></li>
-<li><a href="#orgb5b87d5">3. Skadekoder</a></li>
-<li><a href="#orgba76eea">4. Tilhørighet</a></li>
-<li><a href="#orgf9b4cfe">5. Førarbeid <code>[0/3]</code></a></li>
-<li><a href="#org7f88c7f">6. AIS <code>[2/8]</code></a></li>
-<li><a href="#orgb672c4f">7. Analyse ønsker <code>[1/11]</code></a></li>
-<li><a href="#org171eb6c">8. Analyse gjøres slik:</a>
+<li><a href="#org69b62eb">1. Kategorisering</a></li>
+<li><a href="#org0ffd887">2. Liggerdøgn</a></li>
+<li><a href="#org8c11c41">3. Skadekoder</a></li>
+<li><a href="#orgbea6297">4. Tilhørighet</a></li>
+<li><a href="#org71e9ba3">5. Førarbeid <code>[0/3]</code></a></li>
+<li><a href="#orgafa82de">6. AIS <code>[2/8]</code></a></li>
+<li><a href="#org69b8048">7. Analyse ønsker <code>[1/11]</code></a></li>
+<li><a href="#org92cb543">8. Analyse gjøres slik:</a>
 <ul>
-<li><a href="#org3c24a55">8.1. Kobling av data</a></li>
-<li><a href="#orgd755339">8.2. HealthUnitId</a></li>
+<li><a href="#orgdd10796">8.1. Kobling av data</a></li>
+<li><a href="#org95df2e7">8.2. HealthUnitId</a></li>
 </ul>
 </li>
-<li><a href="#org9a9d48f">9. Outline</a>
+<li><a href="#orgb69cb55">9. Outline</a>
 <ul>
-<li><a href="#org3691cca">9.1. Generelle Info</a></li>
-<li><a href="#org010bb11">9.2. Valg Enhet</a></li>
-<li><a href="#org6d30425">9.3. Periode</a></li>
-<li><a href="#orge011f0c">9.4. Valg kjønn</a></li>
-<li><a href="#org12cbf4b">9.5. Valg Alder</a></li>
-<li><a href="#orgc202612">9.6. AIS</a></li>
-<li><a href="#org3d548d8">9.7. Ulykke</a></li>
+<li><a href="#org48c475e">9.1. Generelle Info</a></li>
+<li><a href="#org1e7d9b7">9.2. Valg Enhet</a></li>
+<li><a href="#org4d5e0ea">9.3. Periode</a></li>
+<li><a href="#orgbcfffe8">9.4. Valg kjønn</a></li>
+<li><a href="#orgef43d71">9.5. Valg Alder</a></li>
+<li><a href="#org6587303">9.6. AIS</a></li>
+<li><a href="#org1d100bc">9.7. Ulykke</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgb75dffe" class="outline-2">
-<h2 id="orgb75dffe"><span class="section-number-2">1</span> Kategorisering</h2>
+<div id="outline-container-org69b62eb" class="outline-2">
+<h2 id="org69b62eb"><span class="section-number-2">1</span> Kategorisering</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>Sykehus</li>
@@ -129,8 +129,8 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org8aca5d9" class="outline-2">
-<h2 id="org8aca5d9"><span class="section-number-2">2</span> Liggerdøgn</h2>
+<div id="outline-container-org0ffd887" class="outline-2">
+<h2 id="org0ffd887"><span class="section-number-2">2</span> Liggerdøgn</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>Hvordan regner man liggerdøgn?</li>
@@ -139,8 +139,8 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb5b87d5" class="outline-2">
-<h2 id="orgb5b87d5"><span class="section-number-2">3</span> Skadekoder</h2>
+<div id="outline-container-org8c11c41" class="outline-2">
+<h2 id="org8c11c41"><span class="section-number-2">3</span> Skadekoder</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>Ullyketype
@@ -152,8 +152,8 @@ JA når man analysere type transport ulykke)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgba76eea" class="outline-2">
-<h2 id="orgba76eea"><span class="section-number-2">4</span> Tilhørighet</h2>
+<div id="outline-container-orgbea6297" class="outline-2">
+<h2 id="orgbea6297"><span class="section-number-2">4</span> Tilhørighet</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>Hvilket sykehus for forskjellige skjemaer eg. Skadegradering og ulykke når skal
@@ -162,8 +162,8 @@ Skadegradering fra annet sykehus. eg. &ldquo;NTR-000285&rdquo;</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf9b4cfe" class="outline-2">
-<h2 id="orgf9b4cfe"><span class="section-number-2">5</span> Førarbeid <code>[0/3]</code></h2>
+<div id="outline-container-org71e9ba3" class="outline-2">
+<h2 id="org71e9ba3"><span class="section-number-2">5</span> Førarbeid <code>[0/3]</code></h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Ting må gjøres for analsyen
@@ -177,8 +177,8 @@ kodebook (definisjonskatalogen)</li>
 </div>
 </div>
 
-<div id="outline-container-org7f88c7f" class="outline-2">
-<h2 id="org7f88c7f"><span class="section-number-2">6</span> AIS <code>[2/8]</code></h2>
+<div id="outline-container-orgafa82de" class="outline-2">
+<h2 id="orgafa82de"><span class="section-number-2">6</span> AIS <code>[2/8]</code></h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Kode 91000.1 vises som 010000.1 i GUI. Check at datadump har 091000.1 (Ingen som har 09**)</li>
@@ -193,8 +193,8 @@ inkluderer skadegrad 1</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb672c4f" class="outline-2">
-<h2 id="orgb672c4f"><span class="section-number-2">7</span> Analyse ønsker <code>[1/11]</code></h2>
+<div id="outline-container-org69b8048" class="outline-2">
+<h2 id="org69b8048"><span class="section-number-2">7</span> Analyse ønsker <code>[1/11]</code></h2>
 <div class="outline-text-2" id="text-7">
 <p>
 De er basert på diskusjonen med NTR og bestillingsdokument
@@ -215,12 +215,12 @@ De er basert på diskusjonen med NTR og bestillingsdokument
 </ul>
 </div>
 </div>
-<div id="outline-container-org171eb6c" class="outline-2">
-<h2 id="org171eb6c"><span class="section-number-2">8</span> Analyse gjøres slik:</h2>
+<div id="outline-container-org92cb543" class="outline-2">
+<h2 id="org92cb543"><span class="section-number-2">8</span> Analyse gjøres slik:</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-org3c24a55" class="outline-3">
-<h3 id="org3c24a55"><span class="section-number-3">8.1</span> Kobling av data</h3>
+<div id="outline-container-orgdd10796" class="outline-3">
+<h3 id="orgdd10796"><span class="section-number-3">8.1</span> Kobling av data</h3>
 <div class="outline-text-3" id="text-8-1">
 <ul class="org-ul">
 <li>NTR nummer representerer 1 pasient.</li>
@@ -229,8 +229,8 @@ De er basert på diskusjonen med NTR og bestillingsdokument
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd755339" class="outline-3">
-<h3 id="orgd755339"><span class="section-number-3">8.2</span> HealthUnitId</h3>
+<div id="outline-container-org95df2e7" class="outline-3">
+<h3 id="org95df2e7"><span class="section-number-3">8.2</span> HealthUnitId</h3>
 <div class="outline-text-3" id="text-8-2">
 <ul class="org-ul">
 <li>Alle skjemaer har <i>HealthUnitId</i>. Filtering for Sykehus, RHF og HF basert på
@@ -239,12 +239,12 @@ De er basert på diskusjonen med NTR og bestillingsdokument
 </div>
 </div>
 </div>
-<div id="outline-container-org9a9d48f" class="outline-2">
-<h2 id="org9a9d48f"><span class="section-number-2">9</span> Outline</h2>
+<div id="outline-container-orgb69cb55" class="outline-2">
+<h2 id="orgb69cb55"><span class="section-number-2">9</span> Outline</h2>
 <div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-org3691cca" class="outline-3">
-<h3 id="org3691cca"><span class="section-number-3">9.1</span> Generelle Info</h3>
+<div id="outline-container-org48c475e" class="outline-3">
+<h3 id="org48c475e"><span class="section-number-3">9.1</span> Generelle Info</h3>
 <div class="outline-text-3" id="text-9-1">
 <p>
 Dashboard som gir informasjon om:
@@ -257,8 +257,8 @@ Dashboard som gir informasjon om:
 </ul>
 </div>
 </div>
-<div id="outline-container-org010bb11" class="outline-3">
-<h3 id="org010bb11"><span class="section-number-3">9.2</span> Valg Enhet</h3>
+<div id="outline-container-org1e7d9b7" class="outline-3">
+<h3 id="org1e7d9b7"><span class="section-number-3">9.2</span> Valg Enhet</h3>
 <div class="outline-text-3" id="text-9-2">
 <ul class="org-ul">
 <li>Hele landet</li>
@@ -268,8 +268,8 @@ Dashboard som gir informasjon om:
 </ul>
 </div>
 </div>
-<div id="outline-container-org6d30425" class="outline-3">
-<h3 id="org6d30425"><span class="section-number-3">9.3</span> Periode</h3>
+<div id="outline-container-org4d5e0ea" class="outline-3">
+<h3 id="org4d5e0ea"><span class="section-number-3">9.3</span> Periode</h3>
 <div class="outline-text-3" id="text-9-3">
 <ul class="org-ul">
 <li>Valg av dato fra og til</li>
@@ -277,25 +277,19 @@ Dashboard som gir informasjon om:
 </ul>
 </div>
 </div>
-<div id="outline-container-orge011f0c" class="outline-3">
-<h3 id="orge011f0c"><span class="section-number-3">9.4</span> Valg kjønn</h3>
+<div id="outline-container-orgbcfffe8" class="outline-3">
+<h3 id="orgbcfffe8"><span class="section-number-3">9.4</span> Valg kjønn</h3>
 </div>
-<div id="outline-container-org12cbf4b" class="outline-3">
-<h3 id="org12cbf4b"><span class="section-number-3">9.5</span> Valg Alder</h3>
+<div id="outline-container-orgef43d71" class="outline-3">
+<h3 id="orgef43d71"><span class="section-number-3">9.5</span> Valg Alder</h3>
 </div>
-<div id="outline-container-orgc202612" class="outline-3">
-<h3 id="orgc202612"><span class="section-number-3">9.6</span> AIS</h3>
+<div id="outline-container-org6587303" class="outline-3">
+<h3 id="org6587303"><span class="section-number-3">9.6</span> AIS</h3>
 </div>
-<div id="outline-container-org3d548d8" class="outline-3">
-<h3 id="org3d548d8"><span class="section-number-3">9.7</span> Ulykke</h3>
+<div id="outline-container-org1d100bc" class="outline-3">
+<h3 id="org1d100bc"><span class="section-number-3">9.7</span> Ulykke</h3>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
-<p class="date">Date: 1 mai 2018</p>
-<p class="author">Author: Yusman Kamaleri</p>
-<p class="date">Created: 2018-08-15 on. 16:34</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
