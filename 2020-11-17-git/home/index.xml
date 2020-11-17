@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on versjonering for Helseprofilarbeid</title>
+    <link>http://example.org/home/</link>
+    <description>Recent content in Homes on versjonering for Helseprofilarbeid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/home/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Startside</title>
+      <link>http://example.org/home/github-side/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/home/github-side/</guid>
+      <description>Github https://github.com/helseprofil
+  </description>
+    </item>
+    
+    <item>
+      <title>Workflow</title>
+      <link>http://example.org/home/workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/home/workflow/</guid>
+      <description>Workflow   </description>
+    </item>
+    
+    <item>
+      <title>Clone</title>
+      <link>http://example.org/home/clone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/home/clone/</guid>
+      <description>Henter koder Kopierer filer fra main branch til lokal pc med
+git clone https://github.com/helseprofil/test-git.git   </description>
+    </item>
+    
+    <item>
+      <title>Branch</title>
+      <link>http://example.org/home/branch-ny/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/home/branch-ny/</guid>
+      <description>Ny Branch Kopierer filer fra branch origin/dev for testing
+ git checkout --track origin/dev git pull  </description>
+    </item>
+    
+    <item>
+      <title>Branch</title>
+      <link>http://example.org/home/branch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/home/branch/</guid>
+      <description>Eksisterende branch Bytt branch dev
+ git checkout dev git pull  </description>
+    </item>
+    
+    <item>
+      <title>Undo</title>
+      <link>http://example.org/home/undo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/home/undo/</guid>
+      <description>Slett endringene Sjekk hvilken branch
+ git branch  Se hvis filen har endret
+ git status  Tilbakestilt koder
+ git stash  </description>
+    </item>
+    
+    <item>
+      <title>Video</title>
+      <link>http://example.org/home/film/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/home/film/</guid>
+      <description>Veiledning på YouTube Klone repo
+https://www.youtube.com/watch?v=1WNneqs1tBk
+Test branch
+https://www.youtube.com/watch?v=J5YCl0Y-5eY</description>
+    </item>
+    
+  </channel>
+</rss>
