@@ -1,0 +1,107 @@
+#+hugo_base_dir: ../
+#+hugo_section: ./
+
+#+OPTIONS: ^:nil 
+
+* Index
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :outputs Reveal :transition slide
+:END:
+
+** Helseprofilarbeid med Git
+- Versjon kontroll for koder
+- Felles versjon for R og pakker (=lockfile=)
+- Test av nye funksjoner
+
+* Home
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: home
+:END:
+** Startside
+:PROPERTIES:
+:EXPORT_FILE_NAME: github-side
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 3
+:END:
+*** Github
+[[https://github.com/helseprofil][https://github.com/helseprofil]]
+#+attr_html: :alt Git workflow
+#+attr_html: :width 750
+[[file:/images/git-helseprofil.PNG]]
+
+** Workflow
+:PROPERTIES:
+:EXPORT_FILE_NAME: workflow
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 5
+:END:
+*** Workflow
+#+attr_html: :alt Git workflow
+#+attr_html: :width 800
+[[file:/images/git-workflow.PNG]]
+
+** Clone
+:PROPERTIES:
+:EXPORT_FILE_NAME: clone
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 10
+:END:
+*** Henter koder
+Kopierer filer fra =main= branch til lokal pc med
+
+#+BEGIN_SRC sh
+  git clone https://github.com/helseprofil/test-git.git
+#+END_SRC
+
+#+attr_html: :alt Git workflow
+#+attr_html: :width 800
+[[file:/images/network.PNG]]
+
+
+** Branch
+:PROPERTIES:
+:EXPORT_FILE_NAME: branch-ny
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 20
+:END:
+*** Ny Branch
+Kopierer filer fra branch =origin/dev= for testing
+- =git checkout --track origin/dev=
+- =git pull=
+
+** Branch
+:PROPERTIES:
+:EXPORT_FILE_NAME: branch
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 25
+:END:
+*** Eksisterende branch
+Bytt branch =dev=
+- =git checkout dev=
+- =git pull=
+
+** Undo
+:PROPERTIES:
+:EXPORT_FILE_NAME: undo
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 30
+:END:
+*** Slett endringene
+Sjekk hvilken branch
+- =git branch=
+
+Se hvis filen har endret
+- =git status=
+
+Tilbakestilt koder
+- =git stash=
+
+** Video
+:PROPERTIES:
+:EXPORT_FILE_NAME: film
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :weight 40
+:END:
+*** Veiledning på YouTube
+Klone repo
+
+[[https://www.youtube.com/watch?v=1WNneqs1tBk][https://www.youtube.com/watch?v=1WNneqs1tBk]]
+
+Test branch
+
+[[https://www.youtube.com/watch?v=J5YCl0Y-5eY][https://www.youtube.com/watch?v=J5YCl0Y-5eY]]
+
