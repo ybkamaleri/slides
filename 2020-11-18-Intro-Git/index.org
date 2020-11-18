@@ -16,7 +16,7 @@
 
 * Formål
 - Versjon kontroll for koder
-- Felles versjon for R og pakker (=lockfile=)
+- Felles versjon for R og pakker ([[https://github.com/helseprofil/khfunctions/blob/master/renv.lock][lockfile]])
 - Test av nye funksjoner
 
 * Github
@@ -52,7 +52,7 @@ Bytt branch =dev=
 - =git pull=
 
 * Slett endringene
-Sjekk hvilken branch
+Sjekk hvilken branch 
 - =git branch=
 
 Se hvis filen har endret
