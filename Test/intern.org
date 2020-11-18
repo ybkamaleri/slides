@@ -1,6 +1,4 @@
-
-#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
-
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 
 #+Title: Kvalitetsindikatorer
 #+Author: Arbeid med utvikling og visualisering av kvalitetsindikatorer fra kvalitetsregistre
