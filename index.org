@@ -12,3 +12,4 @@
 4. [[file:2017-06-08-Workshop-resultat/][Workshop for analyser og resultatutvikling 08 Juni 2017]]
 5. [[file:2017-11-17-Internundervisning/][Internundervisning 17 Nov 2017]]
 6. [[file:2018-04-10-eReg-Rapport/][eReg Rapport løsning 10 Apr 2018]]
+7. [[file:2020-11-18-Intro-Git][Git for helseprofil]]
