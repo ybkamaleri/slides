@@ -1,0 +1,72 @@
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_THEME: beige
+#+REVEAL_HLEVEL: 2
+#+REVEAL_TRANS: default
+
+#+REVEAL_TITLE_SLIDE: <h2>%t</h2>
+#+REVEAL_TITLE_SLIDE_BACKGROUND: #6baed6
+
+#+ATTR_HTML: :height 20%, :width 30%
+#+OPTIONS: ^:nil toc:nil num:nil
+#+OPTIONS: html-postamble:nil
+
+
+#+Title: Helseprofilarbeid med Git
+#+Date:
+
+* Formål
+- Versjon kontroll for koder
+- Felles versjon for R og pakker (=lockfile=)
+- Test av nye funksjoner
+
+* Github
+[[https://github.com/helseprofil][https://github.com/helseprofil]]
+#+attr_html: :alt Git workflow
+#+attr_html: :width 650
+[[./images/git-helseprofil.PNG]]
+
+* Workflow
+#+attr_html: :alt Git workflow
+#+attr_html: :width 800
+[[./images/git-workflow.PNG]]
+
+* Henter koder
+Kopierer filer fra =main= branch til lokal pc med
+
+#+BEGIN_SRC sh
+  git clone https://github.com/helseprofil/test-git.git
+#+END_SRC
+
+#+attr_html: :alt Git workflow
+#+attr_html: :width 800
+[[./images/network.PNG]]
+
+* Ny Branch
+Kopierer filer fra branch =origin/dev= for testing
+- =git checkout --track origin/dev=
+- =git pull=
+
+* Eksisterende branch
+Bytt branch =dev=
+- =git checkout dev=
+- =git pull=
+
+* Slett endringene
+Sjekk hvilken branch
+- =git branch=
+
+Se hvis filen har endret
+- =git status=
+
+Tilbakestilt koder
+- =git stash=
+
+* Veiledning på YouTube
+Klone repo
+
+[[https://www.youtube.com/watch?v=1WNneqs1tBk][https://www.youtube.com/watch?v=1WNneqs1tBk]]
+
+Test branch
+
+[[https://www.youtube.com/watch?v=J5YCl0Y-5eY][https://www.youtube.com/watch?v=J5YCl0Y-5eY]]
+
