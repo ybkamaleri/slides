@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Helseprofilarbeid med Git</title>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/beige.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="#6baed6"><h2>Helseprofilarbeid med Git</h2>
+</section>
+
+<section>
+<section id="slide-org4ff5d6f">
+<h2 id="org4ff5d6f">Formål</h2>
+<ul>
+<li>Versjon kontroll for koder</li>
+<li>Felles versjon for R og pakker (<code>lockfile</code>)</li>
+<li>Test av nye funksjoner</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org63bd454">
+<h2 id="org63bd454">Github</h2>
+<p>
+<a href="https://github.com/helseprofil">https://github.com/helseprofil</a>
+</p>
+
+<div id="orgdf1f424" class="figure">
+<p><img src="./images/git-helseprofil.PNG" alt="Git workflow" width="650" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc23bf55">
+<h2 id="orgc23bf55">Workflow</h2>
+
+<div id="orgb6e4e16" class="figure">
+<p><img src="./images/git-workflow.PNG" alt="Git workflow" width="800" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbdbc2fe">
+<h2 id="orgbdbc2fe">Henter koder</h2>
+<p>
+Kopierer filer fra <code>main</code> branch til lokal pc med
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-sh"><code trim>git clone https://github.com/helseprofil/test-git.git
+</code></pre>
+</div>
+
+
+<div id="orga0cfd60" class="figure">
+<p><img src="./images/network.PNG" alt="Git workflow" width="800" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org8be8922">
+<h2 id="org8be8922">Ny Branch</h2>
+<p>
+Kopierer filer fra branch <code>origin/dev</code> for testing
+</p>
+<ul>
+<li><code>git checkout --track origin/dev</code></li>
+<li><code>git pull</code></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd31dd43">
+<h2 id="orgd31dd43">Eksisterende branch</h2>
+<p>
+Bytt branch <code>dev</code>
+</p>
+<ul>
+<li><code>git checkout dev</code></li>
+<li><code>git pull</code></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org0cd53f2">
+<h2 id="org0cd53f2">Slett endringene</h2>
+<p>
+Sjekk hvilken branch
+</p>
+<ul>
+<li><code>git branch</code></li>
+
+</ul>
+
+<p>
+Se hvis filen har endret
+</p>
+<ul>
+<li><code>git status</code></li>
+
+</ul>
+
+<p>
+Tilbakestilt koder
+</p>
+<ul>
+<li><code>git stash</code></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org0df1cdc">
+<h2 id="org0df1cdc">Veiledning på YouTube</h2>
+<p>
+Klone repo
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=1WNneqs1tBk">https://www.youtube.com/watch?v=1WNneqs1tBk</a>
+</p>
+
+<p>
+Test branch
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=J5YCl0Y-5eY">https://www.youtube.com/watch?v=J5YCl0Y-5eY</a>
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
