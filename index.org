@@ -1,6 +1,6 @@
 #+Options: num:nil toc:nil
 #+Options: html-postamble:nil
-
+#+SETUPFILE: mystyle.org
 
 #+Title: Presentations
 

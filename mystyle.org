@@ -1,0 +1,5 @@
+#+options: org-html-head-include-default-style:nil
+
+#+html_head: <style type="text/css">
+#+html_head: .title {text-align: left; color: blue; font-family: "Times New Roman", Times, serif; margin-bottom: .3em;}
+#+html_head: </style>
