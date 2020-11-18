@@ -26,6 +26,9 @@
 [[./images/git-helseprofil.PNG]]
 
 * Workflow
+test repo
+
+[[https://github.com/helseprofil/test-git][https://github.com/helseprofil/test-git]]
 #+attr_html: :alt Git workflow
 #+attr_html: :width 800
 [[./images/git-workflow.PNG]]
