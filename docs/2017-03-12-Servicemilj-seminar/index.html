@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Ekstern rapportering</title>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./css/reveal.css"/>
+<link rel="stylesheet" href="./css/theme/moon.css" id="theme"/>
+<link rel="stylesheet" href="./local.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>Ekstern rapportering</h1>
+<h2></h2>
+<h2><a href="mailto:"></a></h2>
+<h2></h2>
+</section>
+
+<section>
+<section id="slide-orge07988e">
+<h2 id="orge07988e">Strategi og handlingsplan</h2>
+<p>
+<b>Hovedmål 2: Økt bruk av resultater</b>
+</p>
+
+<p>
+    <span class="underline">Delmål 2.1</span>: Gir registrerende enheter tilgang til oppdaterte resultater for egen
+    virksomhet <span style="text-decoration: underline; font-weight: bold">sammenlignet med nasjonale resultater</span>
+</p>
+
+<p>
+    <span class="underline">Delmål 2.3</span>: Tilgjengeliggjøre <span style="text-decoration: underline; font-weight: bold">tilpassende, oppdaterte og relevante resultater</span> for
+    klinikere, sykehusledere, RHF-ledere og eksterne aktører
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org10a6cc0">
+<h2 id="org10a6cc0">Vi kan tilby</h2>
+<ul>
+<li>Lokal shiny løsning f.eks <a href="shiny.jpeg">BDR</a></li>
+<li>Pakke visualiseringsløsning f.eks <a href="https://cran.r-project.org/web/packages/aimPlot/index.html">aimPlot</a></li>
+<li>MRS-Resultat <a href="https://app.powerbi.com/view?r=eyJrIjoiOTc5MjM1ODEtMGRlYi00NjU2LWJlYzgtODMyYmQ3OGYxN2E5IiwidCI6IjE2ZmY5NjNmLThlYWItNDEyZi04ZWE5LTlkYWVkMzA3OGI5OCIsImMiOjh9">kvalitetsindikator</a></li>
+<li>Shiny-server hos Kreftregsiter (<a href="http://discovery.wmflabs.org/metrics/#kpis_summary">Eksempel</a>)</li>
+<li>Automatisert rapport i pdf eller html f.eks månedlig eller kvartalvis</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1748dfc">
+<h2 id="org1748dfc">Veien videre</h2>
+<p>
+???
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="./lib/js/head.min.js"></script>
+<script src="./js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: false,
+width: 1200,
+height: 800,
+margin: 1.00,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
