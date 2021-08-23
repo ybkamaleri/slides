@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>eReg rapport</title>
+<meta name="author" content="(Yusman Kamaleri)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./css/reveal.css"/>
+
+<link rel="stylesheet" href="./css/theme/beige.css" id="theme"/>
+
+<link rel="stylesheet" href="./ereg.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+    <section id="sec-title-slide" data-background-color="#11aadd" data-background="./images/logo.svg" data-background-size="300px" data-background-position="left 50px top 50px"><h1 class="title">eReg rapport</h1><h2 class="date">10 apr 2018</h2>
+    </section>
+
+    <section>
+        <section id="slide-orgea39b89">
+            <h2 id="orgea39b89">Analyser og rapport</h2>
+            <ul>
+                <li>Data uttrekk</li>
+                <li>Analyse program f.eks Excel, SPSS eller R</li>
+                <li>Tilpasset analyse ved å lage R pakke &ldquo;<a href="https://cran.r-project.org/web/packages/rreg/index.html">rreg</a>&rdquo;</li>
+                <li><a href="https://www.youtube.com/watch?v=zWuTqbDrA2c&amp;t=24s">Rapport per sykehus</a></li>
+                <li><a href="https://www.youtube.com/watch?v=uggz-gn3Brg">Rapport for alle sykehus</a></li>
+                <li><a href="https://youtu.be/Ei_GMagiyMk">Interaktiv resultat</a></li>
+
+            </ul>
+        </section>
+    </section>
+    <section>
+        <section id="slide-org346561c">
+            <h2 id="org346561c">Dagens analyse prosess</h2>
+
+            <div class="figure">
+                <p><img src="./images/prosess.png" alt="prosess.png" />
+                </p>
+            </div>
+</section>
+</section>
+<section>
+<section id="slide-orgc93b58b">
+<h2 id="orgc93b58b">Utfordringer</h2>
+<ul>
+<li>Lokal tilpasning</li>
+<li>Lokal installasjon</li>
+<li>Krever grunnlegende kunnskap om analyseverktøy</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgcbbb9d3">
+<h2 id="orgcbbb9d3">Løsningen</h2>
+<ul>
+<li>Kjør R-kode i <b>eReg</b></li>
+
+</ul>
+
+<div class="figure">
+<p><img src="./images/solve.png" alt="solve.png" width="350px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org342fb57">
+<h2 id="org342fb57">eReg rapport</h2>
+
+<div class="figure">
+<p><img src="./images/ereg.png" alt="ereg.png" />
+</p>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="./lib/js/head.min.js"></script>
+<script src="./js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
