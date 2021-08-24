@@ -172,16 +172,28 @@ git clone -b user https://github.com/helseprofil/orgdata
 
 ```{r read, eval=FALSE}
 library(orgdata)
+
+# Lese alle filer i en filgruppe
 df <- read_org("Dode")
-df
+df #<<
+
+# Lese bare en koblid i den filgruppen
+df <- read_org("Dode", koblid = 15) 
 ```
+
+Gule linje vises i output fanen.
+
 ]
 
 .panel[.panel-name[output]
 ```{r read-output, echo=FALSE}
 library(orgdata)
 df <- read_org("Dode")
-head(df)
+
+th3 <- function(x){
+  data.table::rbindlist(list(head(x, 4), tail(x, 4)))
+}
+th3(df)
 ```
 ]
 ]
@@ -193,12 +205,20 @@ head(df)
 .panelset[
 .panel[.panel-name[options]
 ```{r option-1, eval=FALSE}
-opt.orgdata
+orgdata:::opt.orgdata
 op <- options()
 options(orgdata.aggregate = FALSE)
+# reset options
+options(op)
+
 ```
 ]
 
+.panel[.panel-name[output]
+```{r option-out}
+names(orgdata:::opt.orgdata)
+```
+]
 ]
 
 
