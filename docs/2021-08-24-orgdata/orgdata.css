@@ -1,0 +1,37 @@
+.title-slide {
+background-image: url(https://source.unsplash.com/QCxnIRqBFos);
+background-size: cover;
+}
+
+.title-slide h1 {
+  text-align: right;
+  position: absolute;
+  top: 170px;
+  right : 5ex;
+  color: black;
+}
+
+.title-slide h3 {
+  text-align: right;
+  position: absolute;
+  top: 200px;
+  right : 7.5ex;
+  color: black;
+  }
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+div.my-footer {
+content: "";
+    position: absolute;
+    bottom: 15px;
+    right:   8px;
+    height: 40px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("Rlogo.png");
+}
+

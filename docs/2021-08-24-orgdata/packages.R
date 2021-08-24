@@ -1,0 +1,6 @@
+remotes::install_github("yihui/xaringan")
+# install.packages("remotes")
+## remotes::install_github("gadenbuie/xaringanthemer")
+install.packages("xaringanthemer", dependencies = TRUE)
+remotes::install_github("gadenbuie/xaringanExtra")
+remotes::install_github("gadenbuie/metathis")
