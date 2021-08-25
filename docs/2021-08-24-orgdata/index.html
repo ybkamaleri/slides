@@ -121,11 +121,33 @@ Tabeller:
 
 Databasen **org-norgeo.accdb** ligger i  `..\PRODUKSJON\STYRING\org-innlesing` mappe
 
-Tabeller:
-
 - *tblGeo* : Geo koder med inndelinger
 - *grunnkrets2021* : Gjeldene grunnkretskoder for omkoding
 - ...
+
+.panelset[.panel[.panel-name[tblGeo]
+Bruke `write = TRUE` for å lage ny tabell evt. `append = TRUE`
+for å legge til en eksisterende tabell
+
+
+```r
+geo_level(year = 2020, write = TRUE)
+
+geo_level(year = 2021, append = TRUE)
+```
+]
+
+.panel[.panel-name[grunnkrets2021]
+Tabell for omkoding
+
+
+```r
+geo_recode(type = "grunnkrets",
+           from = 2016, to = 2021,
+           write = TRUE)
+```
+]
+]
 
 ---
 
@@ -159,7 +181,7 @@ df &lt;- read_org("Dode")
 df &lt;- read_org("Dode", koblid = 15) 
 ```
 
-Gule linje vises i output fanen.
+Innehold i object `df` (gul linje) vises i output fanen
 
 ]
 
@@ -177,6 +199,18 @@ Gule linje vises i output fanen.
 ## 8: 9999 2018     2    89     99       0          3     0     1   2
 ```
 ]
+
+.panel[.panel-name[lag filen]
+
+
+```r
+lagfil(df, "Dode")
+
+# lager filer directer
+lesorg("Dode", save = TRUE)
+```
+
+]
 ]
 
 ---
@@ -187,10 +221,14 @@ Gule linje vises i output fanen.
 .panel[.panel-name[options]
 
 ```r
-orgdata:::opt.orgdata
+# lage default oppset
 op &lt;- options()
+
+# endre oppsettet
 options(orgdata.aggregate = FALSE)
-# reset options
+options(orgdata.verbose = TRUE)
+
+# nullstill oppsettet
 options(op)
 ```
 ]
@@ -210,6 +248,46 @@ names(orgdata:::opt.orgdata)
 ]
 ]
 
+
+---
+
+## Les fil
+
+For å lese filen som den er uten å hente noe oppsettet fra innlesing
+
+Les filen ved valg av `FILID` evt. skriv hele filenavn med sti til filen
+
+
+```r
+lesfil(file = 5)
+```
+
+```
+##         aar GRUNNKRETS KJOENN d_aldh
+##     1: 2019    3010105      1     67
+##     2: 2019    3010105      1     71
+##     3: 2019    3010202      1     69
+##     4: 2019    3010206      1     52
+##     5: 2019    3010206      1     67
+##    ---                              
+## 39996: 2019   99999999      2     82
+## 39997: 2019   99999999      2     84
+## 39998: 2019   99999999      2     90
+## 39999: 2019   99999999      2     92
+## 40000: 2019   99999999      2     94
+##        Utdanningsnivå - imputert verdier fom. 2014 landb SIVILSTAND antall
+##     1:                                           1    1B          2      1
+##     2:                                           2     0          4      1
+##     3:                                           3     0          1      1
+##     4:                                           2     0          4      1
+##     5:                                           3     0          4      1
+##    ---                                                                    
+## 39996:                                          99     0          3      1
+## 39997:                                          99     0          4      1
+## 39998:                                          99    1B          3      1
+## 39999:                                          99     0          3      1
+## 40000:                                          99    3B          3      1
+```
 
 
     </textarea>

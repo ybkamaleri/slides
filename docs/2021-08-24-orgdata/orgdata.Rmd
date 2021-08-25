@@ -144,11 +144,31 @@ Tabeller:
 
 Databasen **org-norgeo.accdb** ligger i  `..\PRODUKSJON\STYRING\org-innlesing` mappe
 
-Tabeller:
-
 - *tblGeo* : Geo koder med inndelinger
 - *grunnkrets2021* : Gjeldene grunnkretskoder for omkoding
 - ...
+
+.panelset[.panel[.panel-name[tblGeo]
+Bruke `write = TRUE` for å lage ny tabell evt. `append = TRUE`
+for å legge til en eksisterende tabell
+
+```{r eval=FALSE}
+geo_level(year = 2020, write = TRUE)
+
+geo_level(year = 2021, append = TRUE)
+```
+]
+
+.panel[.panel-name[grunnkrets2021]
+Tabell for omkoding
+
+```{r eval=FALSE}
+geo_recode(type = "grunnkrets",
+           from = 2016, to = 2021,
+           write = TRUE)
+```
+]
+]
 
 ---
 
@@ -181,7 +201,7 @@ df #<<
 df <- read_org("Dode", koblid = 15) 
 ```
 
-Gule linje vises i output fanen.
+Innehold i object `df` (gul linje) vises i output fanen
 
 ]
 
@@ -196,6 +216,17 @@ th3 <- function(x){
 th3(df)
 ```
 ]
+
+.panel[.panel-name[lag filen]
+
+```{r eval=FALSE}
+lagfil(df, "Dode")
+
+# lager filer directer
+lesorg("Dode", save = TRUE)
+```
+
+]
 ]
 
 ---
@@ -205,10 +236,14 @@ th3(df)
 .panelset[
 .panel[.panel-name[options]
 ```{r option-1, eval=FALSE}
-orgdata:::opt.orgdata
+# lage default oppset
 op <- options()
+
+# endre oppsettet
 options(orgdata.aggregate = FALSE)
-# reset options
+options(orgdata.verbose = TRUE)
+
+# nullstill oppsettet
 options(op)
 
 ```
@@ -221,5 +256,18 @@ names(orgdata:::opt.orgdata)
 ]
 ]
 
+
+---
+
+## Les fil
+
+For å lese filen som den er uten å hente noe oppsettet fra innlesing
+
+Les filen ved valg av `FILID` evt. skriv hele filenavn med sti til filen
+
+```{r lesfil}
+lesfil(file = 5)
+
+```
 
 
