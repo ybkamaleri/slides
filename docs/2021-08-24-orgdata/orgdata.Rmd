@@ -196,17 +196,17 @@ To filer som er skal brukes:
 ## Aggregere filer
 
 .panelset[
-.panel[.panel-name[read_org]
+.panel[.panel-name[read_raw]
 
 ```{r read, eval=FALSE}
 library(orgdata)
 
 # Lese alle filer i en filgruppe
-df <- read_org("Dode")
+df <- read_raw("Dode")
 df #<<
 
 # Lese bare en koblid i den filgruppen
-df <- read_org("Dode", koblid = 15) 
+df <- read_raw("Dode", koblid = 15) 
 ```
 
 Innehold i object `df` (gul linje) vises i output fanen
@@ -216,7 +216,7 @@ Innehold i object `df` (gul linje) vises i output fanen
 .panel[.panel-name[output]
 ```{r read-output, echo=FALSE}
 library(orgdata)
-df <- read_org("Dode")
+df <- read_raw("Dode")
 
 th3 <- function(x){
   data.table::rbindlist(list(head(x, 4), tail(x, 4)))
