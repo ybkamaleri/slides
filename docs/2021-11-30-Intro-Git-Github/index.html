@@ -18,8 +18,43 @@
   <body>
     <textarea id="source">
 
+class: inverse, left, middle, hide-logo
+background-image: url(https://source.unsplash.com/wX2L8L-fGeA)
+background-size: cover
 
-<style>.xe__progress-bar__container {
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 110px;
+height: 128px;
+z-index: 0;
+background-image: url(images/fhi_logo_lang.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('a')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = 'https://www.fhi.no'
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div><style>.xe__progress-bar__container {
   top:0;
   opacity: 1;
   position:absolute;
@@ -40,33 +75,170 @@
   100% { width: calc(var(--slide-current) / var(--slide-total) * 100%); }
 }</style>
 
+
 # Git og Github
+
+&lt;img src="images/git-github.png" width="150px" /&gt;
+### Et system for versjonskontroll og deling av kode, men...
+### Hva er vitsen?
+
+.large[Yusman Kamaleri | Avdelingsseminar | Leangkollen 29-30 nov. 2021]
 
 
 ---
+class: hide_logo
+background-image: url(images/github-changes.png)
+background-size: 650px
+background-position: right
 
 # Plan
  - Hva er Git?
+ 
  - Hva er Github?
- - Hvordan bruker vi dem.
+
+ - Hvordan bruker vi dem
+
+
+--
+
+# Betingelse
+ - Tekst f.eks `.sps`, `.do`
+ 
+--
+ 
+ - Nysgjerrig
+ 
+&lt;img src="images/thinking-face.png" width="10%" /&gt;
 
 ---
-background-image: url(images/git-softwarecenter2.png)
-background-size: 650px
+background-image: url(images/softwarecenter.png)
+background-size: 850px
+background-position: center
 
 # Git
 
 ---
+background-image: url(images/softwarecenter2.png)
+background-size: cover
+background-position: center
+
+# Git
+
+
+---
+background-image: url(images/file-changes.png)
+background-size: 700px
+background-position: right
 
 # Hvorfor
 
 - Spore endringer (versjonering)
   - enkeltvis
-  - gruppevis
+--
+ 
+ - gruppevis
+
+???
+- Gruppevis
+  - Datarensing
+  - Analyse 1
+  - Svar til reviewer
 
 ---
 
 # Hvordan
+Spore endringer lokalt
+
+.panelset[
+.panel[.panel-name[Terminal]
+```
+git add filename.do
+git commit -m "Finn årsak til bla..bla.."
+```
+]
+
+.panel[.panel-name[RStudio]
+
+]
+
+.panel[.panel-name[GitHub Desktop]
+
+]
+]
+
+---
+background-image: url(images/github-site.png)
+background-size: 950px
+background-position: center
+
+# GitHub
+
+---
+background-image: url(images/github-site2.png)
+background-size: cover
+background-position: center
+
+# GitHub
+
+---
+# Hvorfor
+- Samarbeide med andre
+- Åpenhet
+
+???
+- Åpen institutt
+- Åpen forskning
+- Åpen som mulig og lukker når nødvendig
+
+
+
+
+---
+# Hvordan
+
+
+
+---
+background-image: url(images/logos.png)
+background-size: 300px
+background-position: 750px 150px
+
+# Folkehelseprofiler
+
+KHfunctions
+
+[https://github.com/helseprofil/khfunctions](https://github.com/helseprofil/khfunctions)
+
+orgdata
+
+[https://helseprofil.github.io/orgdata](https://helseprofil.github.io/orgdata/)
+
+norgeo
+
+[https://helseprofil.github.io/norgeo](https://helseprofil.github.io/norgeo/)
+
+
+---
+
+# Annnen bruk
+
+.pull-left[
+Kvalitetsregister for barne-og ungdomdiabetes [(BDR)](https://bdreg.github.io/)
+
+&lt;img src="images/bdr.png" width="90%" /&gt;
+]
+
+.pull-right[
+Nasjonalt traumeregister [(NTR)](https://ybkamaleri.github.io/traume/)
+
+&lt;img src="images/traume.png" width="90%" /&gt;
+]
+
+---
+
+# Vert å lese
+- [Happy Git and GitHub for the useR](https://happygitwithr.com/index.html)
+- [Intro to GitHub for Social Scientists Using Stata and Dropbox](https://usermanual.wiki/Pdf/githubmanual.2125143468/help)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
