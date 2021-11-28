@@ -32,6 +32,14 @@ xaringanExtra::use_tile_view()
 xaringanExtra::use_fit_screen()
 ```
 
+```{r setup, echo = FALSE}
+image_link <- function(image,url,...){
+  htmltools::a(
+    href=url,
+    htmltools::img(src=image,...)
+  )
+}
+```
 
 # Git og Github
 
@@ -112,17 +120,31 @@ Spore endringer lokalt
 .panelset[
 .panel[.panel-name[Terminal]
 ```
+git init
 git add filename.do
 git commit -m "Finn årsak til bla..bla.."
+git status
+git diff
+git log
 ```
+
+Mer forklaring i [freeCodeCamp](https://www.freecodecamp.org/news/git-cheat-sheet/)
+
 ]
 
 .panel[.panel-name[RStudio]
+
+```{r rstudio, out.width = '90%', echo = FALSE}
+knitr::include_graphics("images/RStudio-diff.png")
+```
 
 ]
 
 .panel[.panel-name[GitHub Desktop]
 
+```{r gitdesk, out.width = '90%', echo = FALSE}
+knitr::include_graphics("images/github-desktop01.png")
+```
 ]
 ]
 
@@ -154,9 +176,15 @@ background-position: center
 
 
 ---
+
 # Hvordan
 
+Lage profil (gratis) på [https://github.com](https://github.com)
 
+
+```{r commit, out.width = '90%', echo = FALSE}
+knitr::include_graphics("images/commit-history.png")
+```
 
 ---
 background-image: url(images/logos.png)
@@ -186,7 +214,8 @@ norgeo
 Kvalitetsregister for barne-og ungdomdiabetes [(BDR)](https://bdreg.github.io/)
 
 ```{r out.width = '90%', echo = FALSE}
-knitr::include_graphics("images/bdr.png")
+## knitr::include_graphics("images/bdr.png")
+image_link("images/bdr.png", url = "https://bdreg.github.io")
 ```
 ]
 
@@ -194,7 +223,8 @@ knitr::include_graphics("images/bdr.png")
 Nasjonalt traumeregister [(NTR)](https://ybkamaleri.github.io/traume/)
 
 ```{r out.width = '90%', echo = FALSE}
-knitr::include_graphics("images/traume.png")
+## knitr::include_graphics("images/traume.png")
+image_link("images/traume.png", url = "https://ybkamaleri.github.io/traume")
 ```
 ]
 
