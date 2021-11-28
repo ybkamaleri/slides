@@ -1,0 +1,53 @@
+---
+title: "Git og Github"
+subtitle: "Hvorfor bruker man det?"
+author: "Yusman Kamaleri"
+<span style = 'font-size: 40%;'
+date: "2021-11-30"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      titleSlideClass: ["left", "middle", "inverse"]
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+    seal: false
+---
+
+```{r xaringanExtra, echo = FALSE}
+xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
+xaringanExtra::use_panelset()
+xaringanExtra::use_tile_view()
+xaringanExtra::use_fit_screen()
+```
+
+# Git og Github
+
+
+---
+
+# Plan
+ - Hva er Git?
+ - Hva er Github?
+ - Hvordan bruker vi dem.
+
+---
+background-image: url(images/git-softwarecenter2.png)
+background-size: 650px
+
+# Git
+
+---
+
+# Hvorfor
+
+- Spore endringer (versjonering)
+  - enkeltvis
+  - gruppevis
+
+---
+
+# Hvordan
