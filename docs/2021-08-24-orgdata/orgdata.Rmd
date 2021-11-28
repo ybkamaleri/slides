@@ -1,5 +1,5 @@
 ---
-title: "Org databasen"
+title: "Raw databasen"
 subtitle: "Pre-prosessering av grunnkrets data"
 data: "2021-08-23"
 output:
@@ -48,17 +48,17 @@ xaringanExtra::use_fit_screen()
 
 class: title-slide
 
-# Org databasen
+# Raw databasen
 ### Pre-prossessing av grunnkrets data
 
 ---
 
 
-## Org databasen
+## Raw databasen
 
-Frontend **org-innlesing.accdb** i `\PRODUKSJON\STYRING` mappe
+Frontend **raw-database_FE.accdb** i `\PRODUKSJON\STYRING` mappe
 
-Backend **org-innlesing_BE.accdb** i `\PRODUKSJON\STYRING\org-innlesing` mappe
+Backend **raw-database_BE.accdb** i `\PRODUKSJON\STYRING\org-innlesing` mappe
 
 .panelset[
 .panel[.panel-name[Tabeller]
@@ -196,17 +196,17 @@ To filer som er skal brukes:
 ## Aggregere filer
 
 .panelset[
-.panel[.panel-name[read_org]
+.panel[.panel-name[read_raw]
 
 ```{r read, eval=FALSE}
 library(orgdata)
 
 # Lese alle filer i en filgruppe
-df <- read_org("Dode")
+df <- make_file("TEST01")
 df #<<
 
 # Lese bare en koblid i den filgruppen
-df <- read_org("Dode", koblid = 15) 
+df <- make_file("TEST01", koblid = 15) 
 ```
 
 Innehold i object `df` (gul linje) vises i output fanen
@@ -216,7 +216,7 @@ Innehold i object `df` (gul linje) vises i output fanen
 .panel[.panel-name[output]
 ```{r read-output, echo=FALSE}
 library(orgdata)
-df <- read_org("Dode")
+df <- make_file("TEST01")
 
 th3 <- function(x){
   data.table::rbindlist(list(head(x, 4), tail(x, 4)))
@@ -228,10 +228,10 @@ th3(df)
 .panel[.panel-name[lag filen]
 
 ```{r eval=FALSE}
-lagfil(df, "Dode")
+save_file(df, "TEST01")
 
 # lager filer directer
-lesorg("Dode", save = TRUE)
+make_file("TEST01", save = TRUE)
 ```
 
 ]
@@ -244,16 +244,12 @@ lesorg("Dode", save = TRUE)
 .panelset[
 .panel[.panel-name[options]
 ```{r option-1, eval=FALSE}
-# lage default oppset
-op <- options()
-
 # endre oppsettet
 options(orgdata.aggregate = FALSE)
 options(orgdata.verbose = TRUE)
 
 # nullstill oppsettet
-options(op)
-
+reset_options()
 ```
 ]
 
@@ -273,8 +269,8 @@ For å lese filen som den er uten å hente noe oppsettet fra innlesing
 
 Les filen ved valg av `FILID` evt. skriv hele filenavn med sti til filen
 
-```{r lesfil}
-lesfil(file = 5)
+```{r lesfil, eval = FALSE}
+read_file(file = 2)
 
 ```
 

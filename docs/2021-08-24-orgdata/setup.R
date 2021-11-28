@@ -9,4 +9,4 @@ remotes::install_github("gadenbuie/xaringanExtra", force = TRUE)
 
 install.packages("fontawesome")
 
-remotes::install_github("helseprofil/orgdata")
+remotes::install_github("helseprofil/orgdata", force = TRUE)

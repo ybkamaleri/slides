@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Org databasen</title>
+    <title>Raw databasen</title>
     <meta charset="utf-8" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <script src="libs/xaringanExtra_fit-screen/fit-screen.js"></script>
     <link rel="stylesheet" href="orgdata.css" type="text/css" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -24,17 +27,17 @@
 
 class: title-slide
 
-# Org databasen
+# Raw databasen
 ### Pre-prossessing av grunnkrets data
 
 ---
 
 
-## Org databasen
+## Raw databasen
 
-Frontend **org-innlesing.accdb** i `\PRODUKSJON\STYRING` mappe
+Frontend **raw-database_FE.accdb** i `\PRODUKSJON\STYRING` mappe
 
-Backend **org-innlesing_BE.accdb** i `\PRODUKSJON\STYRING\org-innlesing` mappe
+Backend **raw-database_BE.accdb** i `\PRODUKSJON\STYRING\org-innlesing` mappe
 
 .panelset[
 .panel[.panel-name[Tabeller]
@@ -174,18 +177,18 @@ To filer som er skal brukes:
 ## Aggregere filer
 
 .panelset[
-.panel[.panel-name[read_org]
+.panel[.panel-name[read_raw]
 
 
 ```r
 library(orgdata)
 
 # Lese alle filer i en filgruppe
-df &lt;- read_org("Dode")
+df &lt;- make_file("TEST01")
 *df
 
 # Lese bare en koblid i den filgruppen
-df &lt;- read_org("Dode", koblid = 15) 
+df &lt;- make_file("TEST01", koblid = 15) 
 ```
 
 Innehold i object `df` (gul linje) vises i output fanen
@@ -195,15 +198,22 @@ Innehold i object `df` (gul linje) vises i output fanen
 .panel[.panel-name[output]
 
 ```
-##     GEO  AAR KJONN ALDER UTDANN LANDBAK SIVILSTAND LANDB LANDF VAL
-## 1:    3 2019     1    67      0     Tot          0    10     0  30
-## 2:    3 2019     1    71      0     Tot          0    10     0  54
-## 3:    3 2019     1    69      0     Tot          0    10     0  39
-## 4:    3 2019     1    52      0     Tot          0    10     0   9
-## 5: 9999 2018     2    82     99       0          3     0     1   1
-## 6: 9999 2018     2    83     99       0          4     0     1   1
-## 7: 9999 2018     2    85     99       0          4     0     1   1
-## 8: 9999 2018     2    89     99       0          3     0     1   2
+## File(s) to be processed in TEST01: 2
+## ===========================================================Koblid: 2File: F:/Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/ORGDATA/SSB\BEFOLKNING\MOTTAK\TEST-2021.csvColumname(s) defined in codebook as ALLE: "INNVKAT", "LANDBAK"---------------------------------Starts aggregating data from grunnkrets to bydel---------------------------------Starts aggregating data from grunnkrets to fylke
+## ===========================================================Koblid: 3File: F:/Forskningsprosjekter/PDB 2455 - Helseprofiler og til_/PRODUKSJON/ORGDATA/SSB\BEFOLKNING\MOTTAK\TEST-2019.csvColumname(s) defined in codebook as ALLE: "INNVKAT", "LANDBAK"Warning:  Are you sure the deleted column(s) doesn't contain subtotal?
+## Else aggregating will be incorrect. Define it in FILGRUPPE and delete laterDeleted column(s): "V7"---------------------------------Starts aggregating data from grunnkrets to bydel---------------------------------Starts aggregating data from grunnkrets to fylkeChecking for implicit null for: bydelNumber of row(s) with implicit null for bydel: 7Checking for implicit null for: fylkeNumber of row(s) with implicit null for fylke: 7Columname(s) defined in codebook for type AGGREGERE (AG): "INNVKAT", "LANDBAK", "UTDANN"
+```
+
+```
+##       GEO LEVEL  AAR KJONN ALDER UTDANN LANDBAK INNVKAT ANTALL
+## 1:     11 fylke 2019     1     0      0       0       0   2858
+## 2:     11 fylke 2019     1     1      0       0       0   3018
+## 3:     11 fylke 2019     1     2      0       0       0   3199
+## 4:     11 fylke 2019     1     3      0       0       0   3183
+## 5: 999999 bydel 2021     1     0      1       1       2      0
+## 6: 999999 bydel 2021     1     0      2       1       2      0
+## 7: 999999 bydel 2021     1     0      3       1       2      0
+## 8: 999999 bydel 2021     1     0      4       1       2      0
 ```
 ]
 
@@ -211,10 +221,10 @@ Innehold i object `df` (gul linje) vises i output fanen
 
 
 ```r
-lagfil(df, "Dode")
+save_file(df, "TEST01")
 
 # lager filer directer
-lesorg("Dode", save = TRUE)
+make_file("TEST01", save = TRUE)
 ```
 
 ]
@@ -228,15 +238,12 @@ lesorg("Dode", save = TRUE)
 .panel[.panel-name[options]
 
 ```r
-# lage default oppset
-op &lt;- options()
-
 # endre oppsettet
 options(orgdata.aggregate = FALSE)
 options(orgdata.verbose = TRUE)
 
 # nullstill oppsettet
-options(op)
+reset_options()
 ```
 ]
 
@@ -247,10 +254,10 @@ names(orgdata:::opt.orgdata)
 ```
 
 ```
-##  [1] "orgdata.drive"         "orgdata.folder.db"     "orgdata.folder.raw"   
-##  [4] "orgdata.folder.output" "orgdata.db"            "orgdata.geo"          
-##  [7] "orgdata.verbose"       "orgdata.columns"       "orgdata.int"          
-## [10] "orgdata.aggregate"     "orgdata.bugs"
+##  [1] "orgdata.drive"           "orgdata.folder.db"       "orgdata.folder.data"     "orgdata.db"              "orgdata.geo"            
+##  [6] "orgdata.verbose"         "orgdata.aggregate"       "orgdata.implicit.null"   "orgdata.tabs"            "orgdata.vals"           
+## [11] "orgdata.columns"         "orgdata.integer"         "orgdata.debug"           "orgdata.debug.nrow"      "orgdata.debug.aggregate"
+## [16] "orgdata.debug.geo"
 ```
 ]
 ]
@@ -266,34 +273,7 @@ Les filen ved valg av `FILID` evt. skriv hele filenavn med sti til filen
 
 
 ```r
-lesfil(file = 5)
-```
-
-```
-##         aar GRUNNKRETS KJOENN d_aldh
-##     1: 2019    3010105      1     67
-##     2: 2019    3010105      1     71
-##     3: 2019    3010202      1     69
-##     4: 2019    3010206      1     52
-##     5: 2019    3010206      1     67
-##    ---                              
-## 39996: 2019   99999999      2     82
-## 39997: 2019   99999999      2     84
-## 39998: 2019   99999999      2     90
-## 39999: 2019   99999999      2     92
-## 40000: 2019   99999999      2     94
-##        Utdanningsnivå - imputert verdier fom. 2014 landb SIVILSTAND antall
-##     1:                                           1    1B          2      1
-##     2:                                           2     0          4      1
-##     3:                                           3     0          1      1
-##     4:                                           2     0          4      1
-##     5:                                           3     0          4      1
-##    ---                                                                    
-## 39996:                                          99     0          3      1
-## 39997:                                          99     0          4      1
-## 39998:                                          99    1B          3      1
-## 39999:                                          99     0          3      1
-## 40000:                                          99    3B          3      1
+read_file(file = 2)
 ```
 
 
