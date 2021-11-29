@@ -53,6 +53,8 @@ image_link <- function(image,url,...){
 
 .large[Yusman Kamaleri | Avdelingsseminar | Leangkollen 29-30 nov. 2021]
 
+[https://bit.ly/ybk-git](https://bit.ly/ybk-git)
+
 
 ---
 class: hide_logo
