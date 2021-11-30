@@ -136,7 +136,10 @@ background-position: right
 ---
 
 # Hvordan
-Spore endringer lokalt
+- Spore endringer lokalt
+- Repository *(mappe)*
+
+--
 
 .panelset[
 .panel[.panel-name[Terminal]
