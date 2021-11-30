@@ -243,6 +243,14 @@ knitr::include_graphics("images/RStudio-diff.png")
 ```
 
 ]
+
+.panel[.panel-name[GitHub]
+
+```{r github, out.width = '90%', echo = FALSE}
+knitr::include_graphics("images/git-profil2.png")
+```
+
+]
 ]
 
 ---
