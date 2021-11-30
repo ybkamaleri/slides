@@ -92,7 +92,7 @@ background-position: center
 # Git
 
 ---
-background-image: url(images/softwarecenter2.png)
+background-image: url(images/softwarecenter3.png)
 background-size: cover
 background-position: center
 
@@ -107,9 +107,11 @@ background-position: right
 # Hvorfor
 
 - Spore endringer (versjonering)
-  - enkeltvis
+
+ - enkeltvis
 --
- 
+
+
  - gruppevis
 
 ???
@@ -119,17 +121,33 @@ background-position: right
   - Svar til reviewer
 
 ---
+background-image: url(images/file.png)
+background-size: 700px
+background-position: right
+
+# Hvorfor
+
+- Spore endringer (versjonering)
+
+  - enkeltvis
+ 
+  - gruppevis
+
+---
 
 # Hvordan
 Spore endringer lokalt
 
 .panelset[
 .panel[.panel-name[Terminal]
-```
+
+```bash
 git init
 git add filename.do
 git commit -m "Finn årsak til bla..bla.."
 git status
+git branch
+git checkout
 git diff
 git log
 ```
@@ -141,7 +159,7 @@ Mer forklaring i [freeCodeCamp](https://www.freecodecamp.org/news/git-cheat-shee
 .panel[.panel-name[RStudio]
 
 ```{r rstudio, out.width = '90%', echo = FALSE}
-knitr::include_graphics("images/RStudio-diff.png")
+knitr::include_graphics("images/Rstudio-menu.png")
 ```
 
 ]
@@ -190,7 +208,30 @@ knitr::include_graphics("images/commit-history.png")
 
 # Hvordan
 
-Lage profil (gratis) på [https://github.com](https://github.com)
+Lager profil (gratis) på [https://github.com](https://github.com)
+
+
+
+.panelset[
+.panel[.panel-name[Terminal]
+
+```bash
+git clone
+git pull
+git push
+```
+
+Mer forklaring i [freeCodeCamp](https://www.freecodecamp.org/news/git-cheat-sheet/)
+]
+
+.panel[.panel-name[RStudio]
+
+```{r rsdiff, out.width = '90%', echo = FALSE}
+knitr::include_graphics("images/RStudio-diff.png")
+```
+
+]
+]
 
 ---
 background-image: url(images/logos.png)
@@ -214,7 +255,7 @@ norgeo
 
 ---
 
-# Annnen bruk
+# Annen bruk
 
 .pull-left[
 Kvalitetsregister for barne-og ungdomdiabetes [(BDR)](https://bdreg.github.io/)
@@ -233,6 +274,13 @@ Nasjonalt traumeregister [(NTR)](https://ybkamaleri.github.io/traume/)
 image_link("images/traume.png", url = "https://ybkamaleri.github.io/traume")
 ```
 ]
+
+---
+class: hide_logo
+background-image: url(images/fhi-github.png)
+background-position: center
+background-size: cover 
+
 
 ---
 class: left, hide_logo

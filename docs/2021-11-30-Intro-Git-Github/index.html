@@ -122,7 +122,7 @@ background-position: center
 # Git
 
 ---
-background-image: url(images/softwarecenter2.png)
+background-image: url(images/softwarecenter3.png)
 background-size: cover
 background-position: center
 
@@ -137,9 +137,11 @@ background-position: right
 # Hvorfor
 
 - Spore endringer (versjonering)
-  - enkeltvis
+
+ - enkeltvis
 --
- 
+
+
  - gruppevis
 
 ???
@@ -149,17 +151,33 @@ background-position: right
   - Svar til reviewer
 
 ---
+background-image: url(images/file.png)
+background-size: 700px
+background-position: right
+
+# Hvorfor
+
+- Spore endringer (versjonering)
+
+  - enkeltvis
+ 
+  - gruppevis
+
+---
 
 # Hvordan
 Spore endringer lokalt
 
 .panelset[
 .panel[.panel-name[Terminal]
-```
+
+```bash
 git init
 git add filename.do
 git commit -m "Finn årsak til bla..bla.."
 git status
+git branch
+git checkout
 git diff
 git log
 ```
@@ -170,7 +188,7 @@ Mer forklaring i [freeCodeCamp](https://www.freecodecamp.org/news/git-cheat-shee
 
 .panel[.panel-name[RStudio]
 
-&lt;img src="images/RStudio-diff.png" width="90%" /&gt;
+&lt;img src="images/Rstudio-menu.png" width="90%" /&gt;
 
 ]
 
@@ -214,7 +232,28 @@ background-position: center
 
 # Hvordan
 
-Lage profil (gratis) på [https://github.com](https://github.com)
+Lager profil (gratis) på [https://github.com](https://github.com)
+
+
+
+.panelset[
+.panel[.panel-name[Terminal]
+
+```bash
+git clone
+git pull
+git push
+```
+
+Mer forklaring i [freeCodeCamp](https://www.freecodecamp.org/news/git-cheat-sheet/)
+]
+
+.panel[.panel-name[RStudio]
+
+&lt;img src="images/RStudio-diff.png" width="90%" /&gt;
+
+]
+]
 
 ---
 background-image: url(images/logos.png)
@@ -238,7 +277,7 @@ norgeo
 
 ---
 
-# Annnen bruk
+# Annen bruk
 
 .pull-left[
 Kvalitetsregister for barne-og ungdomdiabetes [(BDR)](https://bdreg.github.io/)
@@ -255,6 +294,13 @@ Nasjonalt traumeregister [(NTR)](https://ybkamaleri.github.io/traume/)
 <img src="images/traume.png"/>
 </a>
 ]
+
+---
+class: hide_logo
+background-image: url(images/fhi-github.png)
+background-position: center
+background-size: cover 
+
 
 ---
 class: left, hide_logo
