@@ -6,6 +6,7 @@ author: "Yusman Kamaleri"
 date: "2021-11-30"
 output:
   xaringan::moon_reader:
+    css: [default, xaringan-themer.css]
     lib_dir: libs
     nature:
       titleSlideClass: ["left", "middle", "inverse"]
@@ -35,6 +36,13 @@ xaringanExtra::use_extra_styles(
   mute_unhighlighted_code = TRUE  #<<
 )
 ```
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",  # Blue
+  inverse_header_color = "#FFFFFF"
+)
+```
 
 ```{r setup, echo = FALSE}
 image_link <- function(image,url,...){
@@ -51,7 +59,8 @@ image_link <- function(image,url,...){
 ### Et system for versjonskontroll og deling av kode, men...
 ### Hva er vitsen?
 
-.large[Yusman Kamaleri | Avdelingsseminar | Leangkollen 29-30 nov. 2021]
+
+.white[.large[Yusman Kamaleri | Avdelingsseminar | Leangkollen 29-30 nov. 2021]]
 
 [https://bit.ly/ybk-git](https://bit.ly/ybk-git)
 
@@ -92,7 +101,7 @@ background-position: center
 # Git
 
 ---
-background-image: url(images/softwarecenter3.png)
+background-image: url(images/softwarecenter2.png)
 background-size: cover
 background-position: center
 
@@ -284,6 +293,8 @@ background-image: url(images/fhi-github.png)
 background-position: center
 background-size: cover 
 
+.bottom[
+.center[Helse- og kvalitetsregisterkonferansen 2021]]
 
 ---
 class: left, hide_logo
