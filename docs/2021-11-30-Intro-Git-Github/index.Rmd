@@ -225,6 +225,21 @@ Lager profil (gratis) på [https://github.com](https://github.com)
 
 
 .panelset[
+.panel[.panel-name[GitHub]
+
+```{r github, out.width = '90%', echo = FALSE}
+knitr::include_graphics("images/git-profil2.png")
+```
+
+]
+.panel[.panel-name[RStudio]
+
+```{r rsdiff, out.width = '90%', echo = FALSE}
+knitr::include_graphics("images/rstudio-new.png")
+```
+
+]
+
 .panel[.panel-name[Terminal]
 
 ```bash
@@ -236,21 +251,6 @@ git push
 Mer forklaring i [freeCodeCamp](https://www.freecodecamp.org/news/git-cheat-sheet/)
 ]
 
-.panel[.panel-name[RStudio]
-
-```{r rsdiff, out.width = '90%', echo = FALSE}
-knitr::include_graphics("images/RStudio-diff.png")
-```
-
-]
-
-.panel[.panel-name[GitHub]
-
-```{r github, out.width = '90%', echo = FALSE}
-knitr::include_graphics("images/git-profil2.png")
-```
-
-]
 ]
 
 ---
