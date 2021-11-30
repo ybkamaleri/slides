@@ -293,8 +293,7 @@ background-image: url(images/fhi-github.png)
 background-position: center
 background-size: cover 
 
-.bottom[
-.center[Helse- og kvalitetsregisterkonferansen 2021]]
+.black[Helse- og kvalitetsregisterkonferansen 2021]
 
 ---
 class: left, hide_logo
