@@ -6,6 +6,7 @@
 
 * List of slides
 
+- [[file:2021-11-30-Intro-Git-Github][Intro to Git og Github]]
 - [[file:2021-08-24-orgdata][Orgdata: Aggregere geo coder 24 Aug 2021]]
 - [[file:2020-11-18-Intro-Git][Git for helseprofil 10 Nov 2020]]
 - [[file:2018-04-10-eReg-Rapport/][eReg Rapport løsning 10 Apr 2018]]
