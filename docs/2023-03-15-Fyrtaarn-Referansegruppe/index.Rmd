@@ -1,0 +1,80 @@
+---
+title: "Fyrtårnprosjektet"
+subtitle: "FHI som analyseenhet"
+author: "Yusman Kamaleri"
+<span style = 'font-size: 40%;'
+date: "2023-03-15"
+output:
+  xaringan::moon_reader:
+    css: [default, xaringan-themer.css]
+    lib_dir: libs
+    nature:
+      titleSlideClass: ["left", "middle", "inverse"]
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+    seal: false
+---
+
+class: inverse, right, middle, hide_logo
+background-image: url(https://source.unsplash.com/vVHXeu0YNbk)
+background-size: cover
+
+```{r xaringanExtra, echo = FALSE}
+xaringanExtra::use_logo(
+  image_url = "images/fhi_logo_lang.png",
+  link_url = "https://www.fhi.no",
+  position = xaringanExtra::css_position(top = "1em", right = "1em")
+)
+xaringanExtra::use_progress_bar(color = "#0051BA", location = "bottom")
+xaringanExtra::use_panelset()
+xaringanExtra::use_tile_view()
+xaringanExtra::use_fit_screen()
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#080808",  # Black
+  inverse_header_color = "#12126b"
+)
+```
+
+```{r setup, echo = FALSE}
+image_link <- function(image,url,...){
+  htmltools::a(
+    href=url,
+    htmltools::img(src=image,...)
+  )
+}
+```
+
+# Fyrtårnprosjektet
+### FHI som analyseenhet
+
+.black[.large[Yusman Kamaleri | FHI | 15.03.2023]]
+
+[https://bit.ly/ybk-git](https://bit.ly/ybk-git)
+
+
+---
+class: left, hide_logo
+background-image: url(https://source.unsplash.com/-WXQm_NTK0U)
+background-position: right
+background-size: 550px 
+
+# FHI prosjektmedarbeidere
+
+Avd. for helse og ulikhet i <br>
+Område for psykisk og fysisk helse <br>
+
+- Yusman Kamaleri
+- Eyvind Ohm
+- Else Karin Grøholt
+- Kari Alver
+- Christian Madsen
