@@ -15,3 +15,4 @@
 - [[file:2017-05-11-Registry-Data/][Registry data (NAKOS) 11 May 2017]]
 - [[file:2017-03-12-Servicemilj-seminar/][Servicemiljø seminar 12 Mars 2017]]
 - [[https://rpubs.com/ybkamaleri/indikator][Kvalitetsmål for nasjonale kvalitetsregistre 24 Jan 2017]]
+- [[file:2023-03-15-Fyrtaarn-Referansegruppe][FHI som analyseenhet i Fyrtårnprosjekt 15 Mars 2023]]
