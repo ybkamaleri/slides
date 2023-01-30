@@ -79,3 +79,12 @@ Område for psykisk og fysisk helse <br>
 - Else Karin Grøholt
 - Kari Alver
 - Christian Madsen
+
+---
+class: middle, center
+
+## Produsere statistikk og gjennomføre <br> ulike analyse- og forskningsoppgaver
+Felles minimum datasett (FMDS) data som utgangspunkt
+
+???
+- FMDS data som utgangspunkt
