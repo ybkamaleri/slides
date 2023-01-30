@@ -28,7 +28,7 @@ xaringanExtra::use_logo(
   link_url = "https://www.fhi.no",
   position = xaringanExtra::css_position(top = "1em", right = "1em")
 )
-xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
+xaringanExtra::use_progress_bar(color = "#0051BA", location = "bottom")
 xaringanExtra::use_panelset()
 xaringanExtra::use_tile_view()
 xaringanExtra::use_fit_screen()
@@ -60,3 +60,21 @@ image_link <- function(image,url,...){
 .black[.large[Yusman Kamaleri | FHI | 15.03.2023]]
 
 [https://bit.ly/ybk-git](https://bit.ly/ybk-git)
+
+
+---
+class: left, hide_logo
+background-image: url(https://source.unsplash.com/-WXQm_NTK0U)
+background-position: right
+background-size: 550px 
+
+# FHI prosjektmedarbeidere
+
+Avd. for helse og ulikhet i <br>
+Område for psykisk og fysisk helse <br>
+
+- Yusman Kamaleri
+- Eyvind Ohm
+- Else Karin Grøholt
+- Kari Alver
+- Christian Madsen
