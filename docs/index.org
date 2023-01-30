@@ -6,6 +6,7 @@
 
 * List of slides
 
+- [[file:2023-03-15-Fyrtaarn-Referansegruppe][FHI som analyseenhet i Fyrtårnprosjekt 15 Mars 2023]]
 - [[file:2021-11-30-Intro-Git-Github][Intro to Git og Github 30 Nov 2021]]
 - [[file:2021-08-24-orgdata][Orgdata: Aggregere geo coder 24 Aug 2021]]
 - [[file:2020-11-18-Intro-Git][Git for helseprofil 10 Nov 2020]]
@@ -15,4 +16,3 @@
 - [[file:2017-05-11-Registry-Data/][Registry data (NAKOS) 11 May 2017]]
 - [[file:2017-03-12-Servicemilj-seminar/][Servicemiljø seminar 12 Mars 2017]]
 - [[https://rpubs.com/ybkamaleri/indikator][Kvalitetsmål for nasjonale kvalitetsregistre 24 Jan 2017]]
-- [[file:2023-03-15-Fyrtaarn-Referansegruppe][FHI som analyseenhet i Fyrtårnprosjekt 15 Mars 2023]]
