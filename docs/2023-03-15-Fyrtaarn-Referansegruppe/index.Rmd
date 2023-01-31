@@ -59,7 +59,7 @@ image_link <- function(image,url,...){
 
 .black[.large[Yusman Kamaleri | FHI | 15.03.2023]]
 
-[https://bit.ly/ybk-git](https://bit.ly/ybk-git)
+[https://bit.ly/fyrtaarn](https://bit.ly/fyrtaarn)
 
 
 ---
