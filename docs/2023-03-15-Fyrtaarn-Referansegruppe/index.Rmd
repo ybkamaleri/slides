@@ -18,7 +18,7 @@ output:
     seal: false
 ---
 
-class: inverse, right, middle, hide_logo
+class: right, middle, hide_logo
 background-image: url(https://source.unsplash.com/vVHXeu0YNbk)
 background-size: cover
 
@@ -79,6 +79,16 @@ Område for psykisk og fysisk helse <br>
 - Else Karin Grøholt
 - Kari Alver
 - Christian Madsen
+
+---
+class: right, middle 
+background-image: url(https://source.unsplash.com/lc7xcWebECc)
+background-position: left
+background-size: 550px 
+
+## Rolle i projektet og
+## Status i analysearbeid
+
 
 ---
 class: middle, center
