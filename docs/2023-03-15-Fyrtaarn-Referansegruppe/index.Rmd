@@ -10,11 +10,16 @@ output:
     lib_dir: libs
     nature:
       titleSlideClass: ["left", "middle", "inverse"]
-      slideNumberFormat: "%current%"
+      # slideNumberFormat: "%current%"
       highlightStyle: github
       highlightLines: true
       ratio: 16:9
       countIncrementalSlides: true
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
     seal: false
 ---
 
@@ -71,8 +76,8 @@ background-position: left
 background-size: 550px 
 
 .pull-right[
-## Rolle i projektet
-## Status i analysearbeid
+## `r emo::ji("check")` Rolle i projektet
+## `r emo::ji("check")` Status i analysearbeid
 ]
 
 ---
