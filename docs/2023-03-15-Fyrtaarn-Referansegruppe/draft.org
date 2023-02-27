@@ -6,4 +6,5 @@ Rolle i prosjektet og status i analysearbeid. 20-30 min.
 - Søke om REK godkjenning
 - Vurdering av personvernkonsekvenser (Data Protection Impact Assessment - DPIA)
   for å sikre at personvernet til de som er registrert ivaretas.
+- Oppdragsavtale med SVV
 -
