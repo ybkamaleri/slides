@@ -7,6 +7,7 @@
 * List of slides
 
 - [[file:2023-03-15-Fyrtaarn-Referansegruppe][FHI som analyseenhet i Fyrtårnprosjekt 15 Mars 2023]]
+- [[https://fyrtaarn.github.io/misc/status2023feb][Fyrtårnprosjektet: Status fra FHI 23 Feb 2023]]
 - [[file:2021-11-30-Intro-Git-Github][Intro to Git og Github 30 Nov 2021]]
 - [[file:2021-08-24-orgdata][Orgdata: Aggregere geo coder 24 Aug 2021]]
 - [[file:2020-11-18-Intro-Git][Git for helseprofil 10 Nov 2020]]
