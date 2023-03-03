@@ -6,7 +6,7 @@ author: "Yusman Kamaleri"
 date: "2023-03-15"
 output:
   xaringan::moon_reader:
-    css: [default, xaringan-themer.css, nhsr]
+    css: [default, xaringan-themer.css, nhsr, style.css]
     lib_dir: libs
     nature:
       titleSlideClass: ["left", "middle", "inverse"]
@@ -109,6 +109,24 @@ Felles minimum datasett (FMDS) data som utgangspunkt
 
 ???
 - FMDS data som utgangspunkt
+
+---
+name: before
+class: left
+background-image: url(https://source.unsplash.com/OQMZwNd3ThU)
+background-position: right
+background-size: 550px
+
+### Admin
+
+.big-txt[
+- Prosjektprotokoll
+- REK søknad
+- DPIA søknad
+- Samarbeidsavtaler 
+- Analyse av anonyme data fra NTR
+]
+
 
 ---
 name: statistikk01
