@@ -124,7 +124,7 @@ background-size: 550px
 - REK søknad
 - DPIA søknad
 - Samarbeidsavtaler 
-- Analyse av anonyme data fra NTR
+- .color-txt[Analyse av anonyme data fra NTR]
 ]
 
 
@@ -136,14 +136,14 @@ class: left
 
 .pull-left[
 - Deskriptiv statistikk over trafikkulykkesskader behandles i helsetjenesten
-- Utleveres tertialvis til Statens vegvesen
+- Utleveres *tertialvis* til Statens vegvesen
 - Datagrunnlag for å følge utviklingen av trafikkulykker
 
 ]
 
 .pull-right[
 
-```{r out.width = "60%", echo = FALSE}
+```{r out.width = "65%", echo = FALSE}
 knitr::include_graphics("images/charts.png")
 
 ```
