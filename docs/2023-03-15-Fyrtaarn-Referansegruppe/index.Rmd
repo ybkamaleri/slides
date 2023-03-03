@@ -6,7 +6,7 @@ author: "Yusman Kamaleri"
 date: "2023-03-15"
 output:
   xaringan::moon_reader:
-    css: [default, xaringan-themer.css, nhsr, nhsr-fonts]
+    css: [default, xaringan-themer.css, nhsr]
     lib_dir: libs
     nature:
       titleSlideClass: ["left", "middle", "inverse"]
@@ -175,3 +175,49 @@ class: center
 ```{r out.width = "50%", echo = FALSE}
 magick::image_read_pdf("images/flow.pdf", pages = 1)
 ```
+
+---
+name: research01
+class: left
+background-image: url(images/company.jpg)
+background-size: 30%
+background-position: right 35px bottom 45px 
+
+### Analyse og forskning
+
+Frembringe mer kunnskap om hvordan risiko for skader og <br/>
+ulykker er fordelt mellom grupper i befolkningen
+
+
+<br/>
+--
+
+.panelset[
+.panel[.panel-name[Forekomst av skader]
+Hvor mange skadde pasienter behandles i helsetjenesten?
+<br/>
+- Typer ulykker/skader
+- Alvolighetsgrad (AIS)
+- Behandlingsnivå
+]
+
+.panel[.panel-name[Sociodemografisk og geografisk]
+Finnes det forskjeller i forekomst av skader etter..
+- Kjønn
+- Aldersgruppe
+- Utdanningsnivå
+- Inntekt/formue
+- Sivilstand
+- Etnisk bakgrunn
+- Bosted
+- Skadested
+]
+
+.panel[.panel-name[Datakvalitet]
+Hvordan er det med datakvalitet?
+- Representativitet av skader behandlet i helsetjenesten
+- Kompletthet av registreringen for alvorlige skadde
+- Samsvaret med politiregister
+- Samsvaret i vurdering av skadens alvorlighetsgrad
+]
+]
