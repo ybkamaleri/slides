@@ -221,3 +221,11 @@ Hvordan er det med datakvalitet?
 - Samsvaret i vurdering av skadens alvorlighetsgrad
 ]
 ]
+
+---
+name: research02
+class: center
+
+```{r out.width = "80%", echo = FALSE}
+magick::image_read_pdf("images/research.pdf", pages = 1)
+```
