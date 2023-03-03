@@ -172,7 +172,7 @@ knitr::include_graphics("images/charts.png")
 name: statistikk02
 class: center
 
-```{r out.width = "50%", echo = FALSE}
+```{r stats, out.width = "50%", echo = FALSE}
 magick::image_read_pdf("images/flow.pdf", pages = 1)
 ```
 
@@ -181,7 +181,7 @@ name: research01
 class: left
 background-image: url(images/company.jpg)
 background-size: 30%
-background-position: right 35px bottom 45px 
+background-position: right 35px bottom 60px 
 
 ### Analyse og forskning
 
@@ -226,6 +226,6 @@ Hvordan er det med datakvalitet?
 name: research02
 class: center
 
-```{r out.width = "80%", echo = FALSE}
+```{r research, out.width = "80%", echo = FALSE}
 magick::image_read_pdf("images/research.pdf", pages = 1)
 ```
