@@ -78,7 +78,7 @@ background-size: 550px
 
 .pull-right[
 ## `r emo::ji("check")` Rolle i projektet
-## `r emo::ji("check")` Status i analysearbeid
+## `r emo::ji("check")` Analyse av skadedata
 ]
 
 ---
@@ -247,3 +247,8 @@ class: center
 ```{r research, out.width = "80%", echo = FALSE}
 magick::image_read_pdf("images/research.pdf", pages = 1)
 ```
+
+---
+name: question
+background-image: url(https://source.unsplash.com/oZuBNC-6E2s)
+background-size: cover 
