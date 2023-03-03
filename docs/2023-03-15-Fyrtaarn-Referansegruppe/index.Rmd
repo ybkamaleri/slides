@@ -111,7 +111,7 @@ Felles minimum datasett (FMDS) data som utgangspunkt
 - FMDS data som utgangspunkt
 
 ---
-name: rolle
+name: statistikk01
 class: left
 
 ### Løpende statistikk
@@ -168,3 +168,10 @@ knitr::include_graphics("images/charts.png")
 
 ]]]
 
+---
+name: statistikk02
+class: center
+
+```{r out.width = "50%", echo = FALSE}
+magick::image_read_pdf("images/flow.pdf", pages = 1)
+```
