@@ -7,6 +7,8 @@
     <meta name="date" content="2023-03-15" />
     <script src="libs/header-attrs-2.20/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/nhsr.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/nhsr-fonts.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-progressBar-0.0.1/progress-bar.js"></script>
     <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
     <script src="libs/panelset-0.2.6/panelset.js"></script>
@@ -20,7 +22,7 @@
     <textarea id="source">
 
 
-name: intro
+name: title 
 class: right, middle, hide_logo
 background-image: url(https://source.unsplash.com/vVHXeu0YNbk)
 background-size: cover
@@ -48,9 +50,9 @@ top:1em;right:1em;
     } else {
       document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
         .forEach(function (slide) {
-          const logo = document.createElement('a')
+          const logo = document.createElement('div')
           logo.classList = 'xaringan-extra-logo'
-          logo.href = 'https://www.fhi.no'
+          logo.href = null
           slide.appendChild(logo)
         })
     }
@@ -84,6 +86,7 @@ top:1em;right:1em;
 # Fyrtårnprosjektet
 ### FHI som analyseenhet
 
+&lt;br/&gt;
 .black[.large[Yusman Kamaleri | FHI | 15.03.2023]]
 
 [https://bit.ly/fyrtaarn](https://bit.ly/fyrtaarn)
@@ -129,6 +132,62 @@ Felles minimum datasett (FMDS) data som utgangspunkt
 
 ???
 - FMDS data som utgangspunkt
+
+---
+name: rolle
+class: left
+
+### Løpende statistikk
+
+.pull-left[
+- Deskriptiv statistikk over trafikkulykkesskader behandles i helsetjenesten
+- Utleveres tertialvis til Statens vegvesen
+- Datagrunnlag for å følge utviklingen av trafikkulykker
+
+]
+
+.pull-right[
+
+&lt;img src="images/charts.png" width="60%" /&gt;
+]
+
+
+.panelset[
+.panel[.panel-name[Statistikk]
+
+| Trafikkulykkeskadde | Totalt | Hardt skadd (AIS 3+) | Lettere skadd (AIS 1,2) |
+|---------------------|--------|----------------------|-------------------------|
+| Kjønn               |        |                      |                         |
+| Alder               |        |                      |                         |
+| Fremkomsmiddel      |        |                      |                         |
+
+]
+
+.panel[.panel-name[Femkomsmidler]
+
+.pull-left[
+- Til fots
+- Sykkel
+- Elektrisk sykkel
+- Elektrisk sparkesykkel
+- Moped
+- Motorsykkel
+- Personbil, varebil
+- Lastebil
+]
+
+.pull-right[
+- Buss
+- Trikk/tog/bane
+- ATV "firhjuling"
+- Snøskuter
+- Vannskuter
+- Ski, snøbrett
+- Annen fremkomstmiddel
+- Ukjent fremkomstmiddel
+
+]]]
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
