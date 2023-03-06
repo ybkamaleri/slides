@@ -157,11 +157,11 @@ knitr::include_graphics("images/charts.png")
 |---------------------|--------|----------------------|-------------------------|
 | Kjønn               |        |                      |                         |
 | Alder               |        |                      |                         |
-| Fremkomsmiddel      |        |                      |                         |
+| Fremkomstmiddel     |        |                      |                         |
 
 ]
 
-.panel[.panel-name[Femkomsmidler]
+.panel[.panel-name[Femkomstmidler]
 
 .pull-left[
 - Til fots
@@ -181,7 +181,7 @@ knitr::include_graphics("images/charts.png")
 - Snøskuter
 - Vannskuter
 - Ski, snøbrett
-- Annen fremkomstmiddel
+- Annet fremkomstmiddel
 - Ukjent fremkomstmiddel
 
 ]]]
