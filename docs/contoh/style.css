@@ -1,0 +1,21 @@
+
+/* Title Slide */
+
+.title-slide {
+  /* background-image: url("https://liao961120.github.io/slides/img/bg/coffee-blur.jpg"); */
+  background-position: center;
+  background-size: cover;
+}
+
+
+.title-slide .bg-text{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  text-align: left;
+  color: #F7F8FA;
+}
+
+.title-slide .remark-slide-number {
+  display: none;
+}

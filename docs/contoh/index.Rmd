@@ -1,0 +1,53 @@
+---
+title: "Different examples"
+subtitle: "Learning process takes time"
+author: "YBK"
+date: "`r format(Sys.Date(), '%B %e, %Y')`"
+output:
+  xaringan::moon_reader:
+    css: [default, xaringan-themer.css, style.css]
+    lib_dir: libs
+    nature:
+      titleSlideClass: ["left", "middle", "inverse"]
+      slideNumberFormat: "%current% / %total%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+    seal: false
+---
+
+class: title-slide 
+
+.big-text[
+# Different examples
+### Learning process takes time
+
+<hr />
+
+`r format(Sys.Date(), '%B %e, %Y')`  
+YBK
+]
+
+---
+
+## Incremental portion
+
+- Incremental portions is seperated by `--`
+
+--
+
+- Footnotes
+    - `<sup>tag</sup>`: <sup>1</sup>
+    - `.footnote[]`
+
+
+.footnote[
+[1] Bla.. bla.. bla..
+]
+
+---
+
+## Images with shadow
+
+![:class shadow]("img/company.jpg")
