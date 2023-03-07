@@ -247,8 +247,8 @@ Finnes det forskjeller i forekomst av skader etter..
 
 .panel[.panel-name[Datakvalitet]
 Hvordan er det med datakvalitet?
+- Representativt bilde av skadeomfanget i hele landet (standardisering)
 - Representativitet av skader behandlet i helsetjenesten
-- Representativitet bilde av skadeomfanget i hele landet (standardisering)
 - Kompletthet av registreringen for alvorlig skadde
 - Samsvaret med politiregister
 - Samsvaret i vurdering av skadens alvorlighetsgrad
