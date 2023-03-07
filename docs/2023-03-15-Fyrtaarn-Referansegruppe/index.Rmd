@@ -60,6 +60,7 @@ image_link <- function(image,url,...){
 }
 ```
 
+.pull-right[
 # Fyrtårnprosjektet
 ### FHI som analyseenhet
 
@@ -68,6 +69,7 @@ image_link <- function(image,url,...){
 
 [https://bit.ly/fyrtaarn](https://bit.ly/fyrtaarn)
 
+]
 
 ---
 name: content
@@ -117,16 +119,19 @@ background-image: url(https://source.unsplash.com/OQMZwNd3ThU)
 background-position: right
 background-size: 550px
 
-# Admin
+## Admin
 
 .big-txt[
 - Prosjektprotokoll
 - REK søknad
 - DPIA søknad
 - Samarbeidsavtaler 
-- .color-txt[Analyse av anonyme data fra NTR]
 ]
 
+## Statistikk 
+.big-txt[
+- Analyse av anonyme data fra NTR
+]
 
 ---
 name: statistikk01
@@ -136,9 +141,8 @@ class: left
 
 .pull-left[
 - Deskriptiv statistikk over trafikkulykkesskader behandles i helsetjenesten
-- Utleveres *tertialvis* til Statens vegvesen
-- Datagrunnlag for å følge utviklingen av trafikkulykker
-
+- Utleveres .color-txt[*tertialvis*] til Statens vegvesen
+- Datagrunnlag for å følge utviklingen av trafikkulykker dvs. endring over tid
 ]
 
 .pull-right[
@@ -149,9 +153,11 @@ knitr::include_graphics("images/charts.png")
 ```
 ]
 
+--
 
 .panelset[
 .panel[.panel-name[Statistikk]
+
 
 | Trafikkulykkeskadde | Totalt | Hardt skadd (AIS 3+) | Lettere skadd (AIS 1,2) |
 |---------------------|--------|----------------------|-------------------------|
@@ -171,20 +177,28 @@ knitr::include_graphics("images/charts.png")
 - Moped
 - Motorsykkel
 - Personbil, varebil
-- Lastebil
 ]
 
 .pull-right[
+- Lastebil
 - Buss
 - Trikk/tog/bane
 - ATV "firhjuling"
 - Snøskuter
-- Vannskuter
 - Ski, snøbrett
 - Annet fremkomstmiddel
 - Ukjent fremkomstmiddel
 
-]]]
+]]
+
+.panel[.panel-name[Formidling]
+
+- Kort rapport (pdf)
+- Temaside (html)
+]]
+
+???
+[https://github.com/fyrtaarn/indikator/blob/main/indikator.org](https://github.com/fyrtaarn/indikator/blob/main/indikator.org)
 
 ---
 name: statistikk02
@@ -226,7 +240,7 @@ Finnes det forskjeller i forekomst av skader etter..
 - Utdanningsnivå
 - Inntekt/formue
 - Sivilstand
-- Etnisk bakgrunn
+- Landbakgrunn
 - Bosted
 - Skadested
 ]
@@ -234,6 +248,7 @@ Finnes det forskjeller i forekomst av skader etter..
 .panel[.panel-name[Datakvalitet]
 Hvordan er det med datakvalitet?
 - Representativitet av skader behandlet i helsetjenesten
+- Representativitet bilde av skadeomfanget i hele landet (standardisering)
 - Kompletthet av registreringen for alvorlig skadde
 - Samsvaret med politiregister
 - Samsvaret i vurdering av skadens alvorlighetsgrad
