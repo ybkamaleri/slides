@@ -79,7 +79,7 @@ background-position: left
 background-size: 550px 
 
 .pull-right[
-## `r emo::ji("check")` Rolle i projektet
+## `r emo::ji("check")` Rolle i prosjektet
 ## `r emo::ji("check")` Analyse av skadedata
 ]
 
@@ -93,14 +93,13 @@ background-size: 550px
 # FHI 
 ### Prosjektmedarbeidere
 
-Avd. for helse og ulikhet i <br>
-Område for psykisk og fysisk helse <br>
-
+.big-txt[
 - Yusman Kamaleri
 - Eyvind Ohm
-- Else Karin Grøholt
 - Kari Alver
 - Christian Madsen
+- Else Karin Grøholt
+]
 
 ---
 name: main
@@ -140,7 +139,7 @@ class: left
 ### Løpende statistikk
 
 .pull-left[
-- Deskriptiv statistikk over trafikkulykkesskader behandles i helsetjenesten
+- Deskriptiv statistikk over trafikkulykkesskader behandlet i helsetjenesten
 - Utleveres .color-txt[*tertialvis*] til Statens vegvesen
 - Datagrunnlag for å følge utviklingen av trafikkulykker dvs. endring over tid
 ]
