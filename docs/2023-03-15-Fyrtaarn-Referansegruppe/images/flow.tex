@@ -44,13 +44,13 @@
 
 \begin{tikzpicture}[node distance=1cm, auto,]
   % nodes
-  \node[box, text width=3em, scale=.8] (fmds) {FMDS};
+  \node[box, fill=red!5, text width=3em, scale=.8] (fmds) {FMDS};
   \node[box, draw=white, scale=1, text width=10em, above=of fmds] (title) {Løpende statistikk};
   \node[round, draw=blue!60, fill=blue!10, line width=0.8mm, below=of fmds] (population) {Studiepopulasjon};
   \node[box, draw=white, text width=4em, below=of population] (fhi){FHI};
-  \node[box, text width=3em, scale=.8, right=of fmds] (kpr) {KPR}
+  \node[box, fill=red!5, text width=3em, scale=.8, right=of fmds] (kpr) {KPR}
      edge[arrow, bend left=45] (population.east);
-  \node[box, text width=3em, scale=.8, left=of fmds] (NPR) {NPR}
+  \node[box, fill=red!5, text width=3em, scale=.8, left=of fmds] (NPR) {NPR}
      edge[arrow, bend right=45] (population.west);
   \path[line] (fmds) -- (population);
   \path[line] (population) -- node[right=.2, scale=.6, text width=3cm]
