@@ -132,6 +132,11 @@ background-size: 550px
 - Analyse av anonyme data fra NTR
 ]
 
+???
+
+- Tilgjengeliggjøringen av dataene vil være styrt av vedtak med hjemmel i
+helseregisterloven og tilhørende forskrifter
+
 ---
 name: statistikk01
 class: left
@@ -253,6 +258,11 @@ Hvordan er det med datakvalitet?
 - Samsvaret i vurdering av skadens alvorlighetsgrad
 ]
 ]
+
+???
+
+- **Behandlingsnivå** : innlagt på sykehus, poliklinikk, legevakt, fastlege
+- **Skadested** : Vei, bolig, lekeplass, sport, fri nature etc
 
 ---
 name: research02
