@@ -147,7 +147,7 @@ background-size: 550px
 
 .pull-right[
 ## `r emo::ji("check")` Løpende statistikk
-## `r emo::ji("check")` Analyse og forskining
+## `r emo::ji("check")` Analyse og forskning
 ]
 ---
 name: statistikk01
@@ -156,7 +156,7 @@ class: left
 ### Løpende statistikk
 
 .pull-left[
-- Deskriptiv statistikk over trafikkulykkesskader behandlet i helsetjenesten
+- Deskriptiv statistikk over trafikkulykkeskader behandlet i helsetjenesten
 - Utleveres .color-txt[*tertialvis*] til Statens vegvesen
 - Datagrunnlag for å følge utviklingen av trafikkulykker dvs. endring over tid
 ]
