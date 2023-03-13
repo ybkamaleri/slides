@@ -214,7 +214,9 @@ knitr::include_graphics("images/charts.png")
 ]]
 
 ???
-[https://github.com/fyrtaarn/indikator/blob/main/indikator.org](https://github.com/fyrtaarn/indikator/blob/main/indikator.org)
+- [https://github.com/fyrtaarn/indikator/blob/main/indikator.org](https://github.com/fyrtaarn/indikator/blob/main/indikator.org)
+
+- **AIS** : Abbreviated Injury Scale
 
 ---
 name: statistikk02
