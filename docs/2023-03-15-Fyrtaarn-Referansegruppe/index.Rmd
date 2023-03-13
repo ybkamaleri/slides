@@ -138,6 +138,18 @@ background-size: 550px
 helseregisterloven og tilhørende forskrifter
 
 ---
+
+name: oppgave 
+class: left, middle
+background-image: url(https://source.unsplash.com/8mikJ83LmSQ)
+background-position: left 
+background-size: 550px 
+
+.pull-right[
+## `r emo::ji("check")` Løpende statistikk
+## `r emo::ji("check")` Analyse og forskining
+]
+---
 name: statistikk01
 class: left
 
