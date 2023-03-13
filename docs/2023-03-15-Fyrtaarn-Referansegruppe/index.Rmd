@@ -224,6 +224,11 @@ class: center
 magick::image_read_pdf("images/flow.pdf", pages = 1)
 ```
 
+???
+**KPR** Kommunalt pasient- og brukerregister. Inneholder opplysninger om de som har søkt om, mottar eller har mottatt helse- og omsorgstjenester fra kommunen.
+
+**NPR** inneholder helseopplysninger om alle personer som har fått behandling, eller som venter på behandling i spesialisthelsetjenesten
+
 ---
 name: research01
 class: left
