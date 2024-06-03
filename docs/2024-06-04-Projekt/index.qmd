@@ -36,6 +36,7 @@ format:
 
 - Brukergruppe
 - Tilgang til data
+- Formål
 
 ## Innhenting av data 
 
