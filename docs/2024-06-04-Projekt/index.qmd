@@ -6,9 +6,10 @@ format:
     css: style.css
 ---
 
-## {.center} 
+##  {.center} 
 
 ![](img/process.png)
+
 
 ## Innledende fase
 :::: {.columns}
