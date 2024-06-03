@@ -1,32 +1,11 @@
 ---
 title: "Projekt utvikling"
 author: Yusman Kamaleri
-format: revealjs
+format:
+  revealjs:
+    css: style.css
 ---
 
-## Step 1
-- Split slides up with level 2 headers: `## Heading 2`
-- Add some markdown + text and/or some R/Python code
+## {.center} 
 
-## Step 2
-- quarto render
-
-## Step 3
-- Profit
-
-
-```{r}
-## https://rpubs.com/techanswers88/PyramidChart
-## sudo apt install libglpk-dev libxml2-de
-## sudo apt install build-essential gfortran
-library(highcharter)
-library(data.table)
-
-dt <- data.table(var = c("Innledende fase", "Planlegging", "Metodisk tilnærming", "Innhenting av data", "Analyser", "Formidling"),
-                 val = rep(10, 6))
-hc <- dt %>%
-  hchart("pyramid",hcaes(x = var,y = val))
-
-hc
-
-```
+![](img/process.png)
