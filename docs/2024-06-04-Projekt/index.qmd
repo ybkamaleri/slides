@@ -9,3 +9,49 @@ format:
 ## {.center} 
 
 ![](img/process.png)
+
+## Innledende fase
+:::: {.columns}
+
+:::{.column width="50%"}
+- Behov for statistikk om:
+    - befolkning
+    - oppvekst og levekår
+    - miljø
+    - skader
+    - helserelatert atferd
+    - helsetilstand
+:::
+
+::: {.column width="50%"}
+- Kompleks koder
+  - [black box](https://github.com/helseprofil/khfunctions/blob/hist/KHfunctions.R)
+  - dokumentasjon
+:::
+
+::::
+
+
+## Planlegging og strategisk tilnærming
+
+- Brukergruppe
+- Tilgang til data
+
+## Innhenting av data 
+
+- Søknader
+- Forskjellige formater 
+- API f.eks [norgeo](https://helseprofil.github.io/norgeo/)
+
+## Analyse
+
+- Data rensing
+- Aggregering
+- Standardisering
+- [Samarbeid](https://github.com/helseprofil/orgdata)
+
+## Formidling
+
+- [Statistikkbank](https://khs.fhi.no/webview/)
+- [Nedlasting](https://www.fhi.no/he/folkehelse/folkehelseprofil/)
+- [NTR](https://ybkamaleri.github.io/traume/)
