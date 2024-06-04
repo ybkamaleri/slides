@@ -4,6 +4,7 @@ author: Yusman Kamaleri
 date: 04 juni 2024
 format:
   revealjs:
+    logo: "img/logo.png"
     css: style.css
 ---
 
@@ -48,6 +49,7 @@ format:
 ::: {.column width="50%"}
 - Dokumentasjon
 - [GitHub](https://github.com/helseprofil)
+- Testing
 :::
 
 ::::
@@ -57,6 +59,15 @@ format:
 - Søknader
 - Forskjellige formater 
 - API f.eks [norgeo](https://helseprofil.github.io/norgeo/)
+
+```{r norgeo}
+#| echo: true
+#| include: true
+library("norgeo")
+dt <- get_code("kommune", from = 2015, to = 2024)
+dt[, .N, by = validTo]
+```
+
 
 ## Analyse
 
