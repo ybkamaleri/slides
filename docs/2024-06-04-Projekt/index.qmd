@@ -8,16 +8,16 @@ format:
     css: style.css
 ---
 
+## Folkehelseprofiler
+
+- [Folkehelseprofilene](https://www.fhi.no/he/folkehelse/) er unike rapporter for hver av landets kommuner, og for
+bydelene i Oslo, Bergen, Trondheim og Stavanger
+
+- Profilene er et grunnlag for det lokale arbeidet med å bedre folkehelsen
+
 ##  {.center} 
 
 ![](img/process.png)
-
-## Folkehelseprofiler
-
-- Folkehelseprofilene er unike rapporter for hver av landets kommuner, og for
-bydelene i Oslo, Bergen, Trondheim og Stavanger.
-
-- Profilene er et grunnlag for det lokale arbeidet med å bedre folkehelsen
 
 ## Innledende fase
 :::: {.columns}
@@ -35,7 +35,7 @@ bydelene i Oslo, Bergen, Trondheim og Stavanger.
 ::: {.column width="50%"}
 - Kompleks koder
   - [black box](https://github.com/helseprofil/khfunctions/blob/hist/KHfunctions.R)
-  - dokumentasjon
+  - mangler dokumentasjon
 :::
 
 ::::
