@@ -1,6 +1,7 @@
 ---
 title: "Projekt utvikling"
 author: Yusman Kamaleri
+date: 04 juni 2024
 format:
   revealjs:
     css: style.css
@@ -35,9 +36,21 @@ format:
 
 ## Planlegging og strategisk tilnærming
 
+:::: {.columns}
+
+::: {.column width="50%"}
 - Brukergruppe
+- Styringsgruppe
 - Tilgang til data
 - Formål
+:::
+
+::: {.column width="50%"}
+- Dokumentasjon
+- [GitHub](https://github.com/helseprofil)
+:::
+
+::::
 
 ## Innhenting av data 
 
@@ -50,10 +63,12 @@ format:
 - Data rensing
 - Aggregering
 - Standardisering
-- [Samarbeid](https://github.com/helseprofil/orgdata)
+- [Plattform](https://github.com/helseprofil/orgdata) for samarbeid
 
 ## Formidling
 
 - [Statistikkbank](https://khs.fhi.no/webview/)
 - [Nedlasting](https://www.fhi.no/he/folkehelse/folkehelseprofil/)
 - [NTR](https://ybkamaleri.github.io/traume/)
+- [BDR](https://bdreg.github.io/)
+- [orgdata veiledning](https://www.youtube.com/watch?v=PhEQq4iWJCY)
