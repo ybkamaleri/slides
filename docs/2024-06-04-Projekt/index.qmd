@@ -62,7 +62,7 @@ bydelene i Oslo, Bergen, Trondheim og Stavanger.
 
 ## Innhenting av data 
 
-- Søknader
+- Søknader f.eks [ungdata](https://www.ungdata.no/)
 - Forskjellige formater 
 - API f.eks [norgeo](https://helseprofil.github.io/norgeo/)
 
