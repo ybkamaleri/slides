@@ -12,6 +12,12 @@ format:
 
 ![](img/process.png)
 
+## Folkehelseprofiler
+
+- Folkehelseprofilene er unike rapporter for hver av landets kommuner, og for
+bydelene i Oslo, Bergen, Trondheim og Stavanger.
+
+- Profilene er et grunnlag for det lokale arbeidet med å bedre folkehelsen
 
 ## Innledende fase
 :::: {.columns}
