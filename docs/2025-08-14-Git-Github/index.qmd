@@ -1,0 +1,321 @@
+---
+title: "Git og GitHub for Alle"
+subtitle: "En kort intro"
+author: "ybk"
+format: 
+  revealjs:
+    theme: default
+    transition: slide
+    background-transition: fade
+    incremental: true
+    code-line-numbers: false
+lang: no
+---
+
+## 
+
+![](https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif){fig-align="center" width="400"}
+
+::: {.notes}
+Velkommen til en presentasjon om Git og GitHub som er laget for alle - både de som koder og de som ikke gjør det!
+:::
+
+## Hva er Git? 🤔
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Git er som en tidsmaskin for filer** ⏰
+
+- Holder styr på endringer i filer over tid
+- Lar deg gå tilbake til tidligere versjoner
+- Viser hvem som endret hva og når
+- Fungerer for ALLE typer filer!
+:::
+
+::: {.column width="50%"}
+![](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif){width="300"}
+:::
+
+::::
+
+## Tenk deg dette scenario... 📝
+
+:::: {.columns}
+
+::: {.column width="60%"}
+**Uten Git:**
+
+- `dokument_final.docx`
+- `dokument_final_v2.docx`
+- `dokument_final_FINAL.docx`
+- `dokument_final_FINAL_v3.docx`
+- `dokument_final_FINAL_v3_DENNE_GANGEN.docx`
+:::
+
+::: {.column width="40%"}
+![](https://media.giphy.com/media/32mC2kXYWCsg0/giphy.gif){width="250"}
+:::
+
+::::
+
+## Med Git blir det enkelt! ✨
+
+```bash
+# Se alle versjoner av dokumentet
+git log --oneline
+
+# Gå tilbake til en tidligere versjon
+git checkout abc123
+
+# Se hvem som endret hva
+git blame dokument.txt
+```
+
+![](https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif){fig-align="center" width="300"}
+
+## Hva er GitHub? 🌐
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**GitHub = Git + Sosiale medier**
+
+- Online plattform for å dele og samarbeide
+- Som Dropbox, men mye kraftigere
+- Brukes av millioner av mennesker
+- Ikke bare for programmering!
+:::
+
+::: {.column width="50%"}
+![](https://media.giphy.com/media/487L0pNZKONFN01oHO/giphy.gif){width="300"}
+:::
+
+::::
+
+## For ikke-programmerere: Hvorfor bry seg? 🎯
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Perfekt for:**
+
+- Forfatter som skriver bøker 📚
+- Designer som lager grafikk 🎨
+- Folk som skriver rapporter 🔬
+- Alle som jobber med dokumenter!
+:::
+
+::: {.column width="50%"}
+![](https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif){width="300"}
+:::
+
+::::
+
+## Grunnleggende Git-kommandoer 💻
+
+```bash
+# Starte et nytt prosjekt
+git init
+
+# Legge til filer for sporing
+git add minFil.txt
+
+# Lagre en versjon (commit)
+git commit -m "La til ny tekst i dokumentet"
+
+# Se status på prosjektet
+git status
+```
+
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWFndjNtN3A1cWNxN2NtaGx2Y3hteTJ5cTBtNWl4MnVxcWcwdWZ1diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9IgzoKnwFNmISR8I/giphy.gif){fig-align="center" width="400"}
+
+<!-- <iframe src="https://giphy.com/embed/xT9IgzoKnwFNmISR8I" width="480" height="430" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/code-coding-seamless-xT9IgzoKnwFNmISR8I">via GIPHY</a></p> -->
+
+<!-- ![](https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif){fig-align="center" width="250"} -->
+
+## Samarbeid med Git 🤝
+
+```bash
+# Klone et prosjekt fra GitHub
+git clone https://github.com/bruker/prosjekt.git
+
+# Hente endringer fra andre
+git pull
+
+# Sende dine endringer
+git push
+```
+
+![](https://media.giphy.com/media/l1J9FiGxR61OcF2mI/giphy.gif){fig-align="center" width="300"}
+
+
+## GitHub-grensesnittet 🖱️
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Du trenger ikke kommandolinje!**
+
+- RStudio
+- GitHub Desktop (ikke tilgjengelig i Firmaportalen)
+- Nettleseren på github.com
+- Mange andre grafiske verktøy
+- Dra og slipp filer!
+:::
+
+::: {.column width="50%"}
+![](https://media.giphy.com/media/3og0IMJcSI8p6hYQXS/giphy.gif){width="300"}
+:::
+
+::::
+
+## Praktisk eksempel: Rapport 📖
+
+```bash
+# Starte bokprosjekt
+git init viktig-rapport
+cd viktig-rapport
+
+# Legge til første kapittel
+echo "Kapittel 1: Introduksjon ..." > kapittel1.md
+git add kapittel1.md
+git commit -m "La til første kapittel"
+
+# Legge til andre kapittel
+echo "Kapittel 2: Viktige saker fortsetter..." > kapittel2.md
+git add kapittel2.md
+git commit -m "La til andre kapittel"
+```
+
+## Se historikken din 📊
+
+```bash
+# Se alle endringer
+git log
+
+# Se endringer grafisk
+git log --graph --oneline --all
+
+# Se hva som er endret i en fil
+git diff kapittel1.md
+```
+
+![](https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif){fig-align="center" width="300"}
+
+## Branching: Parallelle universer! 🌌
+
+```bash
+# Lage en ny "gren" for eksperimentering
+git branch eksperiment
+
+# Bytte til den nye grenen
+git checkout eksperiment
+
+# Eller gjør begge på en gang
+git checkout -b ny-ide
+```
+
+![](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif){fig-align="center" width="350"}
+
+## GitHub Features for alle 🌟
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Issues** - Oppgavelister
+
+**Wiki** - Dokumentasjon
+
+**Projects** - Prosjektstyring
+
+**Releases** - Publisering
+
+**Pages** - Gratis nettsider!
+
+:::
+
+::: {.column width="50%"}
+![](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif){width="300"}
+:::
+
+::::
+
+## Kom i gang i dag! 🚀
+
+:::: {.columns}
+
+::: {.column width="60%"}
+1. **Lag en GitHub-konto** (gratis!)
+2. **Last ned Git**
+3. **Last ned RStudio**
+4. **Start med et enkelt prosjekt**
+5. **Inviter andre til å samarbeide**
+6. **Utforsk og lær gradvis**
+:::
+
+::: {.column width="40%"}
+![](https://media.giphy.com/media/3ohzdIuqJoo8QdKlnW/giphy.gif){width="300"}
+:::
+
+::::
+
+## Nyttige ressurser 📚
+
+- **Git offisiell dokumentasjon**: [git-scm.com](https://git-scm.com/)
+- **Interactive Git Tutorial**: [learngitbranching.js.org](https://learngitbranching.js.org/)
+- **Pro Git Book**: git-scm.com/book (gratis!)
+- **GitHub Desktop**: desktop.github.com
+
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMng5cjJkODZ1MGd3Zm56MDV4YzZ4MzQzZmFtM2ttYW1tY2g5bHpndyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/128MHrlrHNwwU0/giphy.gif){fig-align="center" width="250"}
+
+## Oppsummering 🎯
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Git gir deg:**
+
+- Versjonskontroll
+- Sikkerhet mot tap
+- Mulighet til eksperimentering
+- Samarbeidsmuligheter
+:::
+
+::: {.column width="50%"}
+**GitHub gir deg:**
+
+- Online lagring
+- Enkelt deling
+- Prosjektstyring
+- Samfunn og nettverk
+:::
+
+::::
+
+## Takk for oppmerksomheten! 🙏
+
+![](https://media.giphy.com/media/3oz8xIsloV7zOmt81G/giphy.gif){fig-align="center" width="400"}
+
+### Spørsmål? 🤷‍♀️
+
+::: {.notes}
+Nå er det tid for spørsmål! Husk at Git og GitHub kan være nyttig for alle, ikke bare programmerere.
+:::
+
+---
+
+## Bonus: Cheat Sheet 📝
+
+```bash
+# De viktigste kommandoene
+git init           # Start nytt repo
+git status         # Se status
+git add filnavn    # Legg til fil
+git commit -m "beskrivelse"  # Lagre versjon
+git log            # Se historikk
+git push           # Send til GitHub
+git pull           # Hent fra GitHub
+git clone url      # Kopier prosjekt
+```
