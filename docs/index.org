@@ -6,7 +6,7 @@
 
 * List of slides
 
-- [[file:2025-08-14][Intro Git og GitHub 14 Aug 2025]]
+- [[file:2025-08-14-Git-GitHub][Intro Git og GitHub 14 Aug 2025]]
 - [[file:2023-03-15-Fyrtaarn-Referansegruppe][FHI som analyseenhet i Fyrtårnprosjekt 15 Mars 2023]]
 - [[https://fyrtaarn.github.io/misc/status2023feb][Fyrtårnprosjektet: Status fra FHI 23 Feb 2023]]
 - [[file:2021-11-30-Intro-Git-Github][Intro to Git og Github 30 Nov 2021]]
