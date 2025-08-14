@@ -82,7 +82,7 @@ git blame dokument.txt
 **GitHub = Git + Sosiale medier**
 
 - Online plattform for å dele og samarbeide
-- Som Dropbox, men mye kraftigere
+- Som Sharepoint, men mye kraftigere
 - Brukes av millioner av mennesker
 - Ikke bare for programmering!
 :::
@@ -97,7 +97,7 @@ git blame dokument.txt
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 **Perfekt for:**
 
 - Forfatter som skriver bøker 📚
@@ -106,7 +106,7 @@ git blame dokument.txt
 - Alle som jobber med dokumenter!
 :::
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 ![](https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif){width="300"}
 :::
 
@@ -154,7 +154,7 @@ git push
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 **Du trenger ikke kommandolinje!**
 
 - RStudio
@@ -164,7 +164,7 @@ git push
 - Dra og slipp filer!
 :::
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 ![](https://media.giphy.com/media/3og0IMJcSI8p6hYQXS/giphy.gif){width="300"}
 :::
 
