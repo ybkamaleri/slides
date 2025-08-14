@@ -300,16 +300,6 @@ git checkout -b ny-ide
 
 ::::
 
-## Takk for oppmerksomheten! 🙏
-
-![](https://media.giphy.com/media/3oz8xIsloV7zOmt81G/giphy.gif){fig-align="center" width="400"}
-
-### Spørsmål? 🤷‍♀️
-
-::: {.notes}
-Nå er det tid for spørsmål! Husk at Git og GitHub kan være nyttig for alle, ikke bare programmerere.
-:::
-
 ---
 
 ## Bonus: Cheat Sheet 📝
