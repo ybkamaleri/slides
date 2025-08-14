@@ -114,18 +114,22 @@ git blame dokument.txt
 
 ::::
 
+
 ## Grunnleggende Git-kommandoer 💻
 
 ```bash
-# Starte et nytt prosjekt
-git init
+# registrere
+git config --global user.name "your-name"
+git config --global user.email "your-email"
 
+# Kopierer et prosjekt
+git clone https://github.com/yourname/repo-name.git
+# Starte et nytt prosjekt om ikke klonet
+git init
 # Legge til filer for sporing
 git add minFil.txt
-
 # Lagre en versjon (commit)
 git commit -m "La til ny tekst i dokumentet"
-
 # Se status på prosjektet
 git status
 ```
