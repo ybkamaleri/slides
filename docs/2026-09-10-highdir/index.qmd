@@ -12,6 +12,11 @@ format:
     code-line-numbers: false
     code-fold: false 
     code-summary: "Koder"
+    pointer:
+      pointerSize: 18
+      key: p
+revealjs-plugins:
+ - pointer
 lang: no
 # Source - https://stackoverflow.com/a/79513156
 # Posted by Einar
@@ -166,7 +171,7 @@ hd_make(spec, "map", opts, map_src = hd_map_no("municipality"), mode = "static")
 
 :::: {.columns}
 ::: {.center .column width="50%"}
-**Dynamisk**
+**[Dynamisk](https://folkehelsestats.github.io/levekaar/kommuner)**
 ```{=html}
 <iframe width="780" height="500" src="https://folkehelsestats.github.io/levekaar/kommuner" title="Kommuner"></iframe>
 ```
