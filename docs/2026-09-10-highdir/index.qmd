@@ -1,0 +1,179 @@
+---
+title: "highdir for Hdir"
+subtitle: "Ikke bare telle, men også fortelle"
+author: ""
+format: 
+  revealjs:
+    theme: default
+    logo: "img/logo.png"
+    transition: slide
+    background-transition: fade
+    incremental: false 
+    code-line-numbers: false
+    code-fold: false 
+    code-summary: "Koder"
+lang: no
+# Source - https://stackoverflow.com/a/79513156
+# Posted by Einar
+# Retrieved 2026-09-09, License - CC BY-SA 4.0
+include-in-header:
+  - text: |
+      <style>
+        body:has(.present.hide-logo) {
+          --logo-display: none;
+        }
+        .slide-logo {
+          display: var(--logo-display, block) !important;
+        }
+      </style>
+  - text: |
+        <style>
+        .center-xy {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translateY(-50%), translateX(-50%);
+          transform: translateY(-50%), translateX(-50%);
+        }
+        </style>
+  - text: |
+        <style>
+        .quarter-y {
+          margin: 0;
+          position: absolute;
+          top: 45%;
+          -ms-transform: translateY(-45%);
+          transform: translateY(-45%);
+        }
+        </style>
+---
+
+##  {.hide-logo .center} 
+
+:::: {.columns}
+::: {.column width="45%"}
+![](img/logo.png){width="100%"}
+:::
+
+::: {.quarter-y .column width="60%"}
+**En diagramdefinisjon.**
+
+**To renderere.**
+
+**Konsistent figur, hver gang.🫰 **
+:::
+::::
+
+## Hdir mal
+
+[![](img/cannabis-nei.png)](https://www.helsedirektoratet.no/rapporter/tall-om-illegale-rusmidler/cannabis/bruk-av-cannabis-i-befolkningen)
+
+## highdir
+
+[![](img/cannabis-ja.png)](https://folkehelsestats.github.io/toir/rapport2026)
+
+## Hdir KI 
+[![](img/ci-nei.png)](https://www.helsedirektoratet.no/rapporter/tall-om-alkohol/alkoholbruk/hvor-mye-og-hva-drikker-vi)
+
+## highdir KI
+
+[![](img/ci-ja.png)](https://folkehelsestats.github.io/toa/reports/2025/#alkoholenheter-siste-4-uker)
+
+## Hdir trend
+[![](img/trend-nei.png)](https://www.helsedirektoratet.no/rapporter/tall-om-illegale-rusmidler/narkotikautloste-dodsfall-i-norge)
+
+## highdir trend
+[![](img/trend-ja.png)](https://folkehelsestats.github.io/toir/rapport2026#test-for-trend-for-cannabisbruk-siste-12-m%C3%A5neder){width=80%}
+
+## highdir-modus
+
+En felles **diagramstil-motor** - en måte å beskrive et diagram på og to måter å rendere det på
+
+- **dynamisk** : [highchartr](https://jkunst.com/highcharter/)
+- **statis** : [ggplot2](https://ggplot2.tidyverse.org/), [eulerr](https://jolars.github.io/eulerr/reference/euler.html) osv
+
+Innebygde diagramtyper inkluderer bl.a søyle-, stablet søyle-, punkt-, linje-, kake- og Venn-diagrammer
+
+## Hands-on
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "2|4-11|13|14"
+#| code-fold: show 
+
+library(highdir)
+region <- rio::import("dataset/region-data.xlsx")
+
+spec <- hd_spec(region, x = "region", y = "rate", n = "n")
+
+opts <- hd_opts(
+  title    = "Health indicator by region",
+  subtitle = "Source: Norwegian Directorate of Health",
+  ylab     = "Rate per 100 000",
+  flip     = TRUE
+)
+
+hd_make(spec, "ranked_bar", opts, mode = "static")
+hd_make(spec, "ranked_bar", opts, mode = "dynamic")
+
+```
+
+## GUI
+
+Grafisk grensesnitt, kan du kjøre:
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-fold: show 
+
+hd_app()
+```
+
+Eller bruk direkte fra Shiny server
+
+[https://ybkamaleri.shinyapps.io/highdir/](https://ybkamaleri.shinyapps.io/highdir/)
+
+## Status 
+
+- [Hjemmeside](https://folkehelsestats.github.io/highdir/)
+- [CRAN](https://cran.r-project.org/web/packages/highdir/index.html)
+- [Awesome](https://github.com/erikgahner/awesome-ggplot2#interactive)
+
+## Utvikling
+
+Kart visning
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-fold: show 
+#| code-line-numbers: "3-4|6|7"
+
+dt <- readRDS(file = "kommuner.RDS")
+
+spec <- hd_spec(dt, x = "code", y = "value")
+opts <- hd_opts(title = "Norge i kart", subtitle = "Her er kartet")
+
+hd_make(spec, "map", opts, map_src = hd_map_no("municipality"), mode = "dynamic")
+hd_make(spec, "map", opts, map_src = hd_map_no("municipality"), mode = "static")
+```
+
+
+## Visning 
+
+:::: {.columns}
+::: {.center .column width="50%"}
+**Dynamisk**
+```{=html}
+<iframe width="780" height="500" src="https://folkehelsestats.github.io/levekaar/kommuner" title="Kommuner"></iframe>
+```
+:::
+
+::: {.center .column width="50%"}
+**Statis**
+![](img/kommuner.png){width="100%"}
+:::
+::::
