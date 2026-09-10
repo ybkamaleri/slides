@@ -328,19 +328,44 @@
 <li><a href="https://github.com/erikgahner/awesome-ggplot2#interactive">Awesome</a></li>
 </ul>
 </section>
+<section id="skjermlesing" class="slide level2">
+<h2>Skjermlesing</h2>
+<p>Figurer er tilgjengelige for personer med nedsatt syn og andre synsutfordringer.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Koder</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" data-code-line-numbers="11-14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">library</span>(highdir)</span>
+<span id="cb3-2"><a href=""></a></span>
+<span id="cb3-3"><a href=""></a>opts <span class="ot">&lt;-</span> <span class="fu">hd_opts</span>(</span>
+<span id="cb3-4"><a href=""></a>  <span class="at">title       =</span> <span class="st">"Alcohol consumption over time"</span>,</span>
+<span id="cb3-5"><a href=""></a>  <span class="at">subtitle    =</span> <span class="st">"Source: Norwegian Directorate of Health"</span>,</span>
+<span id="cb3-6"><a href=""></a></span>
+<span id="cb3-7"><a href=""></a>  <span class="co"># Visible below the chart — for citations and footnotes</span></span>
+<span id="cb3-8"><a href=""></a>  <span class="at">caption     =</span> <span class="st">"Data: Hdir annual report 2023. Adjusted for population age."</span>,</span>
+<span id="cb3-9"><a href=""></a></span>
+<span id="cb3-10"><a href=""></a>  <span class="co"># Read by screen readers only — describes what the chart shows</span></span>
+<span id="cb3-11"><a href=""></a>  <span class="at">description =</span> <span class="fu">paste</span>(</span>
+<span id="cb3-12"><a href=""></a>    <span class="st">"Line chart showing adjusted mean alcohol consumption in Norway from"</span>,</span>
+<span id="cb3-13"><a href=""></a>    <span class="st">"2010 to 2023. Consumption peaked at 7.3 litres per capita in 2014 and"</span>,</span>
+<span id="cb3-14"><a href=""></a>    <span class="st">"declined steadily to 5.3 litres by 2023."</span></span>
+<span id="cb3-15"><a href=""></a>  )</span>
+<span id="cb3-16"><a href=""></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
 <section id="utvikling" class="slide level2">
 <h2>Utvikling</h2>
 <p>Kart visning</p>
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Koder</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" data-code-line-numbers="3-4|6|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a>dt <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="at">file =</span> <span class="st">"kommuner.RDS"</span>)</span>
-<span id="cb3-2"><a href=""></a></span>
-<span id="cb3-3"><a href=""></a>spec <span class="ot">&lt;-</span> <span class="fu">hd_spec</span>(dt, <span class="at">x =</span> <span class="st">"code"</span>, <span class="at">y =</span> <span class="st">"value"</span>)</span>
-<span id="cb3-4"><a href=""></a>opts <span class="ot">&lt;-</span> <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Norge i kart"</span>, <span class="at">subtitle =</span> <span class="st">"Her er kartet"</span>)</span>
-<span id="cb3-5"><a href=""></a></span>
-<span id="cb3-6"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"map"</span>, opts, <span class="at">map_src =</span> <span class="fu">hd_map_no</span>(<span class="st">"municipality"</span>), <span class="at">mode =</span> <span class="st">"dynamic"</span>)</span>
-<span id="cb3-7"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"map"</span>, opts, <span class="at">map_src =</span> <span class="fu">hd_map_no</span>(<span class="st">"municipality"</span>), <span class="at">mode =</span> <span class="st">"static"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" data-code-line-numbers="3-4|6|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a>dt <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="at">file =</span> <span class="st">"kommuner.RDS"</span>)</span>
+<span id="cb4-2"><a href=""></a></span>
+<span id="cb4-3"><a href=""></a>spec <span class="ot">&lt;-</span> <span class="fu">hd_spec</span>(dt, <span class="at">x =</span> <span class="st">"code"</span>, <span class="at">y =</span> <span class="st">"value"</span>)</span>
+<span id="cb4-4"><a href=""></a>opts <span class="ot">&lt;-</span> <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Norge i kart"</span>, <span class="at">subtitle =</span> <span class="st">"Her er kartet"</span>)</span>
+<span id="cb4-5"><a href=""></a></span>
+<span id="cb4-6"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"map"</span>, opts, <span class="at">map_src =</span> <span class="fu">hd_map_no</span>(<span class="st">"municipality"</span>), <span class="at">mode =</span> <span class="st">"dynamic"</span>)</span>
+<span id="cb4-7"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"map"</span>, opts, <span class="at">map_src =</span> <span class="fu">hd_map_no</span>(<span class="st">"municipality"</span>), <span class="at">mode =</span> <span class="st">"static"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -360,27 +385,27 @@
 <div class="cell">
 <details class="code-fold">
 <summary>Koder</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="" aria-hidden="true" tabindex="-1"></a>spec <span class="ot">&lt;-</span> <span class="fu">hd_spec</span>(df, <span class="at">x =</span> <span class="st">"age"</span>, <span class="at">y =</span> <span class="st">"pct"</span>, <span class="at">group =</span> <span class="st">"sex"</span>, <span class="at">n =</span> <span class="st">"n"</span>)</span>
-<span id="cb4-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="" aria-hidden="true" tabindex="-1"></a>opts <span class="ot">&lt;-</span> <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Tall om Report"</span>,</span>
-<span id="cb4-4"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">subtitle =</span> <span class="st">"Source: Example data"</span>,</span>
-<span id="cb4-5"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">caption  =</span> <span class="st">"Tall om helse"</span>,</span>
-<span id="cb4-6"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>))</span>
-<span id="cb4-7"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_make</span>(spec, <span class="st">"column"</span>, opts, <span class="at">mode =</span> <span class="st">"static"</span>)</span>
-<span id="cb4-9"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_make</span>(spec, <span class="st">"line"</span>, opts, <span class="at">smooth =</span> <span class="cn">TRUE</span>)         </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a>spec <span class="ot">&lt;-</span> <span class="fu">hd_spec</span>(df, <span class="at">x =</span> <span class="st">"age"</span>, <span class="at">y =</span> <span class="st">"pct"</span>, <span class="at">group =</span> <span class="st">"sex"</span>, <span class="at">n =</span> <span class="st">"n"</span>)</span>
+<span id="cb5-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="" aria-hidden="true" tabindex="-1"></a>opts <span class="ot">&lt;-</span> <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Tall om Report"</span>,</span>
+<span id="cb5-4"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">subtitle =</span> <span class="st">"Source: Example data"</span>,</span>
+<span id="cb5-5"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">caption  =</span> <span class="st">"Tall om helse"</span>,</span>
+<span id="cb5-6"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>))</span>
+<span id="cb5-7"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_make</span>(spec, <span class="st">"column"</span>, opts, <span class="at">mode =</span> <span class="st">"static"</span>)</span>
+<span id="cb5-9"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_make</span>(spec, <span class="st">"line"</span>, opts, <span class="at">smooth =</span> <span class="cn">TRUE</span>)         </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <p><strong>Lagdelt</strong></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Koder</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd</span>(df, <span class="at">x =</span> <span class="st">"age"</span>, <span class="at">y =</span> <span class="st">"pct"</span>, <span class="at">group =</span> <span class="st">"sex"</span>, <span class="at">n =</span> <span class="st">"n"</span>) <span class="sc">+</span></span>
-<span id="cb5-2"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hd_geom_column</span>() <span class="sc">+</span></span>
-<span id="cb5-3"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Tall om Report"</span>,</span>
-<span id="cb5-4"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">subtitle =</span> <span class="st">"Source: Example data"</span>,</span>
-<span id="cb5-5"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">caption  =</span> <span class="st">"Tall om helse"</span>,</span>
-<span id="cb5-6"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd</span>(df, <span class="at">x =</span> <span class="st">"age"</span>, <span class="at">y =</span> <span class="st">"pct"</span>, <span class="at">group =</span> <span class="st">"sex"</span>, <span class="at">n =</span> <span class="st">"n"</span>) <span class="sc">+</span></span>
+<span id="cb6-2"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hd_geom_column</span>() <span class="sc">+</span></span>
+<span id="cb6-3"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Tall om Report"</span>,</span>
+<span id="cb6-4"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">subtitle =</span> <span class="st">"Source: Example data"</span>,</span>
+<span id="cb6-5"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">caption  =</span> <span class="st">"Tall om helse"</span>,</span>
+<span id="cb6-6"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 

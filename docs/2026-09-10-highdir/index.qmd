@@ -156,6 +156,36 @@ Eller bruk direkte fra Shiny server
 - [CRAN](https://cran.r-project.org/web/packages/highdir/index.html)
 - [Awesome](https://github.com/erikgahner/awesome-ggplot2#interactive)
 
+## Skjermlesing
+
+Figurer er tilgjengelige for personer med nedsatt syn og andre synsutfordringer.
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-fold: show 
+#| code-line-numbers: "11-14"
+
+library(highdir)
+
+opts <- hd_opts(
+  title       = "Alcohol consumption over time",
+  subtitle    = "Source: Norwegian Directorate of Health",
+
+  # Visible below the chart — for citations and footnotes
+  caption     = "Data: Hdir annual report 2023. Adjusted for population age.",
+
+  # Read by screen readers only — describes what the chart shows
+  description = paste(
+    "Line chart showing adjusted mean alcohol consumption in Norway from",
+    "2010 to 2023. Consumption peaked at 7.3 litres per capita in 2014 and",
+    "declined steadily to 5.3 litres by 2023."
+  )
+)
+
+```
+
+
 ## Utvikling
 
 Kart visning
