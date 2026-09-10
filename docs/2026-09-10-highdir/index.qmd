@@ -191,3 +191,36 @@ hd_make(spec, "map", opts, map_src = hd_map_no("municipality"), mode = "static")
 ![](img/kommuner.png){width="100%"}
 :::
 ::::
+
+## API
+
+**Deklarativt**
+```{r}
+#| echo: true
+#| eval: false
+#| code-fold: true 
+
+spec <- hd_spec(df, x = "age", y = "pct", group = "sex", n = "n")
+
+opts <- hd_opts(title = "Tall om Report",
+                subtitle = "Source: Example data",
+                caption  = "Tall om helse",
+                ylim = c(0, 80))
+
+hd_make(spec, "column", opts, mode = "static")
+hd_make(spec, "line", opts, smooth = TRUE)         
+```
+
+**Lagdelt**
+```{r}
+#| echo: true
+#| eval: false
+#| code-fold: true 
+
+hd(df, x = "age", y = "pct", group = "sex", n = "n") +
+  hd_geom_column() +
+  hd_opts(title = "Tall om Report",
+          subtitle = "Source: Example data",
+          caption  = "Tall om helse",
+          ylim = c(0, 80))
+```
