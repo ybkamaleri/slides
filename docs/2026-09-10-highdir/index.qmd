@@ -66,7 +66,7 @@ include-in-header:
 
 **To renderere.**
 
-**Konsistent figur, hver gang.🫰 **
+**Konsistent figur, hver gang. 🤞**
 :::
 ::::
 
@@ -91,16 +91,25 @@ include-in-header:
 ## highdir trend
 [![](img/trend-ja.png)](https://folkehelsestats.github.io/toir/rapport2026#test-for-trend-for-cannabisbruk-siste-12-m%C3%A5neder){width=80%}
 
+## Hdir krav
+
+- Enkel å bruke
+- Tilgjengelig for alle, også til ikke R-brukere
+- Universell utformet
+- Kompatibel med skjermlesere
+- Benytter [Hdir fargepalett](https://designsystem.helsedir.no/0410c9e94/p/45aee7-farger)
+- Støtter [Highcharts](https://www.highcharts.com/)
+
 ## highdir-modus
 
 En felles **diagramstil-motor** - en måte å beskrive et diagram på og to måter å rendere det på
 
-- **dynamisk** : [highchartr](https://jkunst.com/highcharter/)
-- **statis** : [ggplot2](https://ggplot2.tidyverse.org/), [eulerr](https://jolars.github.io/eulerr/reference/euler.html) osv
+- **Dynamisk** : [highcharter](https://jkunst.com/highcharter/)
+- **Statisk** : [ggplot2](https://ggplot2.tidyverse.org/), [eulerr](https://jolars.github.io/eulerr/reference/euler.html) m.fl.
 
-Innebygde diagramtyper inkluderer bl.a søyle-, stablet søyle-, punkt-, linje-, kake- og Venn-diagrammer
+Støtter bl.a søyle-, stablet søyle-, punkt-, linje-, kake- og Venn-diagrammer
 
-## Hands-on
+## Praktisk eksempel 
 
 ```{r}
 #| echo: true
