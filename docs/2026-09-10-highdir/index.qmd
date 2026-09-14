@@ -72,6 +72,7 @@ include-in-header:
 
 ## Hdir mal
 
+ Kan kun vise enten antall eller andel, ikke begge deler samtidig.
 [![](img/cannabis-nei.png)](https://www.helsedirektoratet.no/rapporter/tall-om-illegale-rusmidler/cannabis/bruk-av-cannabis-i-befolkningen)
 
 ## highdir
@@ -79,6 +80,7 @@ include-in-header:
 [![](img/cannabis-ja.png)](https://folkehelsestats.github.io/toir/rapport2026)
 
 ## Hdir KI 
+ Kan ikke vise interaktivt konfidensintervall
 [![](img/ci-nei.png)](https://www.helsedirektoratet.no/rapporter/tall-om-alkohol/alkoholbruk/hvor-mye-og-hva-drikker-vi)
 
 ## highdir KI
