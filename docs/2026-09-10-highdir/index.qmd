@@ -120,6 +120,37 @@ Støtter bl.a søyle-, stablet søyle-, punkt-, linje-, kake- og Venn-diagrammer
 #| code-fold: show 
 
 library(highdir)
+region <- rio::import("region-data.xlsx")
+
+spec <- hd_spec(region, x = "region", y = "rate", n = "n")
+
+opts <- hd_opts(
+  title    = "Health indicator by region",
+  subtitle = "Source: Norwegian Directorate of Health",
+  ylab     = "Rate per 100 000",
+  flip     = TRUE
+)
+
+hd_make(spec, "ranked_bar", opts, mode = "dynamic")
+hd_make(spec, "ranked_bar", opts, mode = "static")
+```
+
+## Dynamisk
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-fold: show 
+
+hd_make(spec, "ranked_bar", opts, mode = "dynamic", vs = "Oslo", aim = 60)
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-height: "30%"
+
+library(highdir)
 region <- rio::import("dataset/region-data.xlsx")
 
 spec <- hd_spec(region, x = "region", y = "rate", n = "n")
@@ -131,10 +162,41 @@ opts <- hd_opts(
   flip     = TRUE
 )
 
-hd_make(spec, "ranked_bar", opts, mode = "static")
-hd_make(spec, "ranked_bar", opts, mode = "dynamic")
-
+hd_make(spec, "ranked_bar", opts, mode = "dynamic", vs = "Oslo", aim = 60)
 ```
+
+Informasjon vises i tooltip.
+
+## Statsik
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-fold: show 
+
+hd_make(spec, "ranked_bar", opts, mode = "static", vs = "Oslo", aim = 60)
+```
+
+```{r}
+#| echo: false
+#| eval: true
+
+library(highdir)
+region <- rio::import("dataset/region-data.xlsx")
+
+spec <- hd_spec(region, x = "region", y = "rate", n = "n")
+
+opts <- hd_opts(
+  title    = "Health indicator by region",
+  subtitle = "Source: Norwegian Directorate of Health",
+  ylab     = "Rate per 100 000",
+  flip     = TRUE
+)
+
+hd_make(spec, "ranked_bar", opts, mode = "static", vs = "Oslo", aim = 60)
+```
+
+All informasjon er inkludert i den statiske figuren.
 
 ## GUI
 

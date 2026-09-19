@@ -191,6 +191,94 @@
       margin-right: 0; 
     }
   </style>
+  <link href="index_files/libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+
+  <script src="index_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+  <script src="index_files/libs/jquery-3.5.1/jquery.min.js"></script>
+
+  <script src="index_files/libs/proj4js-2.3.15/proj4.js"></script>
+
+  <link href="index_files/libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
+
+  <script src="index_files/libs/highcharts-9.3.1/highcharts.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/highcharts-3d.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/highcharts-more.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/stock.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/map.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/data.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/exporting.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/drilldown.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/item-series.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/annotations.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/export-data.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/funnel.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/heatmap.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/treemap.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/sankey.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/organization.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/streamgraph.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/sunburst.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/vector.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/wordcloud.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/xrange.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/tilemap.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/venn.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/gantt.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/timeline.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/bullet.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/coloraxis.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/dumbbell.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/lollipop.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/series-label.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/plugins/motion.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/custom/reset.js"></script>
+
+  <script src="index_files/libs/highcharts-9.3.1/modules/boost.js"></script>
+
+  <script src="index_files/libs/highchart-binding-0.9.5/highchart.js"></script>
+
   <style>
     body:has(.present.hide-logo) {
       --logo-display: none;
@@ -292,7 +380,7 @@
 <details open="" class="code-fold">
 <summary>Koder</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-code-line-numbers="2|4-11|13|14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">library</span>(highdir)</span>
-<span id="cb1-2"><a href=""></a>region <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="st">"dataset/region-data.xlsx"</span>)</span>
+<span id="cb1-2"><a href=""></a>region <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="st">"region-data.xlsx"</span>)</span>
 <span id="cb1-3"><a href=""></a></span>
 <span id="cb1-4"><a href=""></a>spec <span class="ot">&lt;-</span> <span class="fu">hd_spec</span>(region, <span class="at">x =</span> <span class="st">"region"</span>, <span class="at">y =</span> <span class="st">"rate"</span>, <span class="at">n =</span> <span class="st">"n"</span>)</span>
 <span id="cb1-5"><a href=""></a></span>
@@ -303,10 +391,37 @@
 <span id="cb1-10"><a href=""></a>  <span class="at">flip     =</span> <span class="cn">TRUE</span></span>
 <span id="cb1-11"><a href=""></a>)</span>
 <span id="cb1-12"><a href=""></a></span>
-<span id="cb1-13"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"ranked_bar"</span>, opts, <span class="at">mode =</span> <span class="st">"static"</span>)</span>
-<span id="cb1-14"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"ranked_bar"</span>, opts, <span class="at">mode =</span> <span class="st">"dynamic"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-13"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"ranked_bar"</span>, opts, <span class="at">mode =</span> <span class="st">"dynamic"</span>)</span>
+<span id="cb1-14"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"ranked_bar"</span>, opts, <span class="at">mode =</span> <span class="st">"static"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
+</section>
+<section id="dynamisk" class="slide level2">
+<h2>Dynamisk</h2>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Koder</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_make</span>(spec, <span class="st">"ranked_bar"</span>, opts, <span class="at">mode =</span> <span class="st">"dynamic"</span>, <span class="at">vs =</span> <span class="st">"Oslo"</span>, <span class="at">aim =</span> <span class="dv">60</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="highchart html-widget html-fill-item" id="htmlwidget-df259780b494cda2f67c" style="width:960px;height:30%;"></div>
+<script type="application/json" data-for="htmlwidget-df259780b494cda2f67c">{"x":{"hc_opts":{"chart":{"reflow":true,"inverted":true},"title":{"text":"Health indicator by region"},"yAxis":{"title":{"text":null},"plotLines":[{"value":60,"color":"#7C145C","width":2,"dashStyle":"Dash","zIndex":5}]},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"subtitle":{"text":"Source: Norwegian Directorate of Health"},"xAxis":{"categories":["Vestland","Viken","Oslo","Rogaland","Trondelag","Agder","Nordland","Troms og Finnmark","Innlandet"],"title":{"text":" "}},"tooltip":{"useHTML":true,"shared":false,"headerFormat":"","pointFormat":"<span style=\"color:{point.color}\">●<\/span> <b>{point.name}<\/b><br/>Rate per 100 000: <b>{point.y}<\/b><br/>N: <b>{point.n_obs}<\/b>"},"series":[{"type":"column","name":"Rate per 100 000","data":[{"name":"Vestland","y":87.8,"color":"#315975","n_obs":681},{"name":"Viken","y":71.2,"color":"#315975","n_obs":448},{"name":"Oslo","y":68.40000000000001,"color":"#8A294D","n_obs":402},{"name":"Rogaland","y":64.5,"color":"#315975","n_obs":318},{"name":"Trondelag","y":61.3,"color":"#315975","n_obs":297},{"name":"Agder","y":54.2,"color":"#315975","n_obs":198},{"name":"Nordland","y":49.8,"color":"#315975","n_obs":177},{"name":"Troms og Finnmark","y":42.1,"color":"#315975","n_obs":148},{"name":"Innlandet","y":6.1,"color":"#315975","n_obs":251}],"showInLegend":false,"dataLabels":{"enabled":false}}]},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto","color":"#666666"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false}},"spline":{"marker":{"enabled":false}},"area":{"marker":{"enabled":false}},"areaspline":{"marker":{"enabled":false}},"arearange":{"marker":{"enabled":false}},"bubble":{"maxSize":"10%"}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>Informasjon vises i tooltip.</p>
+</section>
+<section id="statsik" class="slide level2">
+<h2>Statsik</h2>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Koder</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_make</span>(spec, <span class="st">"ranked_bar"</span>, opts, <span class="at">mode =</span> <span class="st">"static"</span>, <span class="at">vs =</span> <span class="st">"Oslo"</span>, <span class="at">aim =</span> <span class="dv">60</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><p>All informasjon er inkludert i den statiske figuren.</p>
 </section>
 <section id="gui" class="slide level2">
 <h2>GUI</h2>
@@ -314,7 +429,7 @@
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Koder</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_app</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_app</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <p>Eller bruk direkte fra Shiny server</p>
@@ -334,22 +449,22 @@
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Koder</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" data-code-line-numbers="11-14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">library</span>(highdir)</span>
-<span id="cb3-2"><a href=""></a></span>
-<span id="cb3-3"><a href=""></a>opts <span class="ot">&lt;-</span> <span class="fu">hd_opts</span>(</span>
-<span id="cb3-4"><a href=""></a>  <span class="at">title       =</span> <span class="st">"Alcohol consumption over time"</span>,</span>
-<span id="cb3-5"><a href=""></a>  <span class="at">subtitle    =</span> <span class="st">"Source: Norwegian Directorate of Health"</span>,</span>
-<span id="cb3-6"><a href=""></a></span>
-<span id="cb3-7"><a href=""></a>  <span class="co"># Visible below the chart — for citations and footnotes</span></span>
-<span id="cb3-8"><a href=""></a>  <span class="at">caption     =</span> <span class="st">"Data: Hdir annual report 2023. Adjusted for population age."</span>,</span>
-<span id="cb3-9"><a href=""></a></span>
-<span id="cb3-10"><a href=""></a>  <span class="co"># Read by screen readers only — describes what the chart shows</span></span>
-<span id="cb3-11"><a href=""></a>  <span class="at">description =</span> <span class="fu">paste</span>(</span>
-<span id="cb3-12"><a href=""></a>    <span class="st">"Line chart showing adjusted mean alcohol consumption in Norway from"</span>,</span>
-<span id="cb3-13"><a href=""></a>    <span class="st">"2010 to 2023. Consumption peaked at 7.3 litres per capita in 2014 and"</span>,</span>
-<span id="cb3-14"><a href=""></a>    <span class="st">"declined steadily to 5.3 litres by 2023."</span></span>
-<span id="cb3-15"><a href=""></a>  )</span>
-<span id="cb3-16"><a href=""></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" data-code-line-numbers="11-14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="fu">library</span>(highdir)</span>
+<span id="cb5-2"><a href=""></a></span>
+<span id="cb5-3"><a href=""></a>opts <span class="ot">&lt;-</span> <span class="fu">hd_opts</span>(</span>
+<span id="cb5-4"><a href=""></a>  <span class="at">title       =</span> <span class="st">"Alcohol consumption over time"</span>,</span>
+<span id="cb5-5"><a href=""></a>  <span class="at">subtitle    =</span> <span class="st">"Source: Norwegian Directorate of Health"</span>,</span>
+<span id="cb5-6"><a href=""></a></span>
+<span id="cb5-7"><a href=""></a>  <span class="co"># Visible below the chart — for citations and footnotes</span></span>
+<span id="cb5-8"><a href=""></a>  <span class="at">caption     =</span> <span class="st">"Data: Hdir annual report 2023. Adjusted for population age."</span>,</span>
+<span id="cb5-9"><a href=""></a></span>
+<span id="cb5-10"><a href=""></a>  <span class="co"># Read by screen readers only — describes what the chart shows</span></span>
+<span id="cb5-11"><a href=""></a>  <span class="at">description =</span> <span class="fu">paste</span>(</span>
+<span id="cb5-12"><a href=""></a>    <span class="st">"Line chart showing adjusted mean alcohol consumption in Norway from"</span>,</span>
+<span id="cb5-13"><a href=""></a>    <span class="st">"2010 to 2023. Consumption peaked at 7.3 litres per capita in 2014 and"</span>,</span>
+<span id="cb5-14"><a href=""></a>    <span class="st">"declined steadily to 5.3 litres by 2023."</span></span>
+<span id="cb5-15"><a href=""></a>  )</span>
+<span id="cb5-16"><a href=""></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -359,13 +474,13 @@
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Koder</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" data-code-line-numbers="3-4|6|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a>dt <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="at">file =</span> <span class="st">"kommuner.RDS"</span>)</span>
-<span id="cb4-2"><a href=""></a></span>
-<span id="cb4-3"><a href=""></a>spec <span class="ot">&lt;-</span> <span class="fu">hd_spec</span>(dt, <span class="at">x =</span> <span class="st">"code"</span>, <span class="at">y =</span> <span class="st">"value"</span>)</span>
-<span id="cb4-4"><a href=""></a>opts <span class="ot">&lt;-</span> <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Norge i kart"</span>, <span class="at">subtitle =</span> <span class="st">"Her er kartet"</span>)</span>
-<span id="cb4-5"><a href=""></a></span>
-<span id="cb4-6"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"map"</span>, opts, <span class="at">map_src =</span> <span class="fu">hd_map_no</span>(<span class="st">"municipality"</span>), <span class="at">mode =</span> <span class="st">"dynamic"</span>)</span>
-<span id="cb4-7"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"map"</span>, opts, <span class="at">map_src =</span> <span class="fu">hd_map_no</span>(<span class="st">"municipality"</span>), <span class="at">mode =</span> <span class="st">"static"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" data-code-line-numbers="3-4|6|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a>dt <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="at">file =</span> <span class="st">"kommuner.RDS"</span>)</span>
+<span id="cb6-2"><a href=""></a></span>
+<span id="cb6-3"><a href=""></a>spec <span class="ot">&lt;-</span> <span class="fu">hd_spec</span>(dt, <span class="at">x =</span> <span class="st">"code"</span>, <span class="at">y =</span> <span class="st">"value"</span>)</span>
+<span id="cb6-4"><a href=""></a>opts <span class="ot">&lt;-</span> <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Norge i kart"</span>, <span class="at">subtitle =</span> <span class="st">"Her er kartet"</span>)</span>
+<span id="cb6-5"><a href=""></a></span>
+<span id="cb6-6"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"map"</span>, opts, <span class="at">map_src =</span> <span class="fu">hd_map_no</span>(<span class="st">"municipality"</span>), <span class="at">mode =</span> <span class="st">"dynamic"</span>)</span>
+<span id="cb6-7"><a href=""></a><span class="fu">hd_make</span>(spec, <span class="st">"map"</span>, opts, <span class="at">map_src =</span> <span class="fu">hd_map_no</span>(<span class="st">"municipality"</span>), <span class="at">mode =</span> <span class="st">"static"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -385,27 +500,27 @@
 <div class="cell">
 <details class="code-fold">
 <summary>Koder</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a>spec <span class="ot">&lt;-</span> <span class="fu">hd_spec</span>(df, <span class="at">x =</span> <span class="st">"age"</span>, <span class="at">y =</span> <span class="st">"pct"</span>, <span class="at">group =</span> <span class="st">"sex"</span>, <span class="at">n =</span> <span class="st">"n"</span>)</span>
-<span id="cb5-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="" aria-hidden="true" tabindex="-1"></a>opts <span class="ot">&lt;-</span> <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Tall om Report"</span>,</span>
-<span id="cb5-4"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">subtitle =</span> <span class="st">"Source: Example data"</span>,</span>
-<span id="cb5-5"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">caption  =</span> <span class="st">"Tall om helse"</span>,</span>
-<span id="cb5-6"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>))</span>
-<span id="cb5-7"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_make</span>(spec, <span class="st">"column"</span>, opts, <span class="at">mode =</span> <span class="st">"static"</span>)</span>
-<span id="cb5-9"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_make</span>(spec, <span class="st">"line"</span>, opts, <span class="at">smooth =</span> <span class="cn">TRUE</span>)         </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a>spec <span class="ot">&lt;-</span> <span class="fu">hd_spec</span>(df, <span class="at">x =</span> <span class="st">"age"</span>, <span class="at">y =</span> <span class="st">"pct"</span>, <span class="at">group =</span> <span class="st">"sex"</span>, <span class="at">n =</span> <span class="st">"n"</span>)</span>
+<span id="cb7-2"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="" aria-hidden="true" tabindex="-1"></a>opts <span class="ot">&lt;-</span> <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Tall om Report"</span>,</span>
+<span id="cb7-4"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">subtitle =</span> <span class="st">"Source: Example data"</span>,</span>
+<span id="cb7-5"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">caption  =</span> <span class="st">"Tall om helse"</span>,</span>
+<span id="cb7-6"><a href="" aria-hidden="true" tabindex="-1"></a>                <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>))</span>
+<span id="cb7-7"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_make</span>(spec, <span class="st">"column"</span>, opts, <span class="at">mode =</span> <span class="st">"static"</span>)</span>
+<span id="cb7-9"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd_make</span>(spec, <span class="st">"line"</span>, opts, <span class="at">smooth =</span> <span class="cn">TRUE</span>)         </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <p><strong>Lagdelt</strong></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Koder</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd</span>(df, <span class="at">x =</span> <span class="st">"age"</span>, <span class="at">y =</span> <span class="st">"pct"</span>, <span class="at">group =</span> <span class="st">"sex"</span>, <span class="at">n =</span> <span class="st">"n"</span>) <span class="sc">+</span></span>
-<span id="cb6-2"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hd_geom_column</span>() <span class="sc">+</span></span>
-<span id="cb6-3"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Tall om Report"</span>,</span>
-<span id="cb6-4"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">subtitle =</span> <span class="st">"Source: Example data"</span>,</span>
-<span id="cb6-5"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">caption  =</span> <span class="st">"Tall om helse"</span>,</span>
-<span id="cb6-6"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hd</span>(df, <span class="at">x =</span> <span class="st">"age"</span>, <span class="at">y =</span> <span class="st">"pct"</span>, <span class="at">group =</span> <span class="st">"sex"</span>, <span class="at">n =</span> <span class="st">"n"</span>) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hd_geom_column</span>() <span class="sc">+</span></span>
+<span id="cb8-3"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hd_opts</span>(<span class="at">title =</span> <span class="st">"Tall om Report"</span>,</span>
+<span id="cb8-4"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">subtitle =</span> <span class="st">"Source: Example data"</span>,</span>
+<span id="cb8-5"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">caption  =</span> <span class="st">"Tall om helse"</span>,</span>
+<span id="cb8-6"><a href="" aria-hidden="true" tabindex="-1"></a>          <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">80</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 
