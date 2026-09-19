@@ -167,7 +167,7 @@ hd_make(spec, "ranked_bar", opts, mode = "dynamic", vs = "Oslo", aim = 60)
 
 Informasjon vises i tooltip.
 
-## Statsik
+## Statisk
 
 ```{r}
 #| echo: true
