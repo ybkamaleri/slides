@@ -281,7 +281,7 @@ hd_make(spec, "map", opts, map_src = hd_map_no("municipality"), mode = "static")
 :::
 
 ::: {.center .column width="50%"}
-**Statis**
+**Statisk**
 ![](img/kommuner.png){width="100%"}
 :::
 ::::
