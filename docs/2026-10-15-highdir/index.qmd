@@ -43,6 +43,7 @@ execute:
 - Behov for standardisering
 - Eksport og levering i PDF-format
 - Risiko for redusert kompetanseutvikling
+- Reduserer unødvendig dobbeltarbeid
 
 ## Muligheter
 - Økt fleksibilitet
@@ -51,4 +52,5 @@ execute:
 
 ## Forutsetninger for å lykkes
 - Håndtering av komplekse krav
-- God forståelse og støtte fra IT-miljøet
+- God forankring, forståelse og støtte i IT-miljøet
+- Tilstrekkelig prioritering og kapasitet fra IT
