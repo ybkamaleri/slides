@@ -7,7 +7,6 @@ format:
     footer: "[https://folkehelsestats.github.io/highdir](https://folkehelsestats.github.io/highdir)"
     code-copy: true
     center-title-slide: false
-    include-in-header: heading-meta.html
     code-link: true
     code-overflow: wrap
     highlight-style: a11y
@@ -39,21 +38,17 @@ execute:
 
 ![](img/logo){.absolute top=325 left=1100 width="350"}
 
-## Utfordringer å løse
 
-- Standardisering
-- PDF output
-- Nedgradering av kompetanse
+## Utfordringer å løse
+- Behov for standardisering
+- Eksport og levering i PDF-format
+- Risiko for redusert kompetanseutvikling
 
 ## Muligheter
+- Økt fleksibilitet
+- Tettere integrasjon med Helsedirektoratet (Hdir)
+- Utvidelse til flere brukere
 
-- Fleksibilitet
-- Integrasjon i Hdir
-- Flere brukere
-
-## Utfordringer for å åppnå
-
-- Komplisert krav
-- Forståelse fra IT
-
-
+## Forutsetninger for å lykkes
+- Håndtering av komplekse krav
+- God forståelse og støtte fra IT-miljøet
