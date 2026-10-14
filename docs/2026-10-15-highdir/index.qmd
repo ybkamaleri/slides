@@ -49,9 +49,10 @@ execute:
 ## Gevinster 
 - Økt fleksibilitet i utvikling
 - Tettere integrasjon med "eksisterende" løsninger i Hdir
+- Lavere opplæringsterskel
 - Utvidelse til flere brukere
 
 ## Forutsetninger
-- Håndtering av komplekse krav
+- Håndtering av komplekse IT krav
 - God forankring, forståelse og støtte i IT-miljøet
 - Tilstrekkelig prioritering og kapasitet fra IT
