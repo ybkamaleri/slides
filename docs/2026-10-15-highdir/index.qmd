@@ -47,7 +47,7 @@ execute:
 
 ## Muligheter
 - Økt fleksibilitet
-- Tettere integrasjon med Helsedirektoratet (Hdir)
+- Tettere integrasjon med "eksisterende" løsninger i Hdir
 - Utvidelse til flere brukere
 
 ## Forutsetninger for å lykkes
