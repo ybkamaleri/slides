@@ -1,0 +1,59 @@
+---
+format: 
+  revealjs:
+    theme: ["theme/more-fonts.scss"]
+    slide-number: c/t
+    logo: "img/logo.png"
+    footer: "[https://folkehelsestats.github.io/highdir](https://folkehelsestats.github.io/highdir)"
+    code-copy: true
+    center-title-slide: false
+    include-in-header: heading-meta.html
+    code-link: true
+    code-overflow: wrap
+    highlight-style: a11y
+    height: 1080
+    width: 1920
+execute: 
+  eval: true
+  echo: true
+---
+
+
+<h1> highdir <br>  </h1>
+
+<h2> Datavisualisering etter Hdirs spesifikasjoner <h2>
+
+<hr>
+
+<h3> Ikke bare telle, men også fortelle ☺️ </h3>
+
+<br>
+<br>
+<br>
+
+<h4> Avdelingsseminar </h4>
+
+<h4> 15.10.2026 </h4>
+
+<br>
+
+![](img/logo){.absolute top=325 left=1100 width="350"}
+
+## Utfordringer å løse
+
+- Standardisering
+- PDF output
+- Nedgradering av kompetanse
+
+## Muligheter
+
+- Fleksibilitet
+- Integrasjon i Hdir
+- Flere brukere
+
+## Utfordringer for å åppnå
+
+- Komplisert krav
+- Forståelse fra IT
+
+

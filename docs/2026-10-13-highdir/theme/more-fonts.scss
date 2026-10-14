@@ -1,0 +1,98 @@
+/*-- scss:defaults --*/
+
+/* Colour scheme */
+$theme-light-back: #fdddb6;
+$theme-light-link: #9a3416;
+$theme-light-text: #222222;
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+$font-family-sans-serif: "Montserrat", sans-serif;
+$presentation-heading-font: "Noto Serif", serif;
+
+
+/*-- scss:rules --*/
+
+/* Overall presentation */
+.reveal {
+  color: $theme-light-text;
+}
+
+/* Title slide */
+.reveal h1 {
+  font-family: $presentation-heading-font;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: $theme-light-link;
+}
+
+.reveal h2 {
+  font-family: $presentation-heading-font;
+  color: $theme-light-link;
+}
+
+/* Standard slide titles (##) */
+.reveal .slides section > h2 {
+  font-size: 2em;   /* ~58px */
+  font-weight: 700;
+  margin-bottom: 0.8em;
+}
+
+/* ### headings */
+.reveal .slides section > h3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* Body text */
+.reveal p {
+  font-size: 1.5em;   /* ~38px */
+  line-height: 1.5;
+}
+
+/* Bullet lists */
+.reveal ul,
+.reveal ol {
+  margin-top: 0.5em;
+}
+
+.reveal li {
+  font-size: 1.2em;   /* ~34px */
+  line-height: 1.4;
+  margin-bottom: 0.3em;
+}
+
+/* Code blocks */
+.reveal pre code {
+  font-size: 0.75em;
+}
+
+/* Links */
+.reveal a {
+  color: $theme-light-link;
+}
+
+/* Optional compact slides */
+.reveal .slides section.compact > h2 {
+  font-size: 1.25em;
+}
+
+.reveal .slides section.compact li,
+.reveal .slides section.compact p {
+  font-size: 0.75em;
+}
+
+
+/* Footer */
+.reveal .footer,
+.reveal .footer a {
+  font-size: 16px !important;
+  color: #777;
+}
+
+.reveal .footer {
+  bottom: 8px !important;
+  left: 20px !important;
+}
