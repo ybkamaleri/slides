@@ -40,10 +40,11 @@ execute:
 
 
 ## Dagens utfordringer
+- Videreutvikling av dagens løsning
 - Behov for standardisering
 - Eksport og levering i PDF-format
-- Risiko for redusert kompetanseutvikling
 - Reduserer unødvendig dobbeltarbeid
+- Risiko for redusert kompetanseutvikling
 
 ## Gevinster 
 - Økt fleksibilitet i utvikling
