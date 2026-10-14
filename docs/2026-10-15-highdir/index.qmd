@@ -39,18 +39,18 @@ execute:
 ![](img/logo){.absolute top=325 left=1100 width="350"}
 
 
-## Utfordringer å løse
+## Dagens utfordringer
 - Behov for standardisering
 - Eksport og levering i PDF-format
 - Risiko for redusert kompetanseutvikling
 - Reduserer unødvendig dobbeltarbeid
 
-## Muligheter
-- Økt fleksibilitet
+## Gevinster 
+- Økt fleksibilitet i utvikling
 - Tettere integrasjon med "eksisterende" løsninger i Hdir
 - Utvidelse til flere brukere
 
-## Forutsetninger for å lykkes
+## Forutsetninger
 - Håndtering av komplekse krav
 - God forankring, forståelse og støtte i IT-miljøet
 - Tilstrekkelig prioritering og kapasitet fra IT
