@@ -6,26 +6,43 @@
 library(data.table)
 library(highdir)
 
-dt1 <- fread("c://Users//ykama//Git-hdir//dataset//region-data.csv")
+survey <- fread("c://Users//ykama//Git-hdir//dataset//survey-data.csv")
 
-spec <- hd_spec(data = dt1,
-                x = "region",
-                y = "rate",
-                n = "n")
+spec_col <- hd_spec(survey,
+                    x     = "alder",
+                    y     = "pct",
+                    group = "kjonn",
+                    n     = "n")
 
-opts <- hd_opts(title = "Regioner i Norge", subtitle = "For demonstrasjon")
+opts_col <- hd_opts(
+  title    = "Alcohol use by age group and kjonn",
+  subtitle = "Source: Norwegian Directorate of Health",
+  ylim     = c(0, 100),
+  yint     = 20,
+  ylab     = "Percentage (%)"
+)
 
-fig <- hd_make(spec, "column", opts)
-fig
+# Dynamisk (default)
+fig <- hd_make(spec_col, "column", opts_col)
 
-fig <- hd_make(spec, "column", opts, mode = "static")
-fig
+hd_save(fig, "fig01.html")
 
 # Tips 1
 help(hd_spec)
-geom_args("ranked_bar")
 
 
 # Demo 2
 # ------------------------------------------------------------------------------
 
+dt <- fread("c://Users//ykama//Git-hdir//dataset//region-data.csv")
+
+spec <- hd_spec(dt, x = "fylke", y = "prosent", n = "n")
+opts <- hd_opts(title = "Fylker i Norge",
+                subtitle = "Demo dataset",
+                flip = TRUE)
+
+hd_make(spec, "ranked_bar", opts, vs = "Norge", aim = 50)
+hd_make(spec, "ranked_bar", opts, vs = "Norge", aim = 50, mode = "static")
+
+# Tips 2
+geom_args("ranked_bar")

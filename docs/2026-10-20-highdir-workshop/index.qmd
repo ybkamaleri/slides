@@ -8,10 +8,14 @@ format:
     code-copy: true
     center-title-slide: false
     code-link: true
-    code-overflow: wrap
+    code-overflow: scroll 
     highlight-style: a11y
     height: 1080
     width: 1920
+    code-line-numbers: false
+    pointer:
+      pointerSize: 18
+      key: p
 execute: 
   eval: true
   echo: true
@@ -60,14 +64,155 @@ execute:
 - Data i tabellformat (CSV, Excel, JSON osv.)
 - Minst én kategorivariabel og én tallvariabel
 
-## Praktisk demonstrasjon
-- Fra data til figur
+```{r}
+#| echo: false 
+
+library(gt)
+library(data.table)
+dt1 <- fread("c://Users//ykama//Git-hdir//dataset//survey-data.csv")
+
+gt(dt1[1:5]) |>
+  tab_options(
+    table.font.size = px(30),
+    data_row.padding = px(20),
+    table.width = pct(50)
+  ) |>
+  # Left-align the first column
+  cols_align(
+    align = "left",
+    columns = 1
+  ) |>
+  # Make column headers bold with gray background
+  tab_style(
+    style = list(
+      cell_fill(color = "gray90"),
+      cell_text(weight = "bold")
+    ),
+    locations = cells_column_labels()
+  )
+```
+
+## Data behandling og format
+
+![](img/excel.jpg){.absolute top=250 left=280 width="350"}
+![](img/dax.jpg){.absolute top=650 left=300 width="350"}
+![](img/stata.jpg){.absolute top=350 left=750 width="350"}
+![](img/R.jpg){.absolute top=550 left=750 width="350"}
+![](img/json.jpg){.absolute top=400 left=1150 width="350"}
+
+## Fra data til figur
+
+:::: {.columns}
+::: {.column width="50%"}
+
 - Definer spesifikasjon
-- Velg figurtype
-- Tilpass utseende
+
+```{r}
+#| eval: false
+hd_spec()
+```
+
+- Definer utvalg
+
+```{r}
+#| eval: false
+hd_opts()
+```
+
+:::
+
+::: {.column width="50%"}
 - Generer figur
+
+```{r}
+#| eval: false
+hd_make()
+```
+
 - Eksporter resultat
-- Vis 2-3 konkrete eksempler:
+
+```{r}
+#| eval: false
+hd_save()
+```
+:::
+::::
+
+::: {style="margin-top:100px;"}
+### Figur typer    
+column, ranked_bar, line, scatter, arearange, pie, stacked_column, venn, (map)
+:::
+
+## Demo 1
+```{r}
+#| eval: false
+
+# Demo 1 
+# ------------------------------------------------------------------------------
+# install.packages("highdir")
+# remotes::install_github("folkehelsestats/highdir") #dev versjon
+
+library(data.table)
+library(highdir)
+
+survey <- fread("c://Users//ykama//Git-hdir//dataset//survey-data.csv")
+
+spec_col <- hd_spec(survey,
+                    x     = "alder",
+                    y     = "pct",
+                    group = "kjonn",
+                    n     = "n")
+
+opts_col <- hd_opts(
+  title    = "Alcohol use by age group and kjonn",
+  subtitle = "Source: Norwegian Directorate of Health",
+  ylim     = c(0, 100),
+  yint     = 20,
+  ylab     = "Percentage (%)"
+)
+
+# Dynamisk (default)
+fig <- hd_make(spec_col, "column", opts_col)
+
+```
+
+::: {style="margin-top:80px;"}
+#### Tips
+
+```{r}
+#| eval: false
+
+help(hd_spec)
+help(hd_opts)
+```
+:::
+
+## Demo 2
+```{r}
+#| eval: false
+
+# Demo 2
+# ------------------------------------------------------------------------------
+
+dt <- fread("c://Users//ykama//Git-hdir//dataset//region-data.csv")
+
+spec <- hd_spec(dt, x = "fylke", y = "prosent", n = "n")
+opts <- hd_opts(title = "Fylker i Norge",
+                subtitle = "Demo dataset",
+                flip = TRUE)
+
+hd_make(spec, "ranked_bar", opts, vs = "Norge", aim = 50)
+hd_make(spec, "ranked_bar", opts, vs = "Norge", aim = 50, mode = "static")
+```
+
+::: {style="margin-top:80px;"}
+#### Tips
+
+```{r}
+#| eval: false
+geom_args("ranked_bar")
+```
+:::
 
 ## Hvorfor highdir?
 - Dagens utfordringer
