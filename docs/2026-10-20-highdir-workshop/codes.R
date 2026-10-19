@@ -24,6 +24,10 @@ opts_col <- hd_opts(
 
 # Dynamisk (default)
 fig <- hd_make(spec_col, "column", opts_col)
+fig
+
+fig <- hd_make(spec_col, "column", opts_col, mode = "static")
+fig
 
 hd_save(fig, "fig01.html")
 
@@ -46,3 +50,9 @@ hd_make(spec, "ranked_bar", opts, vs = "Norge", aim = 50, mode = "static")
 
 # Tips 2
 geom_args("ranked_bar")
+
+
+# Demo 3
+# ------------------------------------------------------------------------------
+
+hd_app()
