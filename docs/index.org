@@ -6,6 +6,7 @@
 
 * List of slides
 
+- [[file:2026-10-20-highdir-workshop][Workshop: highdir 20 Oct 2026]]
 - [[file:2026-10-15-highdir][Avdelingsseminar: highdir 15 Oct 2026]]
 - [[file:2026-09-10-highdir][highdir pakke 10 Sep 2026]]
 - [[file:2025-08-14-Git-Github][Intro Git og GitHub 14 Aug 2025]]
