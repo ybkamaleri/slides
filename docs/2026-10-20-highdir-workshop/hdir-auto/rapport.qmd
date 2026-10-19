@@ -1,0 +1,106 @@
+---
+report-title: "Tall om illegale rusmidler"
+report-label: "Rapport 18. mars 2026"
+title: "Bruk av cannabis i befolkningen"
+subtitle: "Kapittel 3.1"
+lang: nb
+execute:
+  echo: false
+  warning: false
+  message: false
+format:
+  html:
+    theme: [default, hdir.scss]
+    embed-resources: true
+    format-links: false
+    toc: false
+    title-block-style: default
+    fig-width: 9
+    fig-height: 4.6
+    fig-dpi: 144
+    include-before-body: hdir-header.html
+    include-after-body: hdir-after.html
+  typst:
+    papersize: a4
+    margin: { x: 2.2cm, top: 3cm, bottom: 2.2cm }
+    fontsize: 10.5pt
+    mainfont: "Arial"
+    number-sections: true
+    section-numbering: "1."
+    shift-heading-level-by: -1
+    template-partials:
+      - typst-show.typ
+    include-in-header: hdir-typst.typ
+    include-before-body: hdir-cover.typ
+    fig-width: 7
+    fig-height: 3.8
+params:
+    mode: NULL 
+---
+
+```{r}
+#| label: setup
+
+library(data.table)
+library(highdir)
+
+mode <- params$mode %||% if (knitr::is_html_output()) "dynamic" else "static"
+
+```
+
+Cannabis, primært marihuana og hasj, er det mest brukte illegale rusmidlet i Norge og Europa
+([Cannabis – den nåværende situasjonen i Europa](https://www.euda.europa.eu)).
+
+Figuren nedenfor viser andelen personer i alderen 16–64 år som noen gang har brukt cannabis.
+*(Tallene i dette eksempelet er fiktive.)*
+
+```{r}
+#| label: fig-bruk
+#| fig-cap: "Andel (%) i alderen 16–64 år som noen gang har brukt cannabis, etter kjønn."
+
+dt <- fread("c://Users//ykama//Git-hdir//dataset//region-data.csv")
+
+spec <- hd_spec(dt, x = "fylke", y = "prosent", n = "n")
+opts <- hd_opts(title = "Fylker i Norge",
+                subtitle = "Demo dataset",
+                flip = TRUE)
+
+hd_make(spec, "ranked_bar", opts, vs = "Norge", aim = 50, mode = mode)
+
+```
+
+::: {.hdir-source}
+Kilde: Eksempeldata. Bytt ut med egne tall.
+:::
+
+## Kjønnsforskjeller i bruk av cannabis
+
+Menn rapporterer gjennomgående høyere bruk enn kvinner i alle målingene. Tabellen under
+viser forskjellen i prosentpoeng.
+
+```{r}
+#| label: tbl-kjonn
+#| tbl-cap: "Andel (%) som noen gang har brukt cannabis, og forskjell mellom menn og kvinner."
+
+set.seed(1)
+aar <- c(2012, 2014, 2016, 2018, 2020, 2022, 2024)
+bruk <- data.frame(
+  aar    = factor(rep(aar, 2)),
+  kjonn  = rep(c("Menn", "Kvinner"), each = length(aar)),
+  andel  = c(24, 25, 26, 27, 29, 30, 31,  14, 15, 16, 17, 19, 20, 21)
+)
+
+tab <- reshape(bruk, idvar = "aar", timevar = "kjonn", direction = "wide")
+names(tab) <- c("\u00c5r", "Menn", "Kvinner")
+tab$Forskjell <- tab$Menn - tab$Kvinner
+knitr::kable(tab, align = "lrrr")
+```
+
+## Debutalder i bruk av cannabis
+
+Gjennomsnittlig debutalder er et viktig mål for å følge utviklingen blant unge. Her kan du
+legge inn tekst, figurer og tabeller på samme måte som i resten av rapporten.
+
+### Underoverskrift (nivå 3)
+
+Underoverskrifter vises ikke i «Innhold på siden», kun nivå 2-overskrifter.
