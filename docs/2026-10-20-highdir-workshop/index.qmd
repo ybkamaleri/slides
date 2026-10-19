@@ -214,8 +214,22 @@ geom_args("ranked_bar")
 ```
 :::
 
+## Eksempler
+
+:::: {.columns}
+::: {.column width="60%"}
+#### Articles
+![](img/example01)
+:::
+
+::: {.column width="40%"}
+#### Reference
+![](img/example02)
+:::
+::::
+
 ## Hvorfor highdir?
-- Dagens utfordringer
+- Dagens [utfordringer](https://ybkamaleri.github.io/slides/2026-09-10-highdir/#/title-slide)
 - Mange ulike måter å lage figurer på
 - Avhengighet av enkeltpersoners kompetanse
 - Forenkle ved eksport til HTML og PDF
