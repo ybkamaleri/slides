@@ -217,8 +217,18 @@ geom_args("ranked_bar")
 ## Hvorfor highdir?
 - Dagens utfordringer
 - Mange ulike måter å lage figurer på
-- Utfordringer ved eksport til PDF og rapporter
 - Avhengighet av enkeltpersoners kompetanse
+- Forenkle ved eksport til HTML og PDF
+
+::: {style="margin-top:80px;"}
+```{sh}
+#| eval: false
+
+quarto render rapport.qmd --to typst && open rapport.pdf
+quarto render rapport.qmd --to html && open rapport.html
+
+```
+:::
 
 ## Hvordan highdir bidrar
 - Standardisert utseende
