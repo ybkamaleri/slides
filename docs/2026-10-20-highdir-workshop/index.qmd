@@ -106,14 +106,14 @@ gt(dt1[1:5]) |>
 :::: {.columns}
 ::: {.column width="50%"}
 
-- Definer spesifikasjon
+- Definer spesifikasjon (nødvendig) 
 
 ```{r}
 #| eval: false
 hd_spec()
 ```
 
-- Definer utvalg
+- Definer utvalg (valgfritt)
 
 ```{r}
 #| eval: false
