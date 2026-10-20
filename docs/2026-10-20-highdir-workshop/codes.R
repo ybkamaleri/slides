@@ -88,3 +88,32 @@ hd_make(
   ymin = "lower_95CI",
   ymax = "upper_95CI",
 )
+
+
+# Demo 5
+# ------------------------------------------------------------------------------
+library(highdir)
+
+olympics <- data.frame(
+    Country   = rep(c("Norway", "Germany", "United States", "Canada"), each = 3),
+    Continent = rep(c("Europe", "Europe", "North America", "North America"), each = 3),
+    Medal     = rep(c("Gold", "Silver", "Bronze"), times = 4),
+    Count     = c(148, 133, 124, 102, 98, 65, 113, 122, 95, 77, 72, 80)
+)
+
+# Define Specification and Options
+spec_st <- hd_spec(olympics,
+    x     = "Medal",
+    y     = "Count",
+    group = "Country"
+)
+
+opts_st <- hd_opts(
+    title    = "Olympic Games all-time medal table, grouped by continent",
+    subtitle = "Source: Olympics",
+    ylab     = "Count medals",
+    flip = TRUE
+)
+
+hd_make(spec_st, "stacked_column", opts_st, stacking = "percent")
+hd_make(spec_st, "stacked_column", opts_st, mode = "static", stacking = "percent")

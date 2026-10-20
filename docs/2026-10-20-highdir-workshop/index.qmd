@@ -288,5 +288,17 @@ quarto render rapport.qmd --to html && open rapport.html
 - Dokumentasjon og opplæringsmateriell
 - Innspill fra brukermiljøet
 
+## Quiz
 
+Skanne QRcode og integrer highdir ☺️ 
+
+:::: {.columns}
+::: {.column width="50%"}
+![](img/qrcode-house.png){width=650 fig-aligh="center"}
+:::
+
+::: {.column width="50%"}
+![](img/house.png){width=600}
+:::
+::::
 
