@@ -6,10 +6,10 @@ format:
     logo: "img/hdir.png"
     footer: "[https://folkehelsestats.github.io/highdir](https://folkehelsestats.github.io/highdir)"
     code-copy: true
-    center-title-slide: false
     code-link: true
+    center-title-slide: false
     code-overflow: scroll 
-    highlight-style: a11y
+    highlight-style: a11y 
     height: 1080
     width: 1920
     code-line-numbers: false
@@ -143,25 +143,34 @@ hd_save()
 column, ranked_bar, line, scatter, arearange, pie, stacked_column, venn, (map)
 :::
 
+## Installasjon
+
+- [CRAN](https://cran.r-project.org/web/packages/highdir/index.html)
+- [Github](https://github.com/folkehelsestats/highdir)
+
+```{r}
+#| eval: false
+
+# CRAN
+install.packages("highdir")
+
+# Github (dev versjon)
+if(!require(remotes)) install.packages("remotes")
+remotes::install_github("folkehelsestats/highdir")
+```
+
 ## Demo 1
 ```{r}
 #| eval: false
 
 # Demo 1 
 # ------------------------------------------------------------------------------
-# install.packages("highdir")
-# remotes::install_github("folkehelsestats/highdir") #dev versjon
-
 library(data.table)
 library(highdir)
 
 survey <- fread("c://Users//ykama//Git-hdir//dataset//survey-data.csv")
 
-spec_col <- hd_spec(survey,
-                    x     = "alder",
-                    y     = "pct",
-                    group = "kjonn",
-                    n     = "n")
+spec_col <- hd_spec(survey, x = "alder", y = "pct", group = "kjonn", n = "n")
 
 opts_col <- hd_opts(
   title    = "Alcohol use by age group and kjonn",
@@ -193,7 +202,6 @@ help(hd_opts)
 
 # Demo 2
 # ------------------------------------------------------------------------------
-
 dt <- fread("c://Users//ykama//Git-hdir//dataset//region-data.csv")
 
 spec <- hd_spec(dt, x = "fylke", y = "prosent", n = "n")
@@ -214,6 +222,20 @@ geom_args("ranked_bar")
 ```
 :::
 
+## Demo 3
+
+Shiny app
+
+```{r}
+#| eval: false
+
+hd_app()
+```
+
+::: {style="margin-top:80px;"}
+![](img/shiny){width=1500}
+:::
+
 ## Eksempler
 
 :::: {.columns}
@@ -223,7 +245,7 @@ geom_args("ranked_bar")
 :::
 
 ::: {.column width="40%"}
-#### Reference
+#### Reference - Layered API
 ![](img/example02)
 :::
 ::::
