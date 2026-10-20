@@ -56,3 +56,35 @@ geom_args("ranked_bar")
 # ------------------------------------------------------------------------------
 
 hd_app()
+
+
+
+# Demo 4
+# ------------------------------------------------------------------------------
+library(data.table)
+library(highdir)
+
+dt2 <- fread("c://Users//ykama//Git-hdir//dataset//data-ci-grp.csv")
+
+spec <- hd_spec(
+  data  = dt2,
+  x = "year",
+  y = "adj_mean",
+  group = "kjonn2",
+)
+
+opts <- hd_opts(
+  xlab = " ",
+  ylab = " ",
+  yint = 10,
+)
+
+hd_make(
+  spec    = spec,
+  opts    = opts,
+  type = "arearange",
+  mode = "dynamic",
+  use_js  = TRUE,
+  ymin = "lower_95CI",
+  ymax = "upper_95CI",
+)

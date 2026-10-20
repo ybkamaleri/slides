@@ -96,11 +96,47 @@ tab$Forskjell <- tab$Menn - tab$Kvinner
 knitr::kable(tab, align = "lrrr")
 ```
 
-## Debutalder i bruk av cannabis
+## Sentralstimulerende rusmidler
 
-Gjennomsnittlig debutalder er et viktig mål for å følge utviklingen blant unge. Her kan du
-legge inn tekst, figurer og tabeller på samme måte som i resten av rapporten.
+Resultater fra rus- og tobakksundersøkelsen 2025 viser at omtrent 10 % i
+aldersgruppen 16–64 år rapporterte at de hadde brukt sentralstimulerende
+rusmidler noen gang (livstidsprevalens). Kokain, ecstasy/MDMA og amfetaminer er
+de sentralstimulerende rusmidlene som flest rapporterer at de har brukt.
 
-### Underoverskrift (nivå 3)
+```{r}
+#| label: tbl-ci
+#| tbl-cap: Bruk av sentralstimulerende rusmidler etter kjønn
 
-Underoverskrifter vises ikke i «Innhold på siden», kun nivå 2-overskrifter.
+dt2 <- data.table::fread("c://Users//ykama//Git-hdir//dataset//data-ci-grp.csv")
+
+spec <- hd_spec(
+  data  = dt2,
+  x = "year",
+  y = "adj_mean",
+  group = "kjonn2",
+)
+
+opts <- hd_opts(
+  xlab = " ",
+  ylab = " ",
+  yint = 10,
+)
+
+hd_make(
+  spec    = spec,
+  opts    = opts,
+  type = "arearange",
+  mode = mode,
+  ymin = "lower_95CI",
+  ymax = "upper_95CI",
+)
+
+```
+
+## Bruk av sentralstimulerende rusmidler i befolkningen
+
+Bruken av sentralstimulerende rusmidler blant unge voksne (16 til 30 år) var i
+2025 høyere enn i den samlede voksne befolkningen (16 til 64 år). Unge voksne
+har også tidligere rapportert høyere bruk enn når man ser på den samlede voksne
+befolkningen.
+
