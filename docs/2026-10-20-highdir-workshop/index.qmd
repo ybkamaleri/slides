@@ -269,7 +269,7 @@ quarto render rapport.qmd --to html && open rapport.html
 
 ## Hvordan highdir bidrar
 - Standardisert utseende
-- Gjenbrukbare løsninger
+- Gjenbrukbare løsninger, og noen ekstra f.eks [skjermlesing](https://folkehelsestats.github.io/highdir/articles/accessibility.html)
 - Tettere integrasjon med eksisterende R-verktøy
 - Åpne for muligheter at flere kan bidra og vedlikeholde
 
