@@ -98,7 +98,8 @@ gt(dt1[1:5]) |>
 ![](img/dax.jpg){.absolute top=650 left=300 width="350"}
 ![](img/stata.jpg){.absolute top=350 left=750 width="350"}
 ![](img/R.jpg){.absolute top=550 left=750 width="350"}
-![](img/json.jpg){.absolute top=400 left=1150 width="350"}
+![](img/json.jpg){.absolute top=350 left=1150 width="350"}
+![](img/calc.jpg){.absolute top=550 left=1150 width="350"}
 
 ## Fra data til figur
 
