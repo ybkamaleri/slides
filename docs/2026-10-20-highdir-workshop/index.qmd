@@ -258,7 +258,7 @@ hd_app()
 - Forenkle ved eksport til HTML og PDF
 
 ::: {style="margin-top:80px;"}
-
+### Ja takk, begge deler
 Kan få i pose og sekk ved å kjøre denne i en quarto fil
 
 ```{sh}
