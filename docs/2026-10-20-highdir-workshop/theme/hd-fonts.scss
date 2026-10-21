@@ -40,6 +40,10 @@ $presentation-heading-font: "Noto Serif", serif;
   color: $theme-light-alt;
 }
 
+.reveal h6 {
+  font-family: $presentation-heading-font;
+  color: $theme-light-other;
+}
 
 /* Standard slide titles (##) */
 .reveal .slides section > h2 {
@@ -52,6 +56,10 @@ $presentation-heading-font: "Noto Serif", serif;
 .reveal .slides section > h3 {
   font-size: 1.5em;
   font-weight: 600;
+}
+
+.reveal .slides section > h6 {
+  font-size: 0.8em;
 }
 
 /* Body text */

@@ -35,9 +35,9 @@ execute:
 <br>
 <br>
 
-<h4> Workshop </h4>
-
-<h4> 20.10.2026 </h4>
+<h6>Yusman Kamaleri<h6>
+<h6> Workshop<h6>
+<h6> 20.10.2026<h6>
 
 <br>
 
