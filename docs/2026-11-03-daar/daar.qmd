@@ -61,3 +61,9 @@ fig_trend
 
 ## Dødsfall etter stofftype
 ![](dodsfall_stoff){.absolute width="1500"}
+
+## Geografisk fordeling (antall)
+![](fylke_antall_dor){.absolute width="1500"}
+
+## Geografisk fordeling (rate)
+![](fylke_rate_dor){.absolute width="1500"}

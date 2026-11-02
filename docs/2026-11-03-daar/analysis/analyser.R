@@ -67,3 +67,26 @@ d12 <- pred_rate(ratenor[year > 2011])
 vars <- c("rate", "trend")
 d12[, (vars) := lapply(.SD, function(x) round(x, 1)), .SDcols = vars]
 # dtrate12 <- melt(d12, id.vars = "year", measure.vars = vars)
+
+
+## Geografisk fordeling
+## --------------------
+
+filFylkeN <- "Narkotikautløste dødsfall etter bofylke og dødsårsak, antall.csv"
+filFylkeR <- "Narkotikautløste dødsfall etter bofylke og dødsårsak, rater.csv"
+
+fnum <- setDT(rio::import(file.path(path, filFylkeN), encoding = "Latin-1"))
+frate <- setDT(rio::import(file.path(path, filFylkeR), encoding = "Latin-1"))
+
+fn <- fnum[, c(1,2,4)]
+fr <- frate[, c(1,2,4)]
+
+data.table::setnames(fn, c("year", "fylke", "antall"))
+data.table::setnames(fr, c("year", "fylke", "rate")) #Aldersstandardisert per 100 000
+
+fn[is.na(antall), antall  := 0] #anonymisert eller skjult pga. andre årsaker
+fr[is.na(rate), rate  := 0] #anonymisert eller skjult pga. andre årsaker
+
+fn <- fn[fylke != "Hele landet"]
+fr <- fr[fylke != "Hele landet"]
+
