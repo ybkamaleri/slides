@@ -100,7 +100,7 @@ function(e) {
 # 4. Create Highcharts Stock chart
 # --------------------------------------------------
 
-fig_trend <- highchart(type = "stock") %>%
+fig_trend <- highchart(type = "stock") |>
 
   # Original confidence interval
   hc_add_series(
@@ -114,7 +114,7 @@ fig_trend <- highchart(type = "stock") %>%
     visible = TRUE,
     showInLegend = FALSE,
     marker = list(enabled = FALSE)
-  ) %>%
+  ) |>
 
   # Alternative confidence interval
   hc_add_series(
@@ -128,7 +128,7 @@ fig_trend <- highchart(type = "stock") %>%
     visible = FALSE,
     showInLegend = FALSE,
     marker = list(enabled = FALSE)
-  ) %>%
+  ) |>
 
   # Observed rate
   hc_add_series(
@@ -142,7 +142,7 @@ fig_trend <- highchart(type = "stock") %>%
       enabled = TRUE,
       radius = 3
     )
-  ) %>%
+  ) |>
 
   # Original trend
   hc_add_series(
@@ -152,9 +152,9 @@ fig_trend <- highchart(type = "stock") %>%
     color = "#D32F2F",
     lineWidth = 2.5,
     zIndex = 4,
-    visible = TRUE,
+    visible = FALSE,
     marker = list(enabled = FALSE)
-  ) %>%
+  ) |>
 
   # Alternative trend
   hc_add_series(
@@ -164,18 +164,18 @@ fig_trend <- highchart(type = "stock") %>%
     color = "#2E7D32",
     lineWidth = 2.5,
     zIndex = 5,
-    visible = FALSE,
+    visible = TRUE,
     marker = list(enabled = FALSE)
-  ) %>%
+  ) |>
 
   # Chart title
   hc_title(
     text = "Narkotikautløste dødsfall, 1996-2025"
-  ) %>%
+  ) |>
 
   hc_subtitle(
     text = "Aldersstandardisert rate for narkotikautløste dødsfall per 100 000 innbyggere"
-  ) %>%
+  ) |>
 
   # X-axis
   hc_xAxis(
@@ -187,13 +187,13 @@ fig_trend <- highchart(type = "stock") %>%
     events = list(
       afterSetExtremes = switch_trend
     )
-  ) %>%
+  ) |>
 
   # Y-axis
   hc_yAxis(
     title = list(text = "Rate"),
     min = 0
-  ) %>%
+  ) |>
 
   # Range selector
   hc_rangeSelector(
@@ -203,16 +203,16 @@ fig_trend <- highchart(type = "stock") %>%
     zoomText = "",  # Remove redundant "Zoom" label
     buttons = list(
       list(
-        type = "all",
-        text = "1996-2025"
-      ),
-      list(
         type = "year",
         count = 13,
-        text = "2012-2025"
+        text = "2012"
+      ),
+      list(
+        type = "all",
+        text = "1996"
       )
     )
-  ) %>%
+  ) |>
 
   # Tooltip
   hc_tooltip(
@@ -220,14 +220,14 @@ fig_trend <- highchart(type = "stock") %>%
     crosshairs = TRUE,
     xDateFormat = "%Y",
     valueDecimals = 2
-  ) %>%
+  ) |>
 
   # Legend
   hc_legend(
     enabled = TRUE,
     align = "center",
     verticalAlign = "bottom"
-  ) %>%
+  ) |>
 
   # Chart settings
   hc_chart(

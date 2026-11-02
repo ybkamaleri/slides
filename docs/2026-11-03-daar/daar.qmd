@@ -31,8 +31,8 @@ source("analysis/fig-antall.R")
 
 ```{r}
 #| label: antall
-#| fig-width: 11
-#| fig-height: 5.5
+#| fig-width: 10
+#| fig-height: 6
 
 fig_antall
 ```
@@ -41,8 +41,8 @@ fig_antall
 
 ```{r}
 #| label: rate
-#| fig-width: 11
-#| fig-height: 5.5
+#| fig-width: 10
+#| fig-height: 6
 
 source("analysis/fig-rate.R")
 fig_rate
@@ -52,8 +52,8 @@ fig_rate
 
 ```{r}
 #| label: trend
-#| fig-width: 11
-#| fig-height: 5.5
+#| fig-width: 10
+#| fig-height: 6
 
 source("analysis/fig-trend.R")
 fig_trend
