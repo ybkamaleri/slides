@@ -1,0 +1,63 @@
+---
+format: 
+  revealjs:
+    theme: simple 
+    slide-number: c/t
+    code-copy: true
+    code-link: true
+    footer: "[Narkotikautløste dødsfall i Norge](https://www.helsedirektoratet.no/rapporter/tall-om-illegale-rusmidler/narkotikautloste-dodsfall-i-norge)"
+    center-title-slide: false
+    code-overflow: scroll 
+    code-line-numbers: false
+    fig-cap: false
+    pointer:
+      pointerSize: 18
+      key: p
+execute: 
+  eval: true
+  echo: false
+---
+
+
+
+## Antall
+
+```{r}
+#| echo: false
+
+source("analysis/analyser.R")
+source("analysis/fig-antall.R")
+```
+
+```{r}
+#| label: antall
+#| fig-width: 11
+#| fig-height: 5.5
+
+fig_antall
+```
+
+## Rate
+
+```{r}
+#| label: rate
+#| fig-width: 11
+#| fig-height: 5.5
+
+source("analysis/fig-rate.R")
+fig_rate
+```
+
+## Trend 
+
+```{r}
+#| label: trend
+#| fig-width: 11
+#| fig-height: 5.5
+
+source("analysis/fig-trend.R")
+fig_trend
+```
+
+## Dødsfall etter stofftype
+![](dodsfall_stoff){.absolute width="1500"}
