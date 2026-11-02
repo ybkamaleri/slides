@@ -13,11 +13,12 @@ format:
     pointer:
       pointerSize: 18
       key: p
+revealjs-plugins:
+  - pointer
 execute: 
   eval: true
   echo: false
 ---
-
 
 
 ## Antall
